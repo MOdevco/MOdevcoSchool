@@ -43,11 +43,11 @@ const HomeColors = () => {
         <Box display={'flex'} gap={'40px'} flexDirection={{base: 'column' ,md: 'row'}} >
             <ColorCards cardBg={'#FFFF00'} copy={'#FFFF00'} copyColor={'#FFFF00'} title={' Yellow'} textColor={'#000'} colorName={'#FFFF00'} />
             <ColorCards cardBg={'#FF6347'} copy={'#FF6347'} copyColor={'#FF6347'}  title={' Tomato'} textColor={'#000'} colorName={'#FF6347'} />
-            <ColorCards cardBg={'#708090'} copy={'#708090'} copyColor={'#708090'}  title={' SlateGrey '} textColor={'#fff'} colorName={'#708090'} />
+            <ColorCards cardBg={'#708090'} copy={'#708090'} copyColor={'#708090'}  title={' SlateGrey '} textColor={'black'} colorName={'#708090'} />
         </Box>
         <Box display={'flex'} gap={'40px'} flexDirection={{base: 'column' ,md: 'row'}} >
             <ColorCards cardBg={'#008080'} copy={'#008080'} copyColor={'#008080'} title={' Teal'} textColor={'#000'} colorName={'#008080'} />
-            <ColorCards cardBg={'#FFFFFF'} copy={'#FFFFFF'} copyColor={'#FFFFFF'}  title={' White'} textColor={'#000'} colorName={'#FFFFFF'} />
+            <ColorCards cardBg={'#FFFFFF'} copy={'#FFFFFF'} copyColor={'#FFFFFF'}  title={' White'} textColor={'#0000'} colorName={'#FFFFFF'} />
             <ColorCards cardBg={'#9ACD32'} copy={'#9ACD32'} copyColor={'#9ACD32'}  title={' YellowGreen '} textColor={'#fff'} colorName={'#9ACD32'} />
         </Box>
         <Box display={'flex'} gap={'40px'} flexDirection={{base: 'column' ,md: 'row'}} >

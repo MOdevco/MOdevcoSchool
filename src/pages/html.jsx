@@ -33,7 +33,7 @@ const Html = () => {
                 </Box>}
                 <Box ml={{base: '30px' , md: '450px'}}   display={'flex'} flexDirection={'column'} alignItems={'center'} gap={'20px'}>
                     {sizes.map((size) => (
-                        <Button  onClick={ () => handleClick(size)} display={{base: 'block' , md: 'none'}}>
+                        <Button  onClick={ () => handleClick(size)} bg={'#233242'} _hover={{bg: '#222'}} display={{base: 'block' , md: 'none'}}>
                             <HamburgerIcon />
                         </Button>
                         

@@ -52,57 +52,57 @@ const Navbar = () => {
                     </Box>
                 </Flex>
                 <Box display={{base: 'block' , md: 'none'}}>
-                    <Menu >
-                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-                            Actions
+                    <Menu  >
+                        <MenuButton   bg={'#233242'} _hover={{bg: '#222'}} as={Button} rightIcon={<ChevronDownIcon />}>
+                            Qo'shimcha
                         </MenuButton>
-                        <MenuList>
-                            <MenuItem>
-                                <Link className='link'>
+                        <MenuList border={'none'} bg={'#233242'}>
+                            <MenuItem bg={'#233242'}>
+                                <Link className='link' to={'/html'}>
                                     HTML
                                 </Link>
                             </MenuItem>
-                            <MenuItem>
+                            <MenuItem bg={'#233242'}>
                                 <Link className='link'>
                                     CSS
                                 </Link>
                             </MenuItem>
-                            <MenuItem>
+                            <MenuItem bg={'#233242'}>
                                 <Link className='link'>
                                     JAVASCRIPT
                                 </Link>
                             </MenuItem>
-                            <MenuItem>
+                            <MenuItem bg={'#233242'}>
                                 <Link className='link'>
                                     BOOTSTRAP
                                 </Link>
                             </MenuItem>
-                            <MenuItem>
+                            <MenuItem bg={'#233242'}>
                                 <Link className='link'>
                                     REACT JS
                                 </Link>
                             </MenuItem>
-                            <MenuItem>
+                            <MenuItem bg={'#233242'}>
                                 <Link className='link'>
                                     NEXT JS
                                 </Link>
                             </MenuItem>
-                            <MenuItem>
+                            <MenuItem bg={'#233242'}>
                                 <Link className='link'>
                                     TYPESCRIPT
                                 </Link>
                             </MenuItem>
-                            <MenuItem>
+                            <MenuItem bg={'#233242'}>
                                 <Link className='link'>
                                     TAILWINT
                                 </Link>
                             </MenuItem>
-                            <MenuItem>
+                            <MenuItem bg={'#233242'}>
                                 <Link className='link'>
                                     CHAKRA UI
                                 </Link>
                             </MenuItem>
-                            <MenuItem>
+                            <MenuItem bg={'#233242'}>
                                 <Link className='link'>
                                     MATERIAL UI
                                 </Link>
