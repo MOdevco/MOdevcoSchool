@@ -32,7 +32,7 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     <AccordionPanel width={'100%'} fontSize={'25px'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         1-Dars
                     </AccordionPanel>
-                    <AccordionPanel width={'100%'} fontSize={'20px'}  display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
+                    <AccordionPanel fontSize={'20px'}  display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
                             {Htmlbir}
                         </Link>
@@ -45,10 +45,10 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     </AccordionPanel>
                     <Divider height={'1px'} bg={'gray.200'} />
                     
-                    <AccordionPanel width={'100%'} fontSize={'25px'} bg={'#0A1624'} pb={4} textAlign={'start'}>
+                    <AccordionPanel  fontSize={'25px'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         2-Dars
                     </AccordionPanel>
-                    <AccordionPanel width={'100%'} fontSize={'20px'}  display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
+                    <AccordionPanel fontSize={'20px'}  display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
                             1-Mavzu: HTML Formatlash
                         </Link>
@@ -100,7 +100,7 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     <AccordionPanel width={'100%'} fontSize={'25px'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         1-Dars
                     </AccordionPanel>
-                    <AccordionPanel width={'100%'} fontSize={'20px'} display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
+                    <AccordionPanel width={'1000px'} fontSize={'20px'} display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
                             1-Mavzu: Html Listlar
                         </Link>
@@ -113,10 +113,10 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     </AccordionPanel>
                     <Divider height={'1px'} bg={'gray.200'} />
                     
-                    <AccordionPanel width={'100%'} fontSize={'25px'} bg={'#0A1624'} pb={4} textAlign={'start'}>
+                    <AccordionPanel fontSize={'25px'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         2-Dars
                     </AccordionPanel>
-                    <AccordionPanel width={'100%'} fontSize={'20px'} display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
+                    <AccordionPanel  fontSize={'20px'} display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
                             1-Mavzu: Html Formalar
                         </Link>

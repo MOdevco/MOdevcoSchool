@@ -44,7 +44,7 @@ const Html = () => {
                     <Drawer placement={placement}  onClose={onClose} size={size} isOpen={isOpen}>
                         <DrawerOverlay />
                         <DrawerContent>
-                        <DrawerBody bg={'#0A1624'} display={'flex'} justifyContent={'center'} minHeight={'100vh'} width={'100%'} >
+                        <DrawerBody bg={'#0A1624'} display={'flex'} justifyContent={'center'} minHeight={'100vh'} >
                         <CloseIcon onClick={nandleClose} position={'absolute'} right={'10px'} />
                             <AccordionItenm  Htmlbir={'1-Mavzu: Html o’rnatish'} Htmlikki={'2-Mavzu: Html asosiy misollar'} Htmluch={'3-Mavzu: Html Paragraphlar'} />
                         </DrawerBody>
