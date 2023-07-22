@@ -2,6 +2,12 @@
 * {
   font-family: 'Molengo';
 }
+*::-webkit-scrollbar {
+  width: 0px;
+}
+*::-webkit-scrollbar-thumb {
+  background: white;
+}
 
 body {
   background: #0A1624;

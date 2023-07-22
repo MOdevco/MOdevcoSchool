@@ -27,6 +27,7 @@ import {
   } from '@chakra-ui/react'
 import { Goog } from '../../assets'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -73,7 +74,9 @@ const Header = () => {
                         <HamburgerIcon />
                     </Box> */}
                     <Box>
-                        <Heading  fontSize={{base: '20px' , md: '40px'}}><span style={{color: 'red'}}>MO</span>devco Online Maktabi</Heading>
+                        <Link to={'/'}>
+                            <Heading  fontSize={{base: '20px' , md: '40px'}}><span style={{color: 'red'}}>MO</span>devco Online Maktabi</Heading>
+                        </Link>
                     </Box>
                     {user ? (
                         <Box>

@@ -19,7 +19,7 @@ const Navbar = () => {
             <Flex fontSize={'20px'}  alignItems={'center'} gap={'40px'} minHeight={'7vh'}>
                 <Flex display={{base: 'none' , md: 'block'}}>
                     <Box   fontSize={'20px'} display={'flex'}  alignItems={'center'} gap={'40px'}>
-                        <Link className='link'>
+                        <Link className='link' to={'/html'}>
                             HTML
                         </Link>
                         <Link className='link'>

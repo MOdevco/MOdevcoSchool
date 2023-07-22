@@ -6,6 +6,7 @@ import Navbar from './components/navbar/navbar'
 import Home from './pages/Home'
 import { ArrowUpIcon } from '@chakra-ui/icons'
 import { useEffect, useState } from 'react'
+import Html from './pages/html'
 
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -37,6 +38,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} ></Route>
+        <Route path='/html' element={<Html />} ></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} bottom={'30px'} right={'30px'}>
@@ -45,9 +47,9 @@ function App() {
         </Button>
       </Box>}
 
-      <Box>
+      {/* <Box>
         <Footer />
-      </Box>
+      </Box> */}
     </Box>
   )
 }
