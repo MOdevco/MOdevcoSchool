@@ -48,7 +48,7 @@ const HomeReact = () => {
                 </Button>
                 <Modal isOpen={isOpen} onClose={onClose}>
                         <ModalOverlay />
-                        <ModalContent>
+                        <ModalContent bg={'#233242'}>
                         <ModalHeader>ESLATIB O'TAMIZ</ModalHeader>
                         <ModalCloseButton />
                         <ModalBody>

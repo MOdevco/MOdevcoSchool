@@ -1,7 +1,7 @@
 import { Box , Flex ,Button} from '@chakra-ui/react'
 import { useState } from 'react'
 import Sidebar from '../components/sidebar/sidebar'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon , CloseIcon} from '@chakra-ui/icons'
 import {
     Drawer,
     DrawerBody,
@@ -21,6 +21,9 @@ const Html = () => {
     const handleClick = (newSize) => {
         setSize(newSize)
         onOpen()
+    }
+    const nandleClose = () => {
+        onClose()
     }
     const sizes = ['md']
 
@@ -42,7 +45,8 @@ const Html = () => {
                         <DrawerOverlay />
                         <DrawerContent>
                         <DrawerBody bg={'#0A1624'} display={'flex'} justifyContent={'center'} minHeight={'100vh'} width={'100%'} >
-                            <AccordionItenm />
+                        <CloseIcon onClick={nandleClose} position={'absolute'} right={'10px'} />
+                            <AccordionItenm  Htmlbir={'1-Mavzu: Html o’rnatish'} Htmlikki={'2-Mavzu: Html asosiy misollar'} Htmluch={'3-Mavzu: Html Paragraphlar'} />
                         </DrawerBody>
                         </DrawerContent>
                     </Drawer>
