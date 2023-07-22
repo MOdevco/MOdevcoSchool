@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+* {
+  font-family: 'Molengo';
+}
+
+body {
+  background: #0A1624;
+}
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  background: white;
+  width: 0%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  top: 35px;
+  transition: 0.5s;
+}
+.link:hover::after {
+  width: 100%;
+  width: -100%;
+}

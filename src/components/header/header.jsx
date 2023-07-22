@@ -1,0 +1,123 @@
+import { Box , Heading , Flex , Button  , Avatar } from '@chakra-ui/react'
+import { useAuthState } from 'react-firebase-hooks/auth'
+import { auth } from '../../firebase'
+import { signInWithPopup , GoogleAuthProvider } from 'firebase/auth'
+import { ArrowRightIcon } from '@chakra-ui/icons'
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+    useDisclosure,
+    Image
+  } from '@chakra-ui/react'
+  import {
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+    MenuItemOption,
+    MenuGroup,
+    MenuOptionGroup,
+    MenuDivider,
+    useToast
+  } from '@chakra-ui/react'
+import { Goog } from '../../assets'
+import { useEffect } from 'react'
+
+
+const Header = () => {
+    const [ user , loading] = useAuthState(auth)
+    const googleProvider = new GoogleAuthProvider
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const toast = useToast()
+    const handleUser =  () => {
+        try {
+            const res = signInWithPopup(auth , googleProvider).then(() => {
+                toast({
+                    position: 'top-right',
+                    render: () => (
+                      <Box color='white' p={3} bg='green.300'>
+                        RO'YXATDAN O'TDINGIZ
+                      </Box>
+                    ),
+                })
+            })
+            
+        } catch {
+            console.log('error')
+        }
+    }
+    
+
+    const handleClose = () => {
+        auth.signOut()
+        toast({
+            position: 'top-right',
+            render: () => (
+              <Box color='white' p={3} bg='red.400'>
+                PROFILINGIZDAN CHIQTINGIZ
+              </Box>
+            ),
+        })
+    }
+    return (
+        <Box pt={'20px'} bg={'#050E17'}  h={'9vh'} px={{base: '20px' , md: '0'}}>
+            
+            <Box maxW={'1633px'} mx={'auto'} >
+                <Flex alignItems={'center'} justifyContent={'space-between'}>
+                    {/* <Box fontSize={'30px'} display={{base: 'block' , md: 'none'}}>
+                        <HamburgerIcon />
+                    </Box> */}
+                    <Box>
+                        <Heading  fontSize={{base: '20px' , md: '40px'}}><span style={{color: 'red'}}>MO</span>devco Online Maktabi</Heading>
+                    </Box>
+                    {user ? (
+                        <Box>
+                        <Menu>
+                            <MenuButton >
+                                <Avatar src={user.photoURL} />
+                            </MenuButton>
+                            <MenuList>
+                                <MenuItem onClick={handleClose}  display={'flex'} gap={'30px'} alignItems={'center'}>
+                                    PRODILDAN CHIQISH
+                                    <ArrowRightIcon />
+                                </MenuItem>
+                            </MenuList>
+                        </Menu>
+                    </Box>
+                    ): (
+                        <Box >
+                            <Button onClick={onOpen} width={{base: '90px' , md: '200px'}} fontSize={{base: '10px' , md: '20px'}}>Ro'yxatdan o'tish</Button>
+                        </Box>
+                        )
+                    }
+                    <Modal isOpen={isOpen} onClose={onClose}>
+                        <ModalOverlay />
+                        <ModalContent>
+                        <ModalHeader>Modal Title</ModalHeader>
+                        <ModalCloseButton />
+                        <ModalBody>
+                            <Button onClick={handleUser} width={'100%'}>
+                                <Image width={'30px'} src={Goog}></Image>
+                                Google Yordamida Ro'yxatdan  O'tish
+                            </Button>
+                        </ModalBody>
+                        </ModalContent>
+                    </Modal>
+
+
+                    
+                </Flex>  
+            </Box>
+
+        </Box>
+    )
+}
+
+
+
+export default Header
