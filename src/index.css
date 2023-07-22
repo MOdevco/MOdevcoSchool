@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
 * {
   font-family: 'Molengo';
+  color: white;
 }
 *::-webkit-scrollbar {
   width: 0px;
@@ -10,7 +11,7 @@
 }
 
 body {
-  background: #0A1624;
+  background-color: #1A202C;
 }
 
 .link {

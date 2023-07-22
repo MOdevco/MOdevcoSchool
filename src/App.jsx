@@ -30,7 +30,7 @@ function App() {
 
 
   return (
-    <Box >
+    <Box bg={'#1A202C'} height={'100%'} >
       <Box position={'fixed'} width={'100%'} zIndex={10}>
         <Header />
         <Navbar />

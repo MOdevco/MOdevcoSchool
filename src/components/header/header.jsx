@@ -84,8 +84,8 @@ const Header = () => {
                             <MenuButton >
                                 <Avatar src={user.photoURL} />
                             </MenuButton>
-                            <MenuList>
-                                <MenuItem onClick={handleClose}  display={'flex'} gap={'30px'} alignItems={'center'}>
+                            <MenuList bg={'#233242'} border={'none'}>
+                                <MenuItem onClick={handleClose} bg={'#233242'}  display={'flex'} gap={'30px'} alignItems={'center'}>
                                     PRODILDAN CHIQISH
                                     <ArrowRightIcon />
                                 </MenuItem>
@@ -94,16 +94,16 @@ const Header = () => {
                     </Box>
                     ): (
                         <Box >
-                            <Button onClick={onOpen} width={{base: '90px' , md: '200px'}} fontSize={{base: '10px' , md: '20px'}}>Ro'yxatdan o'tish</Button>
+                            <Button onClick={onOpen} bg={'#0A1624'} color={'white'} _hover={{bg: '#222'}} width={{base: '90px' , md: '200px'}} fontSize={{base: '10px' , md: '20px'}}>Ro'yxatdan o'tish</Button>
                         </Box>
                         )
                     }
-                    <Modal isOpen={isOpen} onClose={onClose}>
+                    <Modal isOpen={isOpen}  onClose={onClose}>
                         <ModalOverlay />
-                        <ModalContent>
-                        <ModalHeader>Modal Title</ModalHeader>
+                        <ModalContent bg={'#233242'}>
+                        <ModalHeader>Hoziroq boshlang!</ModalHeader>
                         <ModalCloseButton />
-                        <ModalBody>
+                        <ModalBody bg={'#233242'}>
                             <Button onClick={handleUser} width={'100%'}>
                                 <Image width={'30px'} src={Goog}></Image>
                                 Google Yordamida Ro'yxatdan  O'tish

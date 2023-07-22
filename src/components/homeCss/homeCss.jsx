@@ -38,12 +38,12 @@ const HomeCss = () => {
                     Veb-sahifalarni uslublash tili 
                 </Text>
                 <Link>
-                    <Button bg={'#233242'} _hover={{bg: '#222'}} width={{base: '100%' , md: '200px'}}>
+                    <Button bg={'#233242'} _hover={{bg: '#222'}} color={'white'} width={{base: '100%' , md: '200px'}}>
                         BOSHLASH
                     </Button>
                 </Link>
                 <Link>
-                    <Button onClick={onOpen} bg={'#233242'} _hover={{bg: '#222'}} width={{base: '100%' , md: '200px'}}>
+                    <Button onClick={onOpen} bg={'#233242'} _hover={{bg: '#222'}} color={'white'} width={{base: '100%' , md: '200px'}}>
                         VIDEO DARSLIK
                     </Button>
                     <Modal isOpen={isOpen} onClose={onClose}>
@@ -58,7 +58,7 @@ const HomeCss = () => {
                     </Modal>
                 </Link>
                 <Link>
-                    <Button onClick={onOpen} bg={'#233242'} _hover={{bg: '#222'}} width={{base: '100%' , md: '200px'}}>
+                    <Button onClick={onOpen} bg={'#233242'} _hover={{bg: '#222'}} color={'white'} width={{base: '100%' , md: '200px'}}>
                         BARCHA KOD
                     </Button>
                 </Link>

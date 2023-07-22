@@ -25,7 +25,7 @@ const Html = () => {
     const sizes = ['md']
 
   return (
-    <Box pt={'200px'}>
+    <Box pt={'200px'} minHeight={'100vh'}>
         <Box >
             <Flex >
                 {onOpen && <Box>

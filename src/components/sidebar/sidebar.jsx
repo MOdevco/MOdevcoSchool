@@ -8,11 +8,11 @@ const Sidebar = ({title , elementName}) => {
         <Box position={'fixed'} zIndex={'1'} display={'flex'} borderRight={'2px'} overflowY={'scroll'} borderColor={'#2D2D2D'} justifyContent={'center'} alignItems={'flex-start'} textAlign={'center'} pt={'40px'}  width={'365.02px'} height={'100vh'} bg={'#050E17'} top={'160px'}>
             <Box display={'flex'} flexDirection={'column'} gap={'20px'}>
                 <Box>
-                    <Heading fontSize={'35px'}>{title}</Heading>
+                    <Heading color={'white'} fontSize={'35px'}>{title}</Heading>
                 </Box>
                 <Box>
                     <Link>
-                        <Button bg={'#0A1624'} width={'304px'} height='50px' fontSize={'25px'}>{elementName}</Button>
+                        <Button bg={'#0A1624'} color={'white'} _hover={{bg : ''}} width={'304px'} height='50px' fontSize={'25px'}>{elementName}</Button>
                     </Link>
                 </Box>
                 <Box>
