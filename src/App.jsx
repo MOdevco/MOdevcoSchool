@@ -85,7 +85,7 @@ function App() {
             <Button onClick={handleClose} position={'absolute'} bg={'#222'} _hover={{bg: ''}} right={'20'}  top={'-5'}>
               <CloseIcon color={'black'} />
             </Button>
-            <Heading color={'#000'} fontSize={'50px'}><span style={{color: 'red'}}>MO</span>devco Online School biz bilan yuksaklarga erishasiz</Heading>
+            <Heading color={'#000'} fontSize={{base: '30px' , md: '50px'}}><span style={{color: 'red'}}>MO</span>devco Online School biz bilan yuksaklarga erishasiz</Heading>
         </Box>}
 
 

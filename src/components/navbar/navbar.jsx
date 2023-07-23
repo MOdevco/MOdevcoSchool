@@ -54,7 +54,7 @@ const Navbar = () => {
                 <Box display={{base: 'block' , md: 'none'}}>
                     <Menu  >
                         <MenuButton   bg={'#233242'} _hover={{bg: '#222'}} as={Button} rightIcon={<ChevronDownIcon />}>
-                            Qo'shimcha
+                            Baecha Darsliklar To'plami
                         </MenuButton>
                         <MenuList border={'none'} bg={'#233242'}>
                             <MenuItem bg={'#233242'}>
