@@ -74,7 +74,7 @@ const Html6dars = () => {
             <Divider mt={'20px'} />
 
 
-            <Box height={'5vh'} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
+            <Box height={{base: '20vh' , md: '15vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
                 <Text fontSize={'25px'}>HTML sharhlari brauzerda ko'rsatilmaydi, lekin ular HTML manba kodingizni hujjatlashtirishga yordam beradi.</Text>
             </Box>
             <Divider mt={'20px'} />
