@@ -2,7 +2,7 @@ import { Box , Heading , Button , Divider  } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
 
-const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , lesson5 , lesson6 , lesson7 , lesson8 , lesson9 , lesson10 , lesson11 , lesson12 , lesson13 , lesson14 , lesson15 , lesson16 , html1 , html2, html3 , html4 , lesson17 , lesson18 , lesson19 , lesson20 , lesson21 , lesson22 , lesson23 , amalyot1 , amalyot2}) => {
+const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , lesson5 , lesson6 , lesson7 , lesson8 , lesson9 , lesson10 , lesson11 , lesson12 , lesson13 , lesson14 , lesson15 , lesson16 , html1 , html2, html3 , html4,  html5 , html6 , html7  , lesson17 , lesson18 , lesson19 , lesson20 , lesson21 , lesson22 , lesson23 , amalyot1 , amalyot2}) => {
     
    
   return (
@@ -45,13 +45,13 @@ const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , 
                         {/* =================2-dars===================== */}
                         <Box display={'flex'} flexDirection={'column'} gap={'20px'}>
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>2-Dars</Button>
-                            <Link >
+                            <Link to={html5}>
                                 <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson5}</Button>
                             </Link>
-                            <Link >
+                            <Link to={html6}>
                                 <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson6}</Button>
                             </Link>
-                            <Link >
+                            <Link to={html7}>
                                 <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson7}</Button>
                             </Link>
                             <Divider />

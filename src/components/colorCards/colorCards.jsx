@@ -20,9 +20,9 @@ const ColorCards = ({cardBg , title , colorName , textColor , copyColor  , copy}
   return (
     <Box  width={'100%'} mt={'100px'}>
         <CopyToClipboard onCopy={handleClip} text={copyColor} >
-            <Box bg={cardBg}  height={'200px'} width={{base: '100%' , md: '330px'}} color={textColor} rounded={'10px'} p={'70px'}>
-                <Heading fontSize={'25px'}>{title}</Heading>
-                <Text>{colorName}</Text>
+            <Box bg={cardBg}  height={'200px'} width={{base: '200px' , md: '300px'}}  rounded={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} >
+                <Heading color={textColor} fontSize={{base: '20px' , md: '25px'}}>{title}</Heading>
+                <Text color={textColor}>{colorName}</Text>
             </Box>
         </CopyToClipboard>
     </Box>

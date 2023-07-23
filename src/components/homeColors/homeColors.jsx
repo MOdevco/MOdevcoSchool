@@ -47,7 +47,7 @@ const HomeColors = () => {
         </Box>
         <Box display={'flex'} gap={'40px'} flexDirection={{base: 'column' ,md: 'row'}} >
             <ColorCards cardBg={'#008080'} copy={'#008080'} copyColor={'#008080'} title={' Teal'} textColor={'#000'} colorName={'#008080'} />
-            <ColorCards cardBg={'#FFFFFF'} copy={'#FFFFFF'} copyColor={'#FFFFFF'}  title={' White'} textColor={'#0000'} colorName={'#FFFFFF'} />
+            <ColorCards cardBg={'#FFFF'} copy={'#FFFFFF'} copyColor={'#FFFFFF'}  title={' White'} textColor={'#000'} colorName={'#FFFFFF'} />
             <ColorCards cardBg={'#9ACD32'} copy={'#9ACD32'} copyColor={'#9ACD32'}  title={' YellowGreen '} textColor={'#fff'} colorName={'#9ACD32'} />
         </Box>
         <Box display={'flex'} gap={'40px'} flexDirection={{base: 'column' ,md: 'row'}} >

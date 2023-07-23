@@ -41,12 +41,12 @@ const HomeHtml = () => {
                     Veb-sahifalar yaratish uchun til 
                 </Text>
                 <Link>
-                    <Button width={{base: '100%' , md: '200px'}} bg={'#233242'} color={'white'} _hover={{bg: '#222'}}>
+                    <Button width={'200px'} bg={'#233242'} color={'white'} _hover={{bg: '#222'}}>
                         BOSHLASH
                     </Button>
                 </Link>
                 <Link>
-                    <Button onClick={onOpen} width={{base: '100%' , md: '200px'}} bg={'#233242'} color={'white'} _hover={{bg: '#222'}}>
+                    <Button onClick={onOpen} width={'200px'} bg={'#233242'} color={'white'} _hover={{bg: '#222'}}>
                         VIDEO DARSLIK
                     </Button>
                     <Modal isOpen={isOpen} onClose={onClose}>
@@ -61,7 +61,7 @@ const HomeHtml = () => {
                     </Modal>
                 </Link>
                 <Link>
-                    <Button onClick={onOpen} width={{base: '100%' , md: '200px'}} bg={'#233242'} color={'white'} _hover={{bg: '#222'}}>
+                    <Button onClick={onOpen} width={'200px'} bg={'#233242'} color={'white'} _hover={{bg: '#222'}}>
                         BARCHA KOD
                     </Button>
                 </Link>
