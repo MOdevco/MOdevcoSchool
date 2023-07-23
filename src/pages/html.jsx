@@ -48,7 +48,7 @@ const Html = () => {
         <Box >
             <Flex >
                 {onOpen && <Box>
-                    <Sidebar title={'HTML DARSLARI'} elementName={'Html bosh sahifa'} />
+                    <Sidebar title={'HTML DARSLARI'}   elementName={'Bosh sahifa'} html1={'/html1dars'} html2={'/html2dars'} html3={'/html3dars'} html4={'/html4dars'}  lesson1={'1-Mavzu: Html O’rnatish'} lesson2={'2-Mavzu: Html Asosiy Misollar'} lesson3={'3-Mavzu: Html Hedinglar'} lesson4={'4-Mavzu: Html Paragraphlar'} lesson5={'1-Mavzu: HTML Formatlash'} lesson6={'2-Mavzu: Html Komentariya'} lesson7={'3-Mavzu: Html Link'} lesson8={'1-Mavzu: Html Image'} lesson9={'2-Mavzu: Html Favicon va Tittle'} lesson10={'3-Mavzu: Html Table'} lesson11={'1-Mavzu: Html Listlar'} lesson12={'2-Mavzu: Html Block va Inline'} lesson13={'3-Mavzu: Html Emojilar '} lesson14={'1-Mavzu: Html Formalar'}  lesson15={'2-Mavzu: Html Form Attributlari'} lesson16={'3-Mavzu: Html Form Elemtlari'} lesson17={'1-Mavzu: Html Input turlari'} lesson18={'2-Mavzu: Html Input Attributlari'} lesson19={'3-Mavzu: Html Input va Formla'} lesson20={'1-Mavzu: Html Medialar'} lesson21={'2-Mavzu: Html Video'} lesson22={'3-Mavzu: Html Audio '} lesson23={'4-Mavzu: Html YouTube '} amalyot1={'1-Mavzu: Amaliyot'} amalyot2={'2-Mavzu: Amaliyot'} />
                 </Box>}
                 <Box ml={{base: '30px' , md: '450px'}}   display={'flex'}  alignItems={'center'} gap={'20px'}>
                     {sizes.map((size) => (
@@ -62,7 +62,7 @@ const Html = () => {
                         <DrawerContent>
                         <DrawerBody bg={'#0A1624'} display={'flex'} justifyContent={'center'} minHeight={'100vh'} >
                         <CloseIcon onClick={nandleClose} position={'absolute'} right={'10px'} />
-                            <AccordionItenm  Htmlbir={'1-Mavzu: Html o’rnatish'} Htmlikki={'2-Mavzu: Html asosiy misollar'} Htmluch={'3-Mavzu: Html Paragraphlar'} />
+                            <AccordionItenm  html1={'/html1dars'} html2={'/html2dars'} html3={'/html3dars'}  lesson1={'1-Mavzu: Html O’rnatish'} lesson2={'2-Mavzu: Html Asosiy Misollar'} lesson3={'3-Mavzu: Html Hedinglar'} lesson4={'3-Mavzu: Html Paragraphlar'} lesson5={'1-Mavzu: HTML Formatlash'} lesson6={'2-Mavzu: Html Komentariya'} lesson7={'3-Mavzu: Html Link'} lesson8={'1-Mavzu: Html Image'} lesson9={'2-Mavzu: Html Favicon va Tittle'} lesson10={'3-Mavzu: Html Table'} lesson11={'1-Mavzu: Html Listlar'} lesson12={'2-Mavzu: Html Block va Inline'} lesson13={'3-Mavzu: Html Emojilar '} lesson14={'1-Mavzu: Html Formalar'}  lesson15={'2-Mavzu: Html Form Attributlari'} lesson16={'3-Mavzu: Html Form Elemtlari'} lesson17={'1-Mavzu: Html Input turlari'} lesson18={'2-Mavzu: Html Input Attributlari'} lesson19={'3-Mavzu: Html Input va Formla'} lesson20={'1-Mavzu: Html Medialar'} lesson21={'2-Mavzu: Html Video'} lesson22={'3-Mavzu: Html Audio '} lesson23={'4-Mavzu: Html YouTube '} amalyot1={'1-Mavzu: Amaliyot'} amalyot2={'2-Mavzu: Amaliyot'} />
                         </DrawerBody>
                         </DrawerContent>
                     </Drawer>
@@ -105,7 +105,7 @@ const Html = () => {
                </Text>
             </Box>
 
-            <Box pl={{base: '10px' , md: '450px'}} bg={'#233242'} fontSize={{base: '20px' , md: '25px'}} display={'flex'} flexDirection={'column'} gap={'30px'} py={'50px'}>
+            <Box  pl={{base: '10px' , md: '450px'}} bg={'#233242'} fontSize={{base: '20px' , md: '25px'}} display={'flex'} flexDirection={'column'} gap={'30px'} py={'50px'}>
                 <Heading>Misol</Heading>
                <Box width={'100%'} borderLeft={'4px'} borderColor={'#7FFFD4'} height={'30vh'} bg={'#0A1624'}>
                     <Text color={'#9D5EBB'}>{`<!DOCTYPE `} <span style={{color:'red'}}>{`html>`}</span> </Text>

@@ -9,10 +9,12 @@ import {
 import { MinusIcon , AddIcon } from '@chakra-ui/icons'
 import { Link } from 'react-router-dom'
 
-const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
+const AccordionItenm = ({ lesson1 , lesson2 , lesson3 , lesson4 , lesson5 , lesson6 , lesson7 , lesson8 , lesson9 , lesson10 , lesson11 , lesson12 , lesson13 , lesson14 , lesson15 , lesson16 , html1 , html2, html3 , html4  , lesson17 , lesson18 , lesson19 , lesson20 , lesson21 , lesson22 , lesson23 , amalyot1 , amalyot2}) => {
   return (
     <Box minHeight={'150vh'}>
         <Accordion bg={'#0A1624'}  rounded={'10px'} display={'flex'} flexDirection={'column'} gap={'30px'} width={{base: '240px' , md: '304px'}} height={'50px'} allowMultiple>
+
+            {/* ==============1-MODUL============ */}
             <AccordionItem border={'none'} >
                 {({ isExpanded }) => (
                 <>
@@ -33,14 +35,17 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                         1-Dars
                     </AccordionPanel>
                     <AccordionPanel width={'100%'} fontSize={'20px'}  display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
-                        <Link to={'/html1dars'}>
-                            {Htmlbir}
+                        <Link to={html1}>
+                            {lesson1}
                         </Link>
-                        <Link>
-                            {Htmlikki}
+                        <Link to={html2}>
+                            {lesson2}
                         </Link>
-                        <Link>
-                            {Htmluch}
+                        <Link to={html3}>
+                            {lesson3}
+                        </Link>
+                        <Link to={html4}>
+                            {lesson4}
                         </Link>
                     </AccordionPanel>
                     <Divider height={'1px'} bg={'gray.200'} />
@@ -50,13 +55,13 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     </AccordionPanel>
                     <AccordionPanel width={'100%'} fontSize={'20px'}  display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
-                            1-Mavzu: HTML Formatlash
+                            {lesson5}
                         </Link>
                         <Link>
-                            2-Mavzu: Html Komentariya
+                            {lesson6}
                         </Link>
                         <Link>
-                            3-Mavzu: Html Link
+                            {lesson7}
                         </Link>
                     </AccordionPanel>
                     <Divider height={'1px'} bg={'gray.200'} />
@@ -66,13 +71,13 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     </AccordionPanel>
                     <AccordionPanel width={'100%'} fontSize={'20px'}  display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
-                            1-Mavzu: Html Image
+                            {lesson8}
                         </Link>
                         <Link>
-                            2-Mavzu: Html Favicon va Tittle
+                            {lesson9}
                         </Link>
                         <Link>
-                            3-Mavzu: Html Table
+                            {lesson10}
                         </Link>
                     </AccordionPanel>
                     
@@ -80,7 +85,9 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                 
                 )}
             </AccordionItem>
+            
 
+            {/* =============2-MUDUL============== */}
             <AccordionItem border={'none'}bg={'#0A1624'} rounded={'10px'} >
                 {({ isExpanded }) => (
                 <>
@@ -102,13 +109,13 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     </AccordionPanel>
                     <AccordionPanel width={'100%'} fontSize={'20px'} display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
-                            1-Mavzu: Html Listlar
+                            {lesson11}
                         </Link>
                         <Link>
-                            2-Mavzu: Html Block va Inline
+                            {lesson12}
                         </Link>
                         <Link>
-                            3-Mavzu: Html Emojilar 
+                            {lesson13}
                         </Link>
                     </AccordionPanel>
                     <Divider height={'1px'} bg={'gray.200'} />
@@ -118,13 +125,13 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     </AccordionPanel>
                     <AccordionPanel width={'100%'} fontSize={'20px'} display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
-                            1-Mavzu: Html Formalar
+                            {lesson14}
                         </Link>
                         <Link>
-                            2-Mavzu: Html Form Attributlari
+                            {lesson15}
                         </Link>
                         <Link>
-                            3-Mavzu: Html Form Elemtlari
+                            {lesson16}
                         </Link>
                     </AccordionPanel>
                     <Divider height={'1px'} bg={'gray.200'} />
@@ -134,13 +141,13 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     </AccordionPanel>
                     <AccordionPanel width={'100%'} fontSize={'20px'}  display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
-                            1-Mavzu: Html Input turlari
+                            {lesson17}
                         </Link>
                         <Link>
-                            2-Mavzu: Html Input Attributlari
+                            {lesson18}
                         </Link>
                         <Link>
-                            3-Mavzu: Html Input va Formla
+                            {lesson19}
                         </Link>
                     </AccordionPanel>
                     
@@ -149,6 +156,8 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                 )}
             </AccordionItem>
 
+
+            {/* ================3-MODUL================ */}
             <AccordionItem border={'none'}bg={'#0A1624'} rounded={'10px'} >
                 {({ isExpanded }) => (
                 <>
@@ -170,22 +179,25 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     </AccordionPanel>
                     <AccordionPanel width={'100%'} fontSize={'20px'} display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
-                            1-Mavzu: Html Medialar
+                            {lesson20}
                         </Link>
                         <Link>
-                            2-Mavzu: Html Video
+                            {lesson21}
                         </Link>
                         <Link>
-                            3-Mavzu: Html Audio      
+                            {lesson22}
                         </Link>
                         <Link>
-                            4-Mavzu: Html YouTube 
+                            {lesson23}
                         </Link>
                     </AccordionPanel>
                 </>
                 
                 )}
             </AccordionItem>
+
+
+            {/* =================4-MODUL===================== */}
 
             <AccordionItem border={'none'}bg={'#0A1624'} rounded={'10px'} >
                 {({ isExpanded }) => (
@@ -208,10 +220,10 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                     </AccordionPanel>
                     <AccordionPanel width={'100%'} fontSize={'20px'} display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
                         <Link>
-                            1-Mavzu: Amaliyot
+                            {amalyot1}
                         </Link>
                         <Link>
-                            2-Mavzu: Amaliyot
+                            {amalyot2}
                         </Link>
                     </AccordionPanel>
                 </>
