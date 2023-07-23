@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #1A202C;
+  min-height: 100vh !important;
 }
 
 .link {

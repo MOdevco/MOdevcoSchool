@@ -5,7 +5,7 @@ import AccordionItem from '../accordion/accordion'
 const Sidebar = ({title , elementName}) => {
   return (
     <Box  display={{base: 'none' , md: 'block'}}>
-        <Box position={'fixed'} zIndex={'1'} display={'flex'} borderRight={'2px'} overflowY={'scroll'} borderColor={'#2D2D2D'} justifyContent={'center'} alignItems={'flex-start'} textAlign={'center'} pt={'40px'}  width={'365.02px'} height={'100vh'} bg={'#050E17'} top={'160px'}>
+        <Box position={'fixed'} zIndex={'1'} display={'flex'} borderRight={'2px'} overflowY={'scroll'} borderColor={'#2D2D2D'} justifyContent={'center'} alignItems={'flex-start'} textAlign={'center'} pt={'40px'}  width={'365.02px'} height={'90vh'} bg={'#050E17'} top={'160px'}>
             <Box display={'flex'} flexDirection={'column'} gap={'20px'}>
                 <Box>
                     <Heading color={'white'} fontSize={'35px'}>{title}</Heading>

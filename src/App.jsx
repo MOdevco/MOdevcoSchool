@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import { ArrowUpIcon } from '@chakra-ui/icons'
 import { useEffect, useState } from 'react'
 import Html from './pages/html'
+import Html1dars from './pages/html1dars'
 
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -30,15 +31,16 @@ function App() {
 
 
   return (
-    <Box bg={'#1A202C'} height={'100%'} >
+    <Box bg={'#1A202C'} >
       <Box position={'fixed'} width={'100%'} zIndex={10}>
         <Header />
         <Navbar />
       </Box>
 
-      <Routes>
+      <Routes height={'100vh'}>
         <Route path='/' element={<Home />} ></Route>
         <Route path='/html' element={<Html />} ></Route>
+        <Route path='/html1dars' element={<Html1dars />} ></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} bottom={'30px'} right={'30px'}>
@@ -47,9 +49,9 @@ function App() {
         </Button>
       </Box>}
 
-      {/* <Box>
+      <Box>
         <Footer />
-      </Box> */}
+      </Box>
     </Box>
   )
 }

@@ -33,7 +33,7 @@ const AccordionItenm = ({Htmlbir , Htmlikki , Htmluch}) => {
                         1-Dars
                     </AccordionPanel>
                     <AccordionPanel width={'100%'} fontSize={'20px'}  display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
-                        <Link>
+                        <Link to={'/html1dars'}>
                             {Htmlbir}
                         </Link>
                         <Link>
