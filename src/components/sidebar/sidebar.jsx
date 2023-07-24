@@ -7,7 +7,7 @@ const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , 
    
   return (
     <Box  display={{base: 'none' , md: 'block'}}>
-        <Box position={'fixed'} zIndex={'1'} display={'flex'} borderRight={'2px'} overflowY={'scroll'} borderColor={'#2D2D2D'} justifyContent={'center'} alignItems={'flex-start'} textAlign={'center'} pt={'40px'}  width={'365.02px'} height={'90vh'} bg={'#050E17'} top={'160px'}>
+        <Box position={'fixed'} zIndex={'1'} display={'flex'} borderRight={'2px'} overflowY={'scroll'} borderColor={'#2D2D2D'} justifyContent={'center'} alignItems={'flex-start'} textAlign={'center'} pt={'230px'}  width={'365.02px'} height={'100vh'} bg={'#050E17'} top={{base: '100px' , xl: '50px'}}>
             <Box display={'flex'} flexDirection={'column'} gap={'20px'}>
                 <Box>
                     <Heading color={'white'} fontSize={'35px'}>{title}</Heading>

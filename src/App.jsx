@@ -63,7 +63,7 @@ function App() {
         <Navbar />
       </Box>
 
-      <Routes height={'100vh'}>
+      <Routes >
         <Route path='/' element={<Home />} ></Route>
         <Route path='/html' element={<Html />} ></Route>
         <Route path='/html1dars' element={<Html1dars />} ></Route>

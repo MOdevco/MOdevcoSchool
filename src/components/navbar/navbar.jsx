@@ -14,7 +14,7 @@ import {
 
 const Navbar = () => {
   return (
-    <Box bg={'#122435'} px={{base: '20px' , md: '0'}}  h={'7vh'} borderBottom={'1px'} borderColor={'#2D2D2D'}>
+    <Box bg={'#122435'} px={{base: '20px' , md: '0'}}  h={{base: '10vh' , xl: '7vh'}} display={'flex'} flexDirection={'column'}  justifyContent={'center'} borderBottom={'1px'} borderColor={'#2D2D2D'}>
         <Box maxW={'1633px'} mx={'auto'}  >
             <Flex fontSize={'20px'}  alignItems={'center'} gap={'40px'} minHeight={'7vh'}>
                 <Flex display={{base: 'none' , md: 'block'}}>
