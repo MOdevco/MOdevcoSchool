@@ -73,7 +73,7 @@ const Html = () => {
 
                 </Box>
             </Flex>
-            <Box mt={'20px'} width={'100%'} bg={'#233242'} height={{base: '40vh' , md: '30vh'}}>
+            <Box mt={'20px'} width={'100%'} bg={'#233242'} display={'flex'} flexDirection={'column'} alignItems={'flex-start'} justifyContent={'center'} height={{base: '40vh' , xl: '40vh'}}>
                 <Box pl={{base: '10px' , md: '450px'}} fontSize={{base: '20px' , md: '25px'}} display={'flex'} flexDirection={'column'} gap={'30px'} py={'50px'}>
                     <Text >HTML veb-sahifalar uchun standart belgilash tilidir.</Text>
                     <Text >HTML yordamida siz o'z veb-saytingizni yaratishingiz mumkin.</Text>
@@ -83,7 +83,7 @@ const Html = () => {
             <Box pl={{base: '10px' , md: '450px'}} mt={'20px'}>
                 <Heading fontSize={{base: '30px' , md: '50px'}}>HTML nima?</Heading>
             </Box>
-            <Box mt={'20px'} width={'100%'} bg={'#233242'} height={{base: '65vh' , md: '50vh'}}>
+            <Box mt={'20px'} width={'100%'} bg={'#233242'} display={'flex'} flexDirection={'column'} alignItems={'flex-start'} justifyContent={'center'} height={{base: '65vh' , md: '65vh'}}>
                 <Box pl={{base: '10px' , md: '450px'}} fontSize={{base: '20px' , md: '25px'}} display={'flex'} flexDirection={'column'} gap={'30px'} py={'50px'}>
                     <ul style={{display: 'flex' , flexDirection: 'column' , gap: '10px'}}>
                         <li>HTML stands for Hyper Text Markup Language</li>
@@ -107,7 +107,7 @@ const Html = () => {
 
             <Box  pl={{base: '10px' , md: '450px'}} bg={'#233242'} fontSize={{base: '20px' , md: '25px'}} display={'flex'} flexDirection={'column'} gap={'30px'} py={'50px'}>
                 <Heading>Misol</Heading>
-               <Box width={'100%'} borderLeft={'4px'} borderColor={'#7FFFD4'} height={'30vh'} bg={'#0A1624'}>
+               <Box width={'100%'} borderLeft={'4px'} overflow={'scroll'} borderColor={'#7FFFD4'} height={'30vh'} bg={'#0A1624'}>
                     <Text color={'#9D5EBB'}>{`<!DOCTYPE `} <span style={{color:'red'}}>{`html>`}</span> </Text>
                     <Text color={'#9D5EBB'}>{`<html>`}</Text>
                     <Text pl={'30px'} color={'#9D5EBB'}>{`<title>`} <span style={{color: 'white'}}>Html darslari</span> {`</title>`} </Text>
