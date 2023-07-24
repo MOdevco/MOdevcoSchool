@@ -68,7 +68,7 @@ const Header = () => {
     return (
         <Box pt={'20px'} bg={'#050E17'}  h={{base: '10vh' , xl: '10vh'}}  px={{base: '20px' , md: '0'}}>
             
-            <Box maxW={'1633px'} mx={'auto'} >
+            <Box maxW={'1195px'} mx={'auto'} >
                 <Flex alignItems={'center'} justifyContent={'space-between'} >
                     {/* <Box fontSize={'30px'} display={{base: 'block' , md: 'none'}}>
                         <HamburgerIcon />
