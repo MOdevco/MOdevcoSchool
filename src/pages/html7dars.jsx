@@ -93,7 +93,7 @@ const Html7dars = () => {
 
 
         <Box height={{base: '30vh' , md: '10vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}} >
-            <Text fontSize={'25px'} maxWidth>Linklar deyarli barcha veb-sahifalarda mavjud. Havolalar foydalanuvchilarga sahifadan sahifaga o'z yo'lini bosish imkonini beradi.</Text>
+            <Text fontSize={{base: '20px' , xl: '25px'}} maxWidth>Linklar deyarli barcha veb-sahifalarda mavjud. Havolalar foydalanuvchilarga sahifadan sahifaga o'z yo'lini bosish imkonini beradi.</Text>
         </Box>
         <Divider mt={'20px'} />
 
