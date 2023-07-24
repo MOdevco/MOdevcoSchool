@@ -79,7 +79,7 @@ const Html1dars = () => {
                     <Image width={{base: '100%' , md: '600px'}} src={vsp}></Image>
                 </Box>
             </Box>
-            <Divider mt={{base: '10px' , md: '150px'}} />
+            <Divider mt={{base: '10px' , xl: '300px'}} />
 
 
             <Box mt={'20px'} width={'100%'}  height={{base: '40vh' , md: '30vh'}}  >
@@ -89,7 +89,7 @@ const Html1dars = () => {
                     <Image width={{base: '100%' , md: '600px'}} src={vsc}></Image>
                 </Box>
             </Box>
-            <Divider mt={{base: '10px' , md: '200px'}} />
+            <Divider mt={{base: '10px' , xl: '430px'}} />
 
 
 
@@ -100,7 +100,7 @@ const Html1dars = () => {
                     <Image width={{base: '100%' , md: '600px'}} src={vsc}></Image>
                 </Box>
             </Box>
-            <Divider mt={{base: '10px' , md: '10px'}} />
+            <Divider mt={{base: '10px' , xl: '200px'}} />
         
 
 
