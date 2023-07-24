@@ -15,6 +15,10 @@ import Html5dars from './pages/html5dars'
 import { CloseIcon } from '@chakra-ui/icons'
 import Html6dars from './pages/html6dars'
 import Html7dars from './pages/html7dars'
+import Html11dars from './pages/html11dars'
+import Html12dars from './pages/html12dars'
+import Html13dars from './pages/html13dars'
+
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
@@ -73,6 +77,10 @@ function App() {
         <Route path='/html5dars' element={<Html5dars />} ></Route>
         <Route path='/html6dars' element={<Html6dars />} ></Route>
         <Route path='/html7dars' element={<Html7dars />} ></Route>
+
+        <Route path='/html11dars' element={<Html11dars />} ></Route>
+        <Route path='/html12dars' element={<Html12dars />} ></Route>
+        <Route path='/html13dars' element={<Html13dars />} ></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>

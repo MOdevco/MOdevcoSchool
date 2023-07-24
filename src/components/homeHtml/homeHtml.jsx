@@ -40,7 +40,7 @@ const HomeHtml = () => {
                 <Text>
                     Veb-sahifalar yaratish uchun til 
                 </Text>
-                <Link>
+                <Link to={'/html'}>
                     <Button width={'200px'} bg={'#233242'} color={'white'} _hover={{bg: '#222'}}>
                         BOSHLASH
                     </Button>

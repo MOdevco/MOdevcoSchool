@@ -9,7 +9,7 @@ import {
 import { MinusIcon , AddIcon } from '@chakra-ui/icons'
 import { Link } from 'react-router-dom'
 
-const AccordionItenm = ({ lesson1 , lesson2 , lesson3 , lesson4 , lesson5 , lesson6 , lesson7 , lesson8 , lesson9 , lesson10 , lesson11 , lesson12 , lesson13 , lesson14 , lesson15 , lesson16 , html1 , html2, html3 , html4 , html5 , html6 , html7  , lesson17 , lesson18 , lesson19 , lesson20 , lesson21 , lesson22 , lesson23 , amalyot1 , amalyot2}) => {
+const AccordionItenm = ({ lesson1 , lesson2 , lesson3 , lesson4 , lesson5 , lesson6 , lesson7 , lesson8 , lesson9 , lesson10 , lesson11 , lesson12 , lesson13 , lesson14 , lesson15 , lesson16 , html1 , html2, html3 , html4 , html5 , html6 , html7 , html11, html12 , html13  , lesson17 , lesson18 , lesson19 , lesson20 , lesson21 , lesson22 , lesson23 , amalyot1 , amalyot2}) => {
   return (
     <Box minHeight={'150vh'}>
         <Accordion bg={'#0A1624'}  rounded={'10px'} display={'flex'} flexDirection={'column'} gap={'30px'} width={{base: '240px' , md: '304px'}} height={'50px'} allowMultiple>
@@ -108,13 +108,13 @@ const AccordionItenm = ({ lesson1 , lesson2 , lesson3 , lesson4 , lesson5 , less
                         1-Dars
                     </AccordionPanel>
                     <AccordionPanel width={'100%'} fontSize={'20px'} display={'flex'} flexDirection={'column'} bg={'#0A1624'} pb={4} textAlign={'start'}>
-                        <Link>
+                        <Link to={html11}>
                             {lesson11}
                         </Link>
-                        <Link>
+                        <Link to={html12}>
                             {lesson12}
                         </Link>
-                        <Link>
+                        <Link to={html13}>
                             {lesson13}
                         </Link>
                     </AccordionPanel>
