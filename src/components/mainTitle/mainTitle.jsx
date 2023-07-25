@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 const MainTitle = () => {
   return (
     <Box bg={'#050E17'} px={{base: '20px' , md: '0'}} width={'100%'} height={'100%'} display={'flex'} justifyContent={'center'} alignItems={'center'} pt={'150px'} >
-        <Box maxW={'2000px'} mx={'auto'} width={'100%'} height={'100%'} p={4}>
+        <Box maxW={'3000px'} mx={'auto'} width={'100%'} height={'100%'} p={4}>
             <div style={{width: '100%'}}>
                 <Swiper
                     spaceBetween={30}
@@ -31,9 +31,9 @@ const MainTitle = () => {
                 >
                     <SwiperSlide style={{position: 'relative' }} className={'center'}>
                         <img style={{width: '100%' , height: '50%'}} src='https://static.vecteezy.com/system/resources/previews/006/362/910/non_2x/circuit-board-technology-background-central-computer-processors-cpu-concept-motherboard-digital-chip-vector.jpg' />
-                        <Box position={'absolute'} top={{base: 0 , xl: 300}}  pl={{base: '20px' , xl: '200px'}} > 
-                            <Box display={'flex'} flexDirection={'column'} gap={'10px'} alignItems="flex-start" >
-                                <Heading fontSize={{base: '15px' , xl: '70px'}} >
+                        <Box position={'absolute'}  display={'flex'} justifyContent={'center'} alignContent={'center'}  pl={{base: '20px' , xl: '200px'}} > 
+                            <Box display={'flex'} flexDirection={'column'} gap={'10px'} justifyContent={'center'} alignItems="" >
+                                <Heading fontSize={{base: '20px' , xl: '70px'}} >
                                     HTML Dasturini O'rganing
                                 </Heading>
                                 <Text fontSize={{base: '10px' ,xl: '25px'}}>
@@ -41,7 +41,7 @@ const MainTitle = () => {
                                     Html blogiga kiring yoki pastdagi tugmacha yordamida <br /> html darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
                                 </Text>
                                <Link to={'/html'}>
-                                    <Button fontSize={{base: '10px' , xl: '20px'}}>
+                                    <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
                                         HTML darslari
                                     </Button>
                                </Link>
@@ -49,19 +49,19 @@ const MainTitle = () => {
                         </Box>
                     </SwiperSlide>
 
-                    {/* <SwiperSlide style={{position: 'relative' }} className={'center'}>
+                    <SwiperSlide style={{position: 'relative' }} className={'center'}>
                         <img style={{width: '100%' , height: '50%'}} src='https://static.vecteezy.com/ti/vetor-gratis/p1/2082090-abstract-technology-chip-processor-background-circuit-board-and-html-code-blue-technology-background-vector-vetor.jpg' />
                         <Box position={'absolute'} top={{base: 10 , xl: 300}}  pl={{base: '20px' , xl: '200px'}} > 
                             <Box display={'flex'} flexDirection={'column'} gap={'30px'} alignItems="flex-start" >
                                 <Heading fontSize={{base: '20px' , xl: '70px'}} >
                                     CSS Dasturini O'rganing
                                 </Heading>
-                                <Text fontSize={{base: '15px' ,xl: '25px'}}>
-                                    Css darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki <br /> sayitingizga assos soling! Undan tashqari <br />  har turdagi web sayetlarning dizayn korinishini mukammal darajada qilign <br />
-                                    Html blogiga kiring yoki pastdagi tugmacha yordamida <br /> html darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                <Text fontSize={{base: '10px' ,xl: '25px'}}>
+                                    Css darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
+                                    css blogiga kiring yoki pastdagi tugmacha yordamida <br /> css darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
                                 </Text>
                                <Link to={'/html'}>
-                                    <Button>
+                                    <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
                                         CSS darslari
                                     </Button>
                                </Link>
@@ -76,8 +76,9 @@ const MainTitle = () => {
                                 <Heading fontSize={{base: '20px' , xl: '70px'}} >
                                     JavaScript tilini O'rganing
                                 </Heading>
-                                <Text fontSize={{base: '13px' ,xl: '25px'}}>
-                                   JavaScript dasturlash tilini o'rganishingiz uchun <br /> platformada ma'lumotlar yetarli darajada topiladi <br /> sizdan faqatgina o'rganish talab etiladi <br /> javascript bo'limga pastdagi tugma yordamida <br /> kiring va  bilimingizni oling! JavaScript yordamida  web siytlarni jonli ko'rinishga <br /> keltira olasz  jonli bo'lmagan saytlar profesionallikdan dalolat bermaydi!
+                                <Text fontSize={{base: '10px' ,xl: '25px'}}>
+                                    JavaScript darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
+                                    JavaScript blogiga kiring yoki pastdagi tugmacha yordamida <br /> JavaScript darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
                                 </Text>
                                <Link to={'/html'}>
                                     <Button>
@@ -86,7 +87,7 @@ const MainTitle = () => {
                                </Link>
                             </Box>
                         </Box>
-                    </SwiperSlide> */}
+                    </SwiperSlide>
                 </Swiper>
             </div>
         </Box>
