@@ -52,7 +52,7 @@ const MainTitle = () => {
                     <SwiperSlide style={{position: 'relative' }} className={'center'}>
                         <img style={{width: '100%' , height: '50%'}} src='https://static.vecteezy.com/ti/vetor-gratis/p1/2082090-abstract-technology-chip-processor-background-circuit-board-and-html-code-blue-technology-background-vector-vetor.jpg' />
                         <Box position={'absolute'} top={{base: 10 , xl: 300}}  pl={{base: '20px' , xl: '200px'}} > 
-                            <Box display={'flex'} flexDirection={'column'} gap={'30px'} alignItems="flex-start" >
+                            <Box display={'flex'} flexDirection={'column'} gap={'10px'} alignItems="flex-start" >
                                 <Heading fontSize={{base: '20px' , xl: '70px'}} >
                                     CSS Dasturini O'rganing
                                 </Heading>
@@ -81,7 +81,7 @@ const MainTitle = () => {
                                     JavaScript blogiga kiring yoki pastdagi tugmacha yordamida <br /> JavaScript darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
                                 </Text>
                                <Link to={'/html'}>
-                                    <Button>
+                                    <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
                                         JAVASCRIPT darslari
                                     </Button>
                                </Link>
