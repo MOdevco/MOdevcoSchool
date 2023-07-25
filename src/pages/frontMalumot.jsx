@@ -14,7 +14,7 @@ const FrontMalumot = () => {
         window.scroll(0,0)
       }, [])
   return (
-    <Box height={'100%'} pt={'300px'} width={'100%'} display={'flex'} justifyContent={'center'} alignItems={'flex-start'}>
+    <Box height={'100%'} pt={'250px'} px={{base: '25px', xl: '0'}} width={'100%'} display={'flex'} justifyContent={'center'} alignItems={'flex-start'}>
     
         <Box mb={'100px'} display={'flex'} flexDirection={'column'} gap={'70px'}>
             <Box height={'100%'}>

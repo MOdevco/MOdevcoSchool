@@ -11,5 +11,15 @@ import Logo from './LOGO.png'
 import htmlSlider from './htmlSlide.png'
 import cssSlider from './cssSlider.png'
 import jsSlider from './jsSlider.png'
+import htmlPast from './htmlPast.png'
+import cssPast from './cssPast.png'
+import tsPast from './tsPast.png'
+import jsPast from './jsPast.png'
+import nextPast from './nextPast.png'
+import booPast from './booPast.png'
+import chakraPast from './chakraPast.png'
+import materPast from './materPast.png'
+import tailPast from './tailPast.png'
+import reatcPast from './reatcPast.png'
 
-export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider}
+export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider , htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast}

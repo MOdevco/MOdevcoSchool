@@ -51,7 +51,7 @@ const MainTitle = () => {
 
                     <SwiperSlide style={{position: 'relative' }} className={'center'}>
                         <img style={{width: '100%' , height: '50%'}} src='https://static.vecteezy.com/ti/vetor-gratis/p1/2082090-abstract-technology-chip-processor-background-circuit-board-and-html-code-blue-technology-background-vector-vetor.jpg' />
-                        <Box position={'absolute'} top={{base: 10 , xl: 300}}  pl={{base: '20px' , xl: '200px'}} > 
+                        <Box position={'absolute'} display={'flex'} justifyContent={'center'} alignContent={'center'}   pl={{base: '20px' , xl: '200px'}} > 
                             <Box display={'flex'} flexDirection={'column'} gap={'10px'} alignItems="flex-start" >
                                 <Heading fontSize={{base: '20px' , xl: '70px'}} >
                                     CSS Dasturini O'rganing
@@ -60,7 +60,7 @@ const MainTitle = () => {
                                     Css darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
                                     css blogiga kiring yoki pastdagi tugmacha yordamida <br /> css darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
                                 </Text>
-                               <Link to={'/html'}>
+                               <Link >
                                     <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
                                         CSS darslari
                                     </Button>
@@ -71,7 +71,7 @@ const MainTitle = () => {
 
                     <SwiperSlide style={{position: 'relative' }} className={'center'}>
                         <img style={{width: '100%' , height: '50%'}} src='https://static.vecteezy.com/ti/vetor-gratis/p1/6362957-abstract-technology-chip-processor-background-circuit-board-and-html-code-3d-illustration-blue-technology-background-vector-vetor.jpg' />
-                        <Box position={'absolute'} top={{base: 10 , xl: 300}}  pl={{base: '20px' , xl: '200px'}} > 
+                        <Box position={'absolute'} display={'flex'} justifyContent={'center'} alignContent={'center'}   pl={{base: '20px' , xl: '200px'}} > 
                             <Box display={'flex'} flexDirection={'column'} gap={'10px'} alignItems="flex-start" >
                                 <Heading fontSize={{base: '20px' , xl: '70px'}} >
                                     JavaScript tilini O'rganing
@@ -80,9 +80,91 @@ const MainTitle = () => {
                                     JavaScript darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
                                     JavaScript blogiga kiring yoki pastdagi tugmacha yordamida <br /> JavaScript darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
                                 </Text>
-                               <Link to={'/html'}>
+                               <Link >
                                     <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
                                         JAVASCRIPT darslari
+                                    </Button>
+                               </Link>
+                            </Box>
+                        </Box>
+                    </SwiperSlide>
+
+
+                    <SwiperSlide style={{position: 'relative' }} className={'center'}>
+                        <img style={{width: '100%' , height: '50%'}} src='https://static.vecteezy.com/ti/vetor-gratis/p1/6363349-abstract-technology-chip-processor-background-circuit-board-and-html-code-3d-illustration-blue-technology-background-vector-vetor.jpg' />
+                        <Box position={'absolute'}  display={'flex'} justifyContent={'center'} alignContent={'center'}  pl={{base: '20px' , xl: '200px'}} > 
+                            <Box display={'flex'} flexDirection={'column'} gap={'10px'} justifyContent={'center'} alignItems="" >
+                                <Heading fontSize={{base: '20px' , xl: '70px'}} >
+                                    BOOTSTRAP Dasturini O'rganing
+                                </Heading>
+                                <Text fontSize={{base: '10px' ,xl: '25px'}}>
+                                    BOOTSTRAP darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
+                                    BOOTSTRAP blogiga kiring yoki pastdagi tugmacha yordamida <br /> BOOTSTRAP darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                </Text>
+                               <Link >
+                                    <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
+                                        BOOTSTRAP darslari
+                                    </Button>
+                               </Link>
+                            </Box>
+                        </Box>
+                    </SwiperSlide>
+
+
+                    <SwiperSlide style={{position: 'relative' }} className={'center'}>
+                        <img style={{width: '100%' , height: '50%'}} src='https://static.vecteezy.com/ti/vetor-gratis/p1/3800691-abstract-technology-chip-processor-background-circuit-board-and-html-code-3d-illustration-blue-technology-background-vector-vetor.jpg' />
+                        <Box position={'absolute'}  display={'flex'} justifyContent={'center'} alignContent={'center'}  pl={{base: '20px' , xl: '200px'}} > 
+                            <Box display={'flex'} flexDirection={'column'} gap={'10px'} justifyContent={'center'} alignItems="" >
+                                <Heading fontSize={{base: '20px' , xl: '70px'}} >
+                                    REACT JS Dasturini O'rganing
+                                </Heading>
+                                <Text fontSize={{base: '10px' ,xl: '25px'}}>
+                                    REACT JS darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
+                                    REACT JS blogiga kiring yoki pastdagi tugmacha yordamida <br /> REACT JS darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                </Text>
+                               <Link >
+                                    <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
+                                        REACT JS darslari
+                                    </Button>
+                               </Link>
+                            </Box>
+                        </Box>
+                    </SwiperSlide>
+
+                    <SwiperSlide style={{position: 'relative' }} className={'center'}>
+                        <img style={{width: '100%' , height: '50%'}} src='https://static.vecteezy.com/ti/vetor-gratis/p1/6362942-abstract-technology-chip-processor-background-circuit-board-and-html-code-3d-illustration-blue-technology-background-vector-vetor.jpg' />
+                        <Box position={'absolute'}  display={'flex'} justifyContent={'center'} alignContent={'center'}  pl={{base: '20px' , xl: '200px'}} > 
+                            <Box display={'flex'} flexDirection={'column'} gap={'10px'} justifyContent={'center'} alignItems="" >
+                                <Heading fontSize={{base: '20px' , xl: '70px'}} >
+                                    NEXT JS Dasturini O'rganing
+                                </Heading>
+                                <Text fontSize={{base: '10px' ,xl: '25px'}}>
+                                    NEXT JS darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
+                                    NEXT JS blogiga kiring yoki pastdagi tugmacha yordamida <br /> NEXT JS darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                </Text>
+                               <Link >
+                                    <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
+                                        NEXT JS darslari
+                                    </Button>
+                               </Link>
+                            </Box>
+                        </Box>
+                    </SwiperSlide>
+
+                    <SwiperSlide style={{position: 'relative' }} className={'center'}>
+                        <img style={{width: '100%' , height: '50%'}} src='https://static.vecteezy.com/system/resources/previews/006/363/355/non_2x/abstract-technology-chip-processor-background-circuit-board-and-html-code-3d-illustration-blue-technology-background-vector.jpg' />
+                        <Box position={'absolute'}  display={'flex'} justifyContent={'center'} alignContent={'center'}  pl={{base: '20px' , xl: '200px'}} > 
+                            <Box display={'flex'} flexDirection={'column'} gap={'10px'} justifyContent={'center'} alignItems="" >
+                                <Heading fontSize={{base: '20px' , xl: '70px'}} >
+                                    TYPESCRIPT tilini o'rganing
+                                </Heading>
+                                <Text fontSize={{base: '10px' ,xl: '25px'}}>
+                                    TYPESCRIPT darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
+                                    TYPESCRIPT blogiga kiring yoki pastdagi tugmacha yordamida <br /> TYPESCRIPT darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                </Text>
+                               <Link >
+                                    <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
+                                        TYPESCRIPT darslari
                                     </Button>
                                </Link>
                             </Box>

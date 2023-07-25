@@ -10,6 +10,7 @@ import HomeJavascipt from '../components/homeJavascript/homeJavascipt'
 import HomeLessons from '../components/homeLessons/homeLessons'
 import HomeReact from '../components/homeReact/homeReact'
 import MainTitle from '../components/mainTitle/mainTitle'
+import TexnologiIcon from '../components/texnologiIcon/texnologiIcon'
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
         <HomeJavascipt />
         <HomeReact />
         <HomeLessons />
+        <TexnologiIcon />
         <HomeColors />
         <FrontCard />
         <BeckCard />
