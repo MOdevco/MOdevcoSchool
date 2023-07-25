@@ -25,7 +25,7 @@ import {
     MenuDivider,
     useToast
   } from '@chakra-ui/react'
-import { Goog } from '../../assets'
+import { Goog, Logo } from '../../assets'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -66,18 +66,16 @@ const Header = () => {
         })
     }
     return (
-        <Box pt={'20px'} bg={'#050E17'}  h={{base: '11vh' , xl: '10vh'}}  px={{base: '20px' , md: '0'}}>
+        <Box pt={'8px'} bg={'#050E17'}  h={{base: '9vh' , xl: '10vh'}}  px={{base: '20px' , md: '0'}}>
             
             <Box maxW={'1195px'} mx={'auto'} >
                 <Flex alignItems={'center'} justifyContent={'space-between'} >
-                    {/* <Box fontSize={'30px'} display={{base: 'block' , md: 'none'}}>
-                        <HamburgerIcon />
-                    </Box> */}
-                    <Box>
-                        <Link to={'/'}>
-                            <Heading  fontSize={{base: '20px' , md: '40px'}}><span style={{color: 'red'}}>MO</span>devco Online Maktabi</Heading>
-                        </Link>
-                    </Box>
+                    
+                    <Link to={'/'}>
+                        <Box display={'flex'} alignItems={'center'}>
+                                <Heading  fontSize={{base: '15px' , md: '40px'}}><span style={{color: 'red'}}>MO</span>devco Maktabi</Heading>
+                        </Box>
+                    </Link>
                     {user ? (
                         <Box>
                         <Menu>
@@ -111,6 +109,7 @@ const Header = () => {
                         </ModalBody>
                         </ModalContent>
                     </Modal>
+
 
 
                     

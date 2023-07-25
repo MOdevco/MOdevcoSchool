@@ -18,6 +18,8 @@ import Html7dars from './pages/html7dars'
 import Html11dars from './pages/html11dars'
 import Html12dars from './pages/html12dars'
 import Html13dars from './pages/html13dars'
+import FrontMalumot from './pages/frontMalumot'
+import BeckMalumot from './pages/beckMalumot'
 
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -57,6 +59,9 @@ function App() {
       behavior: 'smooth'
     })
   }
+  useEffect(() => {
+    window.scroll(0,0)
+  }, [])
 
 
 
@@ -70,6 +75,8 @@ function App() {
       <Routes >
         <Route path='/' element={<Home />} ></Route>
         <Route path='/html' element={<Html />} ></Route>
+        <Route path='/frontMalumot' element={<FrontMalumot />} ></Route>
+        <Route path='/beckMalumot' element={<BeckMalumot />} ></Route>
         <Route path='/html1dars' element={<Html1dars />} ></Route>
         <Route path='/html2dars' element={<Html2dars />} ></Route>
         <Route path='/html3dars' element={<Html3dars/>} ></Route>

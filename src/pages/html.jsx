@@ -1,5 +1,5 @@
 import { Box , Flex ,Button , Heading , Text} from '@chakra-ui/react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Sidebar from '../components/sidebar/sidebar'
 import { HamburgerIcon , CloseIcon} from '@chakra-ui/icons'
 import {
@@ -42,9 +42,12 @@ const Html = () => {
         onClose()
     }
     const sizes = ['md']
+    useEffect(() => {
+        window.scroll(0,0)
+    }, [])
 
   return (
-    <Box pt={'200px'} width={'100%'} bg={'#1A202C'} height={'100%'}>
+    <Box pt={'300px'} width={'100%'} bg={'#1A202C'} height={'100%'}>
         <Box >
             <Flex >
                 {onOpen && <Box>

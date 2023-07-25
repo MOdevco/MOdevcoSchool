@@ -9,13 +9,13 @@ const Footer = () => {
         <Box pt={5} maxW={'1633px'} mx={'auto'} flexDirection={{base: 'column' , md: 'row'}}  display={'flex'} justifyContent={'space-between'} alignItems={'center'}minHeight={'10vh'}>
             <Heading fontSize={{base: '18px' , md: '40px'}}><span style={{color: 'red'}}>MO</span>devco Online Maktabi</Heading>
             <Box display={'flex '} alignItems={'center'} gap={{base: '10px' , md: '50px'}}>
-              <Link>
+              <Link to={'https://t.me/modevco_online_school'} target={'_blank'}>
                 <Image width={'40px'} src={Tg}></Image>
               </Link>
-              <Link>
+              <Link to={'https://youtube.com/@MOdevco'} target={'_blank'}>
                 <Image width={'40px'} src={You}></Image>
               </Link>
-              <Link>
+              <Link to={'https://instagram.com/mo_devco'} target={"_blank"}>
                 <Image width={'40px'} src={Ins}></Image>
               </Link>
             </Box>

@@ -5,5 +5,11 @@ import Goog from './google.png'
 import vsp from './vsp.png'
 import vsc from './vsc.png'
 import vsh from './vsh.png'
+import frontImg from './frontImg.jpeg'
+import beckImg from './beckImg.jpg'
+import Logo from './LOGO.png'
+import htmlSlider from './htmlSlide.png'
+import cssSlider from './cssSlider.png'
+import jsSlider from './jsSlider.png'
 
-export { Tg , You , Ins , Goog , vsc , vsh , vsp}
+export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider}

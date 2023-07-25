@@ -1,4 +1,5 @@
 import { Box } from '@chakra-ui/react'
+import { useEffect } from 'react'
 import BeckCard from '../components/beckCard/beckCard'
 import ColorCards from '../components/colorCards/colorCards'
 import FrontCard from '../components/forntCard/frontCard'
@@ -11,6 +12,10 @@ import HomeReact from '../components/homeReact/homeReact'
 import MainTitle from '../components/mainTitle/mainTitle'
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scroll(0,0)
+  }, [])
   return (
     <Box >
         <MainTitle />

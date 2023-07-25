@@ -14,7 +14,7 @@ import {
   } from '@chakra-ui/react'
 import AccordionItenm from '../components/accordion/accordion'
 import CopyToClipboard from 'react-copy-to-clipboard'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
     List,
     ListItem,
@@ -60,8 +60,11 @@ const Html7dars = () => {
         onClose()
     }
     const sizes = ['md']
+    useEffect(() => {
+        window.scroll(0,0)
+      }, [])
   return (
-    <Box pt={'200px'} width={'100%'} bg={'#1A202C'} height={'100%'}>
+    <Box pt={'300px'} width={'100%'} bg={'#1A202C'} height={'100%'}>
     <Box >
         <Flex >
             {onOpen && <Box>
