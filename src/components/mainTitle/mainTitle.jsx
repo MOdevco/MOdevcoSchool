@@ -37,8 +37,8 @@ const MainTitle = () => {
                                     HTML Dasturini O'rganing
                                 </Heading>
                                 <Text fontSize={{base: '10px' ,xl: '25px'}}>
-                                    Html darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
-                                    Html blogiga kiring yoki pastdagi tugmacha yordamida <br /> html darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                    Html darslarini mukammal darajada o'rganing <br /> va o'zingizni web ilova yoki sayitingizga asos soling! <br />
+                                    Html blogiga kiring yoki pastdagi tugmacha yordamida <br /> html darsliklarga kirishingiz mumkun bolladi hoziroq boshlang!
                                 </Text>
                                <Link to={'/html'}>
                                     <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
@@ -57,8 +57,8 @@ const MainTitle = () => {
                                     CSS Dasturini O'rganing
                                 </Heading>
                                 <Text fontSize={{base: '10px' ,xl: '25px'}}>
-                                    Css darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
-                                    css blogiga kiring yoki pastdagi tugmacha yordamida <br /> css darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                    Css darslarini mukammal darajada o'rganing <br /> va o'zingizni web ilova yoki sayitingizga asos soling! <br />
+                                    css blogiga kiring yoki pastdagi tugmacha yordamida <br /> css darsliklarga kirishingiz mumkun bo'ladi hoziroq boshlang!
                                 </Text>
                                <Link >
                                     <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
@@ -77,8 +77,8 @@ const MainTitle = () => {
                                     JavaScript tilini O'rganing
                                 </Heading>
                                 <Text fontSize={{base: '10px' ,xl: '25px'}}>
-                                    JavaScript darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
-                                    JavaScript blogiga kiring yoki pastdagi tugmacha yordamida <br /> JavaScript darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                    JavaScript darslarini mukammal darajada o'rganing <br /> va o'zingizni web ilova yoki sayitingizga asos soling! <br />
+                                    JavaScript blogiga kiring yoki pastdagi tugmacha yordamida <br /> JavaScript darsliklarga kirishingiz mumkun bo'ladi hoziroq boshlang!
                                 </Text>
                                <Link >
                                     <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
@@ -98,8 +98,8 @@ const MainTitle = () => {
                                     BOOTSTRAP Dasturini O'rganing
                                 </Heading>
                                 <Text fontSize={{base: '10px' ,xl: '25px'}}>
-                                    BOOTSTRAP darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
-                                    BOOTSTRAP blogiga kiring yoki pastdagi tugmacha yordamida <br /> BOOTSTRAP darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                    BOOTSTRAP darslarini mukammal darajada o'rganing <br /> va o'zingizni web ilova yoki sayitingizga asos soling! <br />
+                                    BOOTSTRAP blogiga kiring yoki pastdagi tugmacha yordamida <br /> BOOTSTRAP darsliklarga kirishingiz mumkun bo'ladi hoziroq boshlang!
                                 </Text>
                                <Link >
                                     <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
@@ -119,8 +119,8 @@ const MainTitle = () => {
                                     REACT JS Dasturini O'rganing
                                 </Heading>
                                 <Text fontSize={{base: '10px' ,xl: '25px'}}>
-                                    REACT JS darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
-                                    REACT JS blogiga kiring yoki pastdagi tugmacha yordamida <br /> REACT JS darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                    REACT JS darslarini mukammal darajada o'rganing <br /> va o'zingizni web ilova yoki sayitingizga asos soling! <br />
+                                    REACT JS blogiga kiring yoki pastdagi tugmacha yordamida <br /> REACT JS darsliklarga kirishingiz mumkun bo'ladi hoziroq boshlang!
                                 </Text>
                                <Link >
                                     <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
@@ -139,8 +139,8 @@ const MainTitle = () => {
                                     NEXT JS Dasturini O'rganing
                                 </Heading>
                                 <Text fontSize={{base: '10px' ,xl: '25px'}}>
-                                    NEXT JS darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
-                                    NEXT JS blogiga kiring yoki pastdagi tugmacha yordamida <br /> NEXT JS darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                    NEXT JS darslarini mukammal darajada o'rganing <br /> va o'zingizni web ilova yoki sayitingizga asos soling! <br />
+                                    NEXT JS blogiga kiring yoki pastdagi tugmacha yordamida <br /> NEXT JS darsliklarga kirishingiz mumkun bo'ladi hoziroq boshlang!
                                 </Text>
                                <Link >
                                     <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
@@ -159,8 +159,8 @@ const MainTitle = () => {
                                     TYPESCRIPT tilini o'rganing
                                 </Heading>
                                 <Text fontSize={{base: '10px' ,xl: '25px'}}>
-                                    TYPESCRIPT darslarini mukammal darajada o'rganing <br /> va o'zigizni web ilova yoki sayitingizga assos soling! <br />
-                                    TYPESCRIPT blogiga kiring yoki pastdagi tugmacha yordamida <br /> TYPESCRIPT darsliklarga kirishingiz mumkun boladi hoziroq boshlang!
+                                    TYPESCRIPT darslarini mukammal darajada o'rganing <br /> va o'zingizni web ilova yoki sayitingizga asos soling! <br />
+                                    TYPESCRIPT blogiga kiring yoki pastdagi tugmacha yordamida <br /> TYPESCRIPT darsliklarga kirishingiz mumkun bo'ladi hoziroq boshlang!
                                 </Text>
                                <Link >
                                     <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>

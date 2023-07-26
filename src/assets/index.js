@@ -21,5 +21,6 @@ import chakraPast from './chakraPast.png'
 import materPast from './materPast.png'
 import tailPast from './tailPast.png'
 import reatcPast from './reatcPast.png'
+import favicon from './favicon.jpg'
 
-export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider , htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast}
+export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider , htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon}

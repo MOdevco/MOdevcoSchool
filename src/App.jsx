@@ -20,6 +20,9 @@ import Html12dars from './pages/html12dars'
 import Html13dars from './pages/html13dars'
 import FrontMalumot from './pages/frontMalumot'
 import BeckMalumot from './pages/beckMalumot'
+import Html8dars from './pages/html8dars'
+import Html9dars from './pages/html9dars'
+import Html10dars from './pages/html10dars'
 
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -84,7 +87,9 @@ function App() {
         <Route path='/html5dars' element={<Html5dars />} ></Route>
         <Route path='/html6dars' element={<Html6dars />} ></Route>
         <Route path='/html7dars' element={<Html7dars />} ></Route>
-
+        <Route path='/html8dars' element={<Html8dars />} ></Route>
+        <Route path='/html9dars' element={<Html9dars />} ></Route>
+        <Route path='/html10dars' element={<Html10dars />} ></Route>
         <Route path='/html11dars' element={<Html11dars />} ></Route>
         <Route path='/html12dars' element={<Html12dars />} ></Route>
         <Route path='/html13dars' element={<Html13dars />} ></Route>

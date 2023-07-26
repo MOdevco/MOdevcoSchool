@@ -35,7 +35,7 @@ const HomeJavascipt = () => {
                     JAVASCRIPT
                 </Heading>
                 <Text color={'black'}>
-                    Veb-sahifalarni uslublash tili 
+                    Veb-sahifalarni dasturlash tili 
                 </Text>
                 <Link>
                     <Button bg={'#233242'}_hover={{bg: '#222'}} color={'white'} width={'200px'}>
@@ -69,18 +69,18 @@ const HomeJavascipt = () => {
                         JavaScipt Misol:
                     </Heading>
                 </Box>
-                <Box width={{base: '100%' , md: '469px'}} fontSize={{base: '17px' , md: '20px'}} color={'#9D5EBB'} height={'332px'} bg={'#0A1624'} borderLeft={'4px'} borderColor={'#7FFFD4'}>
-                        <Text >{'<button'} <span style={{color: 'red'}}>{` onclick=`}</span> <span style={{color: 'blue'}}>{`"myFunction()">`}</span> </Text>
+                <Box pl={'10px'} width={{base: '100%' , md: '469px'}} fontSize={{base: '17px' , md: '20px'}} color={'#9D5EBB'} height={'332px'} bg={'#0A1624'} borderLeft={'4px'} borderColor={'#7FFFD4'}>
+                        <Text color={'#9D5EBB'}>{'<button'} <span style={{color: 'red'}}>{` onclick=`}</span> <span style={{color: 'blue'}}>{`"myFunction()">`}</span> </Text>
                         <Text pl={'20px'} color={'white'} >{'Click Me!'}</Text>
-                        <Text >{'</button>'}</Text>
+                        <Text color={'#9D5EBB'}>{'</button>'}</Text>
                         <br />
-                        <Text >{'<script>'}</Text>
-                        <Text pl={'20px'} color={'blue'} >{'function '} <span style={{color: 'white'}}>{` myFunction() `}</span> <span style={{color: '#9D5EBB'}}>{`{`}</span></Text>
-                        <Text pl={'20px'} fontSize={{base: '13px' , md: '20px'}} color={'blue'}>{'let  '} <span style={{color: 'white'}}>{`x = document.getElementById(`}</span> <span style={{color: 'yellow'}}>{`"demo"`}</span> <span style={{color: 'white'}}>{`);`}</span></Text>
-                        <Text pl={'20px'} color={'white'}>{'x.style.fontSize = '} <span style={{color: 'yellow'}}>{`"25px";`}</span></Text>
-                        <Text pl={'20px'} color={'white'}>{'x.style.color =  '} <span style={{color: 'yellow'}}>{`"red";`}</span></Text>
-                        <Text>{'}'}</Text>
-                        <Text>{'</script>'}</Text>
+                        <Text color={'#9D5EBB'}>{'<script>'}</Text>
+                        <Text pl={'20px'} color={'blue'} >{'function '} <span style={{color: 'red'}}>{` myFunction() `}</span> <span style={{color: '#9D5EBB'}}>{`{`}</span></Text>
+                        <Text pl={'20px'} fontSize={{base: '13px' , md: '20px'}} color={'blue'}>{'let  '} <span style={{color: 'red'}}>{`x = document.getElementById(`}</span> <span style={{color: 'yellow'}}>{`"demo"`}</span> <span style={{color: 'white'}}>{`);`}</span></Text>
+                        <Text pl={'20px'} color={'red'}>{'x.style.fontSize = '} <span style={{color: 'yellow'}}>{`"25px";`}</span></Text>
+                        <Text pl={'20px'} color={'red'}>{'x.style.color =  '} <span style={{color: 'yellow'}}>{`"red";`}</span></Text>
+                        <Text color={'#9D5EBB'}>{'}'}</Text>
+                        <Text color={'#9D5EBB'}>{'</script>'}</Text>
                 </Box>
                 <Box>
                     <CopyToClipboard onCopy={handleClip}  text='<button onclick="myFunction()">Click Me!</button> <script>function myFunction() {et x = document.getElementById("demo");x.style.fontSize = "25px";x.style.color = "red";}</script>'>

@@ -2,7 +2,7 @@ import { Box , Heading , Button , Divider  } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
 
-const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , lesson5 , lesson6 , lesson7 , lesson8 , lesson9 , lesson10 , lesson11 , lesson12 , lesson13 , lesson14 , lesson15 , lesson16 , html1 , html2, html3 , html4,  html5 , html6 , html7 , html11, html12 , html13 , lesson17 , lesson18 , lesson19 , lesson20 , lesson21 , lesson22 , lesson23 , amalyot1 , amalyot2}) => {
+const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , lesson5 , lesson6 , lesson7 , lesson8 , lesson9 , lesson10 , lesson11 , lesson12 , lesson13 , lesson14 , lesson15 , lesson16 , html1 , html2, html3 , html4,  html5 , html6 , html7 , html8 , html9, html10 , html11, html12 , html13 , lesson17 , lesson18 , lesson19 , lesson20 , lesson21 , lesson22 , lesson23 , amalyot1 , amalyot2}) => {
     
    
   return (
@@ -60,13 +60,13 @@ const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , 
                         {/* ===========3-dars================ */}
                         <Box  display={'flex'} flexDirection={'column'} gap={'20px'} minHeight={'40vh'}>
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>3-Dars</Button>
-                            <Link >
+                            <Link to={html8}>
                                 <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson8}</Button>
                             </Link>
-                            <Link>
+                            <Link to={html9}>
                                 <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson9}</Button>
                             </Link>
-                            <Link >
+                            <Link to={html10}>
                                 <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson10}</Button>
                             </Link>
                         </Box>

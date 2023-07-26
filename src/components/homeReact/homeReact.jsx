@@ -34,8 +34,9 @@ const HomeReact = () => {
             <Heading color={'black'} fontSize={{base: '40px' , md: '50px'}}>
                 REACT JS 
             </Heading>
-            <Text color={'black'}>
-                Veb-sahifalarni uslublash tili 
+            <Text textAlign={'center'} color={'black'}>
+                Foydalanuvchi interfeyslarini <br /> yaratish 
+                uchun JavaScript kutubxonasi
             </Text>
             <Link>
                 <Button bg={'#233242'}_hover={{bg: '#222'}} color={'white'} width={'200px'}>
@@ -69,15 +70,15 @@ const HomeReact = () => {
                     REACT JS  Misol:
                 </Heading>
             </Box>
-            <Box width={{base: '100%' , md: '469px'}} fontSize={{base: '17px' , md: '20px'}} color={'#9D5EBB'} height={'332px'} bg={'#0A1624'} borderLeft={'4px'} borderColor={'#7FFFD4'}>
-                        <Text color={'red'}>{"import "} <span style={{color: 'white'}}>React from 'react'</span></Text>
-                        <Text>{"const Header = () => {"}</Text>
+            <Box width={{base: '100%' , md: '469px'}} pl={'10px'} fontSize={{base: '17px' , md: '20px'}} color={'#9D5EBB'} height={'332px'} bg={'#0A1624'} borderLeft={'4px'} borderColor={'#7FFFD4'}>
+                        <Text color={'red'}>{"import "} <span style={{color: 'orange'}}>React from 'react'</span></Text>
+                        <Text color={'#9D5EBB'}>{"const Header = () => {"}</Text>
                         <Text pl={'30px'} color={'blue'}>{"return ("}</Text>
                         <Text pl={'50px'} color={'#9ACD32'}>{"<div>"}</Text>
-                        <Text pl={'70px'}> {`<h1>`} <span style={{color:' white'}}>Salom Dunyo</span> {`</h1>`}</Text>
+                        <Text pl={'70px'} color={'#9D5EBB'}> {`<h1>`} <span style={{color:' white'}}>Salom Dunyo</span> {`</h1>`}</Text>
                         <Text pl={'50px'} color={'#9ACD32'}>{"<div>"}</Text>
                         <Text pl={'20px'} color={'blue'}>{")"}</Text>
-                        <Text >{'}'}</Text>
+                        <Text color={'#9D5EBB'}>{'}'}</Text>
                         <Text  color={'red'}>{'export'} <span style={{color: 'orange'}}>default</span> <span style={{color: 'white'}}>Header</span></Text>
                 </Box>
                 <Box>

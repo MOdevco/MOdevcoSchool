@@ -77,7 +77,7 @@ const Navbar = () => {
                             </MenuButton>
                             <MenuList border={'none'} bg={'#233242'}>
                                 <MenuItem bg={'#233242'}>
-                                    <Link onClick={onOpen} className='link' to={'/html'}>
+                                    <Link  className='link' to={'/html'}>
                                         HTML
                                     </Link>
                                 </MenuItem>

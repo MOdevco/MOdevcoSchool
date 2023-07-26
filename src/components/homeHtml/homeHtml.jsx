@@ -72,28 +72,17 @@ const HomeHtml = () => {
                         Html Misol:
                     </Heading>
                 </Box>
-                <Box width={{base: '100%' , md: '469px'}} fontSize={{base: '17px' , md: '23px'}} color={'#9D5EBB'} height={'332px'} bg={'#0A1624'} borderLeft={'4px'} borderColor={'#7FFFD4'}>
-                        <Text >{'<!DOCTYPE '}<span style={{color: 'red'}}>{`html>`}</span> </Text>
-                        <Text >{'<html>'}</Text>
-                        <Box display={'flex'} alignItems={'center'}>
-                            <Text >{'<title>'}</Text>
-                            <Text color={'white'}>{'HTML darslik'}</Text>
-                            <Text >{'<title>'}</Text>
-                        </Box>
-                        <Text >{'<body>'}</Text>
+                <Box width={{base: '100%' , md: '469px'}} overflow={'scroll'} pl={'10px'} fontSize={{base: '17px' , md: '23px'}} color={'#9D5EBB'} height={'332px'} bg={'#0A1624'} borderLeft={'4px'} borderColor={'#7FFFD4'}>
+                        <Text color={'#9D5EBB'}>{'<!DOCTYPE '}<span style={{color: 'red'}}>{`html>`}</span> </Text>
+                        <Text color={'#9D5EBB'}>{'<html>'}</Text>
+                        <Text pl={'30px'} color={'#9D5EBB'}>{'<title>'} <span style={{color: 'white'}}>HTML darslik</span>{'</title>'}</Text>
+                        <Text color={'#9D5EBB'}>{'<body>'}</Text>
                         <br />
-                        <Box display={'flex'} alignItems={'center'}>
-                            <Text >{'<h1>'}</Text>
-                            <Text color={'white'}>{'Bu sarlavha'}</Text>
-                            <Text >{'<h1>'}</Text>
-                        </Box>
-                        <Box display={'flex'} alignItems={'center'}>
-                            <Text >{'<p>'}</Text>
-                            <Text color={'white'}>{'Bu paragraf'}</Text>
-                            <Text >{'<p>'}</Text>
-                        </Box>
-                        <Text >{'<body>'}</Text>
-                        <Text >{'<html>'}</Text>
+                        <Text pl={'30px'} color={'#9D5EBB'}>{'<h1>'} <span style={{color: 'white'}}>Bu sarlavha</span>{'</h1>'}</Text>
+                        <Text pl={'30px'} color={'#9D5EBB'}>{'<p>'} <span style={{color: 'white'}}>Bu paragraf</span>{'</p>'}</Text>
+                        <br />
+                        <Text color={'#9D5EBB'} >{'<body>'}</Text>
+                        <Text color={'#9D5EBB'} >{'<html>'}</Text>
                 </Box>
                 <Box>
                     <CopyToClipboard onCopy={handleClip}  text='<!DOCTYPE html><html><title>HTML Tutorial</title><body><h1>This is a heading</h1><p>This is a paragraph.</p></body></html> '>

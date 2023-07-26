@@ -67,19 +67,19 @@ const HomeCss = () => {
                 <Box>
                     <Heading>Css Misol:</Heading>
                 </Box>
-                <Box width={{base: '100%' , md: '469px'}} fontSize={{base: '17px' , md: '20px'}} color={'#9D5EBB'} height={'332px'} bg={'#0A1624'} borderLeft={'4px'} borderColor={'#7FFFD4'}>
-                    <Text >{'<body> { '}</Text>
+                <Box pl={'10px'} width={{base: '100%' , md: '469px'}} fontSize={{base: '17px' , md: '20px'}} color={'#9D5EBB'} height={'332px'} bg={'#0A1624'} borderLeft={'4px'} borderColor={'#7FFFD4'}>
+                    <Text color={'#9D5EBB'}>{'<body> { '}</Text>
                     <Text pl={'20px'} color={'red'} >{'background-color:'} <span style={{color: 'blue'}}>lightblue;</span></Text>
-                    <Text >{'}'}</Text>
+                    <Text color={'#9D5EBB'}>{'}'}</Text>
 
-                    <Text >{'h1 { '}</Text>
+                    <Text color={'#9D5EBB'}>{'h1 { '}</Text>
                     <Text pl={'20px'} color={'red'} >{'color:'} <span style={{color: 'blue'}}>white;</span></Text>
                     <Text pl={'20px'} color={'red'} >{' text-align:'} <span style={{color: 'blue'}}>center;</span></Text>
-                    <Text >{'}'}</Text>
+                    <Text color={'#9D5EBB'}>{'}'}</Text>
 
-                    <Text >{'p { '}</Text>
+                    <Text color={'#9D5EBB'}>{'p { '}</Text>
                     <Text pl={'20px'} color={'red'} >{'font-family:'} <span style={{color: 'blue'}}>verdana;</span></Text>
-                    <Text >{'}'}</Text>
+                    <Text color={'#9D5EBB'}>{'}'}</Text>
                 </Box>
                 <Box>
                     <CopyToClipboard onCopy={handleClip}  text='body { background-color: lightblue;} h1 { color: white;text-align: center;} p { font-family: verdana;} '>
