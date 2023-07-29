@@ -17,27 +17,119 @@ body {
   min-height: 100vh !important;
 }
 
-.link {
-  position: relative;
-}
 
-.link::after {
-  content: '';
-  position: absolute;
-  background: white;
-  width: 0%;
-  height: 1px;
-  top: 0;
-  left: 0;
-  top: 35px;
+.link:hover {
+  color: gray;
   transition: 0.5s;
 }
-.link:hover::after {
-  width: 100%;
-  width: -100%;
-}
-
 
 .over {
   overflow-x: auto;
+}
+
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
+}
+.white {
+  color: #ffff;
+}
+
+input {
+  color: black;
+}
+
+
+
+
+@media (max-width: 850px) {
+  .header {
+    padding-top: 20000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: 16vh !important;
+  }
+  .over {
+    height: 9vh !important;
+  }
+}
+
+@media (max-width: 912px) {
+  .header {
+    height: 8vh !important;
+  }
+  .over {
+    height: 8vh !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .header {
+    height: 8vh !important;
+  }
+  .over {
+    height: 8vh !important;
+  }
+}
+
+@media (max-width: 761px) {
+  .header {
+    height: 8vh !important;
+  }
+  .over {
+    height: 8vh !important;
+  }
+}
+@media (max-width: 770px) {
+  .header {
+    height: 10vh !important;
+  }
+  .over {
+    height: 8vh !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    padding-top: 10px !important;
+    height: 9vh !important;
+  }
+  .over {
+    height: 9vh !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    padding-top: 10px !important;
+  }
+  .over {
+    height: 9vh !important;
+  }
+
+}
+@media (max-width: 375px) {
+  .header {
+    height: 9vh !important;
+  }
+
+}
+@media (max-width: 280px) {
+  .header {
+    height: 15vh !important;
+  }
+  .over {
+    height: 10vh !important;
+  }
+  .slider {
+    height: 90vh !important ;
+  }
+  .slider img {
+    height: 50vh !important;
+  }
 }

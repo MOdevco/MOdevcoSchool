@@ -16,7 +16,7 @@ import { htmlSlider } from '../../assets';
 import { Link } from 'react-router-dom';
 const MainTitle = () => {
   return (
-    <Box bg={'#050E17'} px={{base: '20px' , md: '0'}} width={'100%'} height={'100%'} display={'flex'} justifyContent={'center'} alignItems={'center'} pt={'150px'} >
+    <Box bg={'#050E17'} px={{base: '20px' , md: '0'}} width={'100%'} className={'slider'} height={'100%'} display={'flex'} justifyContent={'center'} alignItems={'center'} pt={'200px'} >
         <Box maxW={'3000px'} mx={'auto'} width={'100%'} height={'100%'} p={4}>
             <div style={{width: '100%'}}>
                 <Swiper
@@ -30,7 +30,7 @@ const MainTitle = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide style={{position: 'relative' }} className={'center'}>
-                        <img style={{width: '100%' , height: '50%'}} src='https://static.vecteezy.com/system/resources/previews/006/362/910/non_2x/circuit-board-technology-background-central-computer-processors-cpu-concept-motherboard-digital-chip-vector.jpg' />
+                        <img style={{width: '100%' , height: '100%'}} src='https://static.vecteezy.com/system/resources/previews/006/362/910/non_2x/circuit-board-technology-background-central-computer-processors-cpu-concept-motherboard-digital-chip-vector.jpg' />
                         <Box position={'absolute'}  display={'flex'} justifyContent={'center'} alignContent={'center'}  pl={{base: '20px' , xl: '200px'}} > 
                             <Box display={'flex'} flexDirection={'column'} gap={'10px'} justifyContent={'center'} alignItems="" >
                                 <Heading fontSize={{base: '20px' , xl: '70px'}} >

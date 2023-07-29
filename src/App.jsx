@@ -23,6 +23,10 @@ import BeckMalumot from './pages/beckMalumot'
 import Html8dars from './pages/html8dars'
 import Html9dars from './pages/html9dars'
 import Html10dars from './pages/html10dars'
+import Html14dars from './pages/html14dars'
+import Html15dars from './pages/html15dars'
+import Html16dars from './pages/html16dars'
+import Html17dars from './pages/html17dars'
 
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -93,6 +97,10 @@ function App() {
         <Route path='/html11dars' element={<Html11dars />} ></Route>
         <Route path='/html12dars' element={<Html12dars />} ></Route>
         <Route path='/html13dars' element={<Html13dars />} ></Route>
+        <Route path='/html14dars' element={<Html14dars />} ></Route>
+        <Route path='/html15dars' element={<Html15dars />} ></Route>
+        <Route path='/html16dars' element={<Html16dars />} ></Route>
+        <Route path='/html17dars' element={<Html17dars />} ></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>
@@ -100,15 +108,6 @@ function App() {
           <ArrowUpIcon />
         </Button>
       </Box>}
-
-      { time && <Box position={'fixed'} bottom={'0'} left={'0'} width={'100%'} display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'} zIndex={'1000'} bg={'#98FB98'} height={'15vh'}>
-            <Button onClick={handleClose} position={'absolute'} bg={'#222'} _hover={{bg: ''}} right={'20'}  top={'-5'}>
-              <CloseIcon color={'black'} />
-            </Button>
-            <Heading color={'#000'} fontSize={{base: '30px' , md: '50px'}}><span style={{color: 'red'}}>MO</span>devco Online School biz bilan yuksaklarga erishasiz</Heading>
-        </Box>}
-
-
 
       <Box>
         <Footer />

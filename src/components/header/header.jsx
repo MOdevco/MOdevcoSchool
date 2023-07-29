@@ -66,7 +66,7 @@ const Header = () => {
         })
     }
     return (
-        <Box pt={'15px'} bg={'#050E17'}  h={{base: '9vh' , xl: '10vh' , md: '15vh' }}  px={{base: '20px' , md: '0'}}>
+        <Box pt={{base: '30px' , xl: '15px'}} className={'header'} bg={'#050E17'}  h={{base: '13vh' , xl: '10vh' }}  px={{base: '20px' , md: '0'}}>
             
             <Box maxW={'1195px'} mx={'auto'} >
                 <Flex alignItems={'center'} justifyContent={'space-between'} >
@@ -92,7 +92,7 @@ const Header = () => {
                     </Box>
                     ): (
                         <Box >
-                            <Button onClick={onOpen} bg={'#0A1624'} color={'white'} _hover={{bg: '#222'}} width={{base: '90px' , md: '200px'}} fontSize={{base: '10px' , md: '20px'}}>Ro'yxatdan o'tish</Button>
+                            <Button onClick={onOpen} bg={'#7FFFD4'} color={'#111'} _hover={{bg: '#1FFFD0'}} width={{base: '90px' , md: '200px'}} fontSize={{base: '10px' , md: '20px'}}>Ro'yxatdan o'tish</Button>
                         </Box>
                         )
                     }
@@ -108,7 +108,7 @@ const Header = () => {
                             </Button>
                             
                             <ModalFooter display={'flex'} justifyContent={'flex-start'} gap={'10px'} alignItems={'flex-start'} flexDirection={'column'}>
-                                <Text>Ichtimoiy tarmoqlarga obuna bo'ling</Text>
+                                <Text>Ijtimoiy tarmoqlarga obuna bo'ling</Text>
                                 <Box display={'flex'} justifyContent={'flex-start'} gap={'20px'} alignItems={'flex-start'}>
                                     <Link to={'https://t.me/modevco_online_school'} target={'_blank'}>
                                         <Button bg={'#050E17'}  _hover={{bg: '#222'}}>
