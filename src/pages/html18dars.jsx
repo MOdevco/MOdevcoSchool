@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/react'
 const Html18dars = () => {
   return (
     <div>
-      Odina qalesan man zor ozizchi
+      Odina qalesan man zor ozizchi ha yaxshida
     </div>
   )
 }
