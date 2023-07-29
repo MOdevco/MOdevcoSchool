@@ -32,27 +32,8 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
     const [ user , loading] = useAuthState(auth)
-    const googleProvider = new GoogleAuthProvider
     const { isOpen, onOpen, onClose } = useDisclosure()
     const toast = useToast()
-    const handleUser =  () => {
-        try {
-            const res = signInWithPopup(auth , googleProvider).then(() => {
-                toast({
-                    position: 'top-right',
-                    render: () => (
-                      <Box color='white' p={3} bg='green.300'>
-                        RO'YXATDAN O'TDINGIZ
-                      </Box>
-                    ),
-                })
-            })
-            
-        } catch {
-            console.log('error')
-        }
-    }
-    
 
     const handleClose = () => {
         auth.signOut()
@@ -92,49 +73,12 @@ const Header = () => {
                     </Box>
                     ): (
                         <Box >
-                            <Button onClick={onOpen} bg={'#7FFFD4'} color={'#111'} _hover={{bg: '#1FFFD0'}} width={{base: '90px' , md: '200px'}} fontSize={{base: '10px' , md: '20px'}}>Ro'yxatdan o'tish</Button>
+                            <Link to={'/register'}>
+                                <Button bg={'#7FFFD4'} color={'#111'} _hover={{bg: '#1FFFD0'}} width={{base: '90px' , md: '200px'}} fontSize={{base: '10px' , md: '20px'}}>Ro'yxatdan o'tish</Button>
+                            </Link>
                         </Box>
                         )
                     }
-                    <Modal isOpen={isOpen}  onClose={onClose}>
-                        <ModalOverlay />
-                        <ModalContent bg={'#233242'}>
-                        <ModalHeader>Hoziroq boshlang!</ModalHeader>
-                        <ModalCloseButton />
-                        <ModalBody bg={'#233242'}>
-                            <Button onClick={handleUser} _hover={{bg: '#222'}} bg={'#050E17'} color={'white'} width={'100%'}>
-                                <Image width={'30px'} src={Goog}></Image>
-                                Google Yordamida Ro'yxatdan  O'tish
-                            </Button>
-                            
-                            <ModalFooter display={'flex'} justifyContent={'flex-start'} gap={'10px'} alignItems={'flex-start'} flexDirection={'column'}>
-                                <Text>Ijtimoiy tarmoqlarga obuna bo'ling</Text>
-                                <Box display={'flex'} justifyContent={'flex-start'} gap={'20px'} alignItems={'flex-start'}>
-                                    <Link to={'https://t.me/modevco_online_school'} target={'_blank'}>
-                                        <Button bg={'#050E17'}  _hover={{bg: '#222'}}>
-                                            <Image width={'25px'} src={Tg}></Image>
-                                        </Button>
-                                    </Link>
-                                    <Link to={'https://youtube.com/@MOdevco'} target={'_blank'}>
-                                        <Button bg={'#050E17'}  _hover={{bg: '#222'}}>
-                                            <Image width={'25px'} src={You}></Image>
-                                        </Button>                                
-                                    </Link>
-                                    <Link to={'https://instagram.com/mo_devco'} target={"_blank"}>                                  
-                                        <Button bg={'#050E17'}  _hover={{bg: '#222'}}>
-                                            <Image width={'25px'} src={Ins}></Image>
-                                        </Button>
-                                        
-                                    </Link>                                        
-                                </Box>
-                            </ModalFooter>
-                        </ModalBody>
-                        </ModalContent>
-                    </Modal>
-
-
-
-                    
                 </Flex>  
             </Box>
 

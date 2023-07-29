@@ -28,6 +28,7 @@ import Html15dars from './pages/html15dars'
 import Html16dars from './pages/html16dars'
 import Html17dars from './pages/html17dars'
 import Html18dars from './pages/html18dars'
+import Register from './pages/register'
 
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -85,6 +86,7 @@ function App() {
         <Route path='/html' element={<Html />} ></Route>
         <Route path='/frontMalumot' element={<FrontMalumot />} ></Route>
         <Route path='/beckMalumot' element={<BeckMalumot />} ></Route>
+        <Route path='/register' element={<Register />} ></Route>
         <Route path='/html1dars' element={<Html1dars />} ></Route>
         <Route path='/html2dars' element={<Html2dars />} ></Route>
         <Route path='/html3dars' element={<Html3dars/>} ></Route>

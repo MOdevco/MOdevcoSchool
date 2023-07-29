@@ -44,15 +44,12 @@ input {
 
 
 
-@media (max-width: 850px) {
-  .header {
-    padding-top: 20000px;
-  }
-}
 
-@media (max-width: 1024px) {
+
+
+@media (max-width: 1020px) {
   .header {
-    height: 16vh !important;
+    height: 10vh !important;
   }
   .over {
     height: 9vh !important;
@@ -65,6 +62,11 @@ input {
   }
   .over {
     height: 8vh !important;
+  }
+}
+@media (max-width: 850px) {
+  .header {
+    padding-top: 20000px;
   }
 }
 
@@ -93,6 +95,13 @@ input {
     height: 8vh !important;
   }
 }
+
+@media (max-width: 600px) {
+  .register {
+    width: 100% !important;
+  }
+}
+
 
 @media (max-width: 540px) {
   .header {
