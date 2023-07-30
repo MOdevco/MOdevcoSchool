@@ -112,7 +112,7 @@ const Html19dars = () => {
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'480px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'20px'}>HTML formasidan tashqarida joylashgan kiritish maydoni (lekin shaklning bir qismi):</Text>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'250px'} bg={'#0A1624'} pt={'0'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'250px'} bg={'#0A1624'} pt={'10px'}>
                       
                       <Text fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span>   <span className='red'>id=</span> <span className='yellow'>"form1"</span> {`>`}</Text>
                       <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"fname"</span> {`>`}<span className='white'>First name:</span>{`</label>`}</Text>
@@ -186,7 +186,7 @@ const Html19dars = () => {
                   <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '590px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                       <Heading>Misol</Heading>
                       <Text fontSize={'20px'}>Ikkita yuborish tugmasi bo'lgan shakl. Birinchisi forma ma'lumotlarini standart kodlash bilan yuboradi,<br /> ikkinchisi "ko'p qismli/forma-ma'lumotlar" sifatida kodlangan shakl-ma'lumotlarni yuboradi:</Text>
-                      <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'250px'} bg={'#0A1624'} pt={'0'}>
+                      <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'250px'} bg={'#0A1624'} pt={'10px'}>
                         
                       <Text fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page_binary.asp"</span> {`>`}</Text>
                         <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"fname"</span> {`>`}<span className='white'>First name:</span>{`</label>`}</Text>
@@ -238,7 +238,7 @@ const Html19dars = () => {
                   <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'510px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                       <Heading>Misol</Heading>
                       <Text fontSize={'20px'}>Ikkita yuborish tugmasi bo'lgan shakl. Birinchisi, forma ma' <span className='red'>method=</span> <span className='yellow'>"get"</span>  bilan yuboradi.br <br /> Ikkinchisi form-ma'lumotlarini method="post" bilan yuboradi:</Text>
-                      <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'250px'} bg={'#0A1624'} pt={'0'}>
+                      <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'250px'} bg={'#0A1624'} pt={'10px'}>
                       <Text color={'#9D5EBB'} fontSize={'25px'}>{`<form>`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span> <span className='red'>method=</span> <span className='yellow'>"get"</span> </Text>
                       <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"fname"</span> {`>`}<span className='white'>First name:</span>{`</label>`}</Text>
                         <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span><span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"fname"</span> <span className='red'>name=</span> <span className='yellow'>"fname"</span> {`>`}{`</input>`} <span className='red'>{`<br/> <br/>`}</span></Text>
@@ -271,7 +271,7 @@ const Html19dars = () => {
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'480px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'20px'}>HTML formasidan tashqarida joylashgan kiritish maydoni (lekin shaklning bir qismi):</Text>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'250px'} bg={'#0A1624'} pt={'0'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'250px'} bg={'#0A1624'} pt={'10px'}>
                       
                     <Text mt={'10px'} fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span> {`>`}</Text>
                         <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"fname"</span> {`>`}<span className='white'>First name:</span>{`</label>`}</Text>
@@ -303,7 +303,7 @@ const Html19dars = () => {
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={{md:'550px', base: '590px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'25px'}>Ikkita yuborish tugmasi bo'lgan shakl (tasdiqlangan va tasdiqlanmagan):</Text>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'300px'} bg={'#0A1624'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'300px'} bg={'#0A1624'} pt={'8px'}>
                     <Text fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span> {`>`}</Text>
                       <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"email"</span> {`>`}<span className='white'>Enter Your Email</span>{`</label>`}</Text>
 
@@ -333,7 +333,7 @@ const Html19dars = () => {
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={{md:'470px',base:'550px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'25px'}>Taqdim etilganda hech qanday shakl ma'lumotlari tasdiqlanmasligi kerakligini belgilang:</Text>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'220px'} bg={'#0A1624'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'220px'} bg={'#0A1624'} pt={'10px'}>
                     <Text fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span> {`>`}</Text>
                       <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"email"</span> {`>`}<span className='white'>Enter Your Email</span>{`</label>`}</Text>
 
