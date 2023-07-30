@@ -29,6 +29,7 @@ import { Goog, Ins, Logo, Tg, You } from '../../assets'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import useProgres from '../../hooks/useProgres'
+import { closeAudio } from '../../assets'
 
 
 const Header = () => {
@@ -36,7 +37,9 @@ const Header = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const toast = useToast()
     const completion = useProgres()
-
+    const handleCloseAudio = () => {
+        new Audio(closeAudio).play()
+    }
     const handleClose = () => {
         auth.signOut()
         toast({
@@ -47,6 +50,7 @@ const Header = () => {
               </Box>
             ),
         })
+        handleCloseAudio()
     }
     return (
         <Box pt={{base: '5px' , xl: '1px'}} className={'header'} bg={'#050E17'}  h={{base: '13vh' , xl: '10vh' }}  px={{base: '20px' , md: '0'}}>

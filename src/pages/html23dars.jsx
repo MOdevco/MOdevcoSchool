@@ -63,7 +63,7 @@ const Html23dars = () => {
         <Box >
             <Flex >
                 {onOpen && <Box>
-                    <Sidebar title={'HTML DARSLARI'} elementName={'Bosh sahifa'}html1={'/html1dars'} html2={'/html2dars'} html3={'/html3dars'} html4={'/html4dars'}  html5={'/html5dars'}  html6={'/html6dars'}  html7={'/html7dars'}  html8={'/html8dars'}  html9={'/html9dars'}  html10={'/html10dars'} html11={'/html11dars'} html12={'/html12dars'} html13={'/html13dars'}    lesson1={'1-Mavzu: Html O’rnatish'} lesson2={'2-Mavzu: Html Asosiy Misollar'} lesson3={'3-Mavzu: Html Hedinglar'} lesson4={'4-Mavzu: Html Paragraphlar'} lesson5={'1-Mavzu: HTML Formatlash'} lesson6={'2-Mavzu: Html Komentariya'} lesson7={'3-Mavzu: Html Link'} lesson8={'1-Mavzu: Html Image'} lesson9={'2-Mavzu: Html Favicon va Tittle'} lesson10={'3-Mavzu: Html Table'} lesson11={'1-Mavzu: Html Listlar'} lesson12={'2-Mavzu: Html Block va Inline'} lesson13={'3-Mavzu: Html Emojilar '} lesson14={'1-Mavzu: Html Formalar'}  lesson15={'2-Mavzu: Html Form Attributlari'} lesson16={'3-Mavzu: Html Form Elemtlari'} lesson17={'1-Mavzu: Html Input turlari'} lesson18={'2-Mavzu: Html Input Attributlari'} lesson19={'3-Mavzu: Html Input va Formla'} lesson20={'1-Mavzu: Html Medialar'} lesson21={'2-Mavzu: Html Video'} lesson22={'3-Mavzu: Html Audio '} lesson23={'4-Mavzu: Html YouTube '} amalyot1={'1-Mavzu: Amaliyot'} amalyot2={'2-Mavzu: Amaliyot'}  />
+                    <Sidebar title={'HTML DARSLARI'} elementName={'Bosh sahifa'}  />
                 </Box>}
                 <Box ml={{base: '30px' , md: '450px'}}   display={'flex'}  alignItems={'center'} gap={'20px'}>
                     {sizes.map((size) => (
@@ -77,13 +77,13 @@ const Html23dars = () => {
                         <DrawerContent>
                         <DrawerBody bg={'#0A1624'} display={'flex'} justifyContent={'center'} minHeight={'100vh'} >
                         <CloseIcon onClick={nandleClose} position={'absolute'} right={'10px'} />
-                            <AccordionItenm html1={'/html1dars'} html2={'/html2dars'} html3={'/html3dars'} html4={'/html4dars'}  html5={'/html5dars'}  html6={'/html6dars'}  html7={'/html7dars'}  html8={'/html8dars'}  html9={'/html9dars'}  html10={'/html10dars'} html11={'/html11dars'} html12={'/html12dars'} html13={'/html13dars'}    lesson1={'1-Mavzu: Html O’rnatish'} lesson2={'2-Mavzu: Html Asosiy Misollar'} lesson3={'3-Mavzu: Html Hedinglar'} lesson4={'4-Mavzu: Html Paragraphlar'} lesson5={'1-Mavzu: HTML Formatlash'} lesson6={'2-Mavzu: Html Komentariya'} lesson7={'3-Mavzu: Html Link'} lesson8={'1-Mavzu: Html Image'} lesson9={'2-Mavzu: Html Favicon va Tittle'} lesson10={'3-Mavzu: Html Table'} lesson11={'1-Mavzu: Html Listlar'} lesson12={'2-Mavzu: Html Block va Inline'} lesson13={'3-Mavzu: Html Emojilar '} lesson14={'1-Mavzu: Html Formalar'}  lesson15={'2-Mavzu: Html Form Attributlari'} lesson16={'3-Mavzu: Html Form Elemtlari'} lesson17={'1-Mavzu: Html Input turlari'} lesson18={'2-Mavzu: Html Input Attributlari'} lesson19={'3-Mavzu: Html Input va Formla'} lesson20={'1-Mavzu: Html Medialar'} lesson21={'2-Mavzu: Html Video'} lesson22={'3-Mavzu: Html Audio '} lesson23={'4-Mavzu: Html YouTube '} amalyot1={'1-Mavzu: Amaliyot'} amalyot2={'2-Mavzu: Amaliyot'}  />
+                            <AccordionItenm   />
                         </DrawerBody>
                         </DrawerContent>
                     </Drawer>
                     
                     <Box>
-                        <Heading fontSize={{base: '30px' , md: '50px'}}>HTML Audio</Heading>
+                        <Heading fontSize={{base: '30px' , md: '50px'}}>HTML YouTube Video lar</Heading>
                     </Box>
                 </Box>
             </Flex>
@@ -91,44 +91,23 @@ const Html23dars = () => {
 
 
             <Box height={{base: '20vh' , md: '15vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
-                <Text fontSize={'20px'}>HTML <span className='red'>{`<audio>`}</span>elementi veb-sahifadagi audio faylni ijro etish uchun ishlatiladi.</Text>
+                <Text fontSize={'20px'}>HTML-da videolarni o'ynashning eng oson yo'li YouTube-dan foydalanishdir.</Text>
             </Box>
             <Divider mt={'20px'} />
            
 
-
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'60vh'}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>HTML<span style={{color: 'red'}}>{` <audio>`}</span> Element</Heading>
-                <Text fontSize={'20px'}>Ovoz faylini HTML formatida ijro etish uchun<span style={{color: 'red'}}>{` <audio`}</span> elementidan foydalaning:</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={'350px'} rounded={'20px'}>
-                    <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'160px'} bg={'#0A1624'}>
-                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`<audio `} <span className='red'>controls</span>  {'>'} </Text>
-                        
-                        <Text pl={'20px'} color={'#9D5EBB'} fontSize={'20px'}>{`<source `} <span className='red'>src=</span>  <span className='yellow'>"horse.ogg" </span> <span className='red'>type=</span>  <span className='yellow'>"audio/ogg"</span> {'>'} </Text>
-                        <Text pl={'20px'} color={'#9D5EBB'} fontSize={'20px'}>{`<source `} <span className='red'>src=</span>  <span className='yellow'>"horse.mp3"</span> <span className='red'>type=</span>  <span className='yellow'>"audio/mpeg"</span> {'>'} </Text>
-                        <Text pl={'20px'} color={'white'} fontSize={'20px'}> Brauzeringiz video tegini qo'llab-quvvatlamaydi. </Text>
-                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`</audio>>`}</Text>
-
-                       
-                    </Box>
-                    <CopyToClipboard text={`<audio controls><source src="horse.ogg" type="audio/ogg"><source src="horse.mp3" type="audio/mpeg">Brauzeringiz video tegini qo'llab-quvvatlamaydi.</audio>`} onCopy={handleClip} >
-                        <Button bg={'#7FFFD4'}>Nusxa olish</Button>
-                    </CopyToClipboard>
-                </Box>
+            
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'23vh'}>
+                <Heading fontSize={{base: '30px' , md: '50px'}}>Video formatlari bilan kurashyapsizmi?</Heading>
+                <Text fontSize={'20px'}>Videolarni turli formatlarga aylantirish qiyin va ko'p vaqt talab qilishi mumkin.</Text>
+                <Text fontSize={'20px'}>An easier solution is to let YouTube play the videos in your web page.</Text>
             </Box>
             <Divider mt={'20px'} />
 
-
-
-            
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'40vh'}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>HTML Audio - U qanday ishlaydi</Heading>
-                <Text fontSize={'20px'}>Controls atributi ijro, pauza va ovoz balandligi kabi audio boshqaruv elementlarini qo‘shadi.</Text>
-                <Text fontSize={'20px'}><span className='red'>{`<source>`}</span> elementi brauzer tanlashi mumkin bo'lgan muqobil audio fayllarni belgilash imkonini beradi. <br /> Brauzer birinchi tan olingan formatdan foydalanadi.</Text>
-                <Text fontSize={'20px'}> <span className='red'>{`<source>`}</span> elementi brauzer tanlashi mumkin bo'lgan muqobil video fayllarni belgilash imkonini beradi. Brauzer birinchi tan olingan formatdan foydalanadi.</Text>
-                <Text fontSize={'20px'}><span className='red'>{`<audio>`}</span> va <span className='red'>{`</audio>`}</span> teglari orasidagi matn faqat <span className='red'>{`<audio>`}</span> elementini qo'llab-quvvatlamaydigan brauzerlarda ko'rsatiladi.</Text>
-                
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'23vh'}>
+                <Heading fontSize={{base: '30px' , md: '50px'}}>YouTube Video Id</Heading>
+                <Text fontSize={'20px'}>Videoni saqlaganingizda (yoki o'ynaganingizda) YouTube identifikatorni (masalan, tgbNymZ7vqY) ko'rsatadi.</Text>
+                <Text fontSize={'20px'}>Siz ushbu identifikatordan foydalanishingiz va HTML kodidagi videongizga murojaat qilishingiz mumkin.</Text>
             </Box>
             <Divider mt={'20px'} />
 
@@ -136,22 +115,28 @@ const Html23dars = () => {
 
 
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'100vh'}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>HTML<span style={{color: 'red'}}>{` <audio>`}</span> Autoplay</Heading>
-                <Text fontSize={'25px'}>Audio faylni avtomatik ravishda ishga tushirish uchun autoplay atributidan foydalaning:</Text>
+                <Heading fontSize={{base: '30px' , md: '50px'}}>YouTube Videosini HTML Formatida Ijro Etish</Heading>
+                <Text fontSize={'25px'}>Videongizni veb-sahifada ijro etish uchun quyidagilarni bajaring:</Text>
+                <UnorderedList fontSize={'25px'} pl={'30px'}>
+                    <ListItem>Videoni YouTube-ga yuklang</ListItem>
+                    <ListItem>Video identifikatoriga e'tibor bering</ListItem>
+                    <ListItem>Veb-sahifangizda <span className='red'>{`<iframe>`}</span> elementini aniqlang</ListItem>
+                    <ListItem>src atributi video URL manziliga ishora qilsin</ListItem>
+                    <ListItem>Pleyerning o'lchamini belgilash uchun kenglik va balandlik atributlaridan foydalaning</ListItem>
+                    <ListItem>URL manziliga boshqa parametrlarni qo'shing (pastga qarang)</ListItem>
+                </UnorderedList>
 
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={'350px'} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'160px'} bg={'#0A1624'}>
-                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`<audio `} <span className='red'>controls autoplay</span>  {'>'} </Text>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'160px'} bg={'#0A1624'}>
+                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`<iframe `} <span className='red'>controls autoplay</span>  {'>'} </Text>
                         
-                        <Text pl={'20px'} color={'#9D5EBB'} fontSize={'20px'}>{`<source `} <span className='red'>src=</span>  <span className='yellow'>"horse.ogg" </span> <span className='red'>type=</span>  <span className='yellow'>"audio/ogg"</span> {'>'} </Text>
-                        <Text pl={'20px'} color={'#9D5EBB'} fontSize={'20px'}>{`<source `} <span className='red'>src=</span>  <span className='yellow'>"horse.mp3"</span> <span className='red'>type=</span>  <span className='yellow'>"audio/mpeg"</span> {'>'} </Text>
-                        <Text pl={'20px'} color={'white'} fontSize={'20px'}> Brauzeringiz video tegini qo'llab-quvvatlamaydi. </Text>
-                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`</audio>>`}</Text>
+                        <Text pl={'20px'} color={'#9D5EBB'} fontSize={'20px'}>{`<iframe `} <span className='red'>width=</span>  <span className='yellow'>"420" </span> <span className='red'>height=</span>  <span className='yellow'>"315"</span>  <span className='red'>src=</span>  <span className='yellow'>"https://www.youtube.com/embed/tgbNymZ7vqY"</span> {'>'} </Text>
+                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`</iframe>`}</Text>
 
                        
                     </Box>
-                    <CopyToClipboard text={`<audio controls autoplay><source src="horse.ogg" type="audio/ogg"><source src="horse.mp3" type="audio/mpeg">Brauzeringiz video tegini qo'llab-quvvatlamaydi.</audio>`} onCopy={handleClip} >
+                    <CopyToClipboard text={`<iframe width="420" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
@@ -180,190 +165,95 @@ const Html23dars = () => {
 
 
 
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'10vh'}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>Brauzerni Qo'llab-Quvvatlash</Heading>
-                <Text fontSize={'25px'}>Jadvaldagi raqamlar  <span style={{color: 'red'}}>{`<audio> `}</span> elementini to'liq qo'llab-quvvatlaydigan birinchi brauzer versiyasini ko'rsatadi.</Text>
-
-
-
-                    <Box  display={'flex'} flexDirection={'column'} gap={'20px'} pt={'20px'} minHeight={'25vh'}>
-                        <TableContainer>
-                            <Table border={'1px'} variant='simple' width={'90%'}>
-                                
-                                <Thead>
-                                    <Tr fontWeight={'bold'} bg={'#233242'} >
-                                        <Td>Element</Td>
-                                        <Td>
-                                            <Image width={'40px'} src='https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png'></Image>
-                                        </Td>
-                                        <Td>
-                                            <Image width={'40px'} rounded={'50%'} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkLaHbeRYxvTBd4BE_yVmP2oGDQsCmC5k69OueIriIXiMBjfKmhUgPoLYCQR0-4DFuGPY&usqp=CAU'></Image>
-                                        </Td>
-                                        <Td>
-                                            <Image width={'40px'} src='https://upload.wikimedia.org/wikipedia/commons/1/16/Firefox_logo%2C_2017.png'></Image>
-                                        </Td>
-                                        <Td>
-                                            <Image width={'40px'} src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Safari_browser_logo.svg/2057px-Safari_browser_logo.svg.png'></Image>
-                                        </Td>
-                                        <Td>
-                                            <Image width={'40px'} src='https://cdn.freebiesupply.com/logos/large/2x/opera-2-logo-png-transparent.png'></Image>
-                                        </Td>
-                                    </Tr>
-                                </Thead>
-                                <Tbody>
-                                    <Tr>
-                                        <Td>{`<video>`}</Td>
-                                        <Td>4.0</Td>
-                                        <Td>9.0</Td>
-                                        <Td>3.5</Td>
-                                        <Td>4.0</Td>
-                                        <Td>10.5</Td>
-                                    </Tr>
-                                </Tbody>
-                                
-                            </Table>
-                        </TableContainer>
-               
-                    </Box>
-
-                </Box>
-            <Divider mt={'20px'} />
-
-
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'20vh'}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>HTML Audio Format lari</Heading>
-                <Text fontSize={'25px'}>Uchta qo'llab-quvvatlanadigan audio formatlari mavjud: MP3, WAV va OGG. Turli formatlar uchun brauzerni qo'llab-quvvatlash:</Text>
-
-                    <Box  display={'flex'} flexDirection={'column'} gap={'20px'} pt={'20px'} minHeight={'45vh'}>
-                        <TableContainer>
-                            <Table border={'1px'} variant='simple' width={'90%'}>
-                                
-                                <Thead>
-                                    <Tr fontWeight={'bold'} bg={'#233242'} >
-                                        <Td>Browser</Td>
-                                        <Td>MP3</Td>
-                                        <Td>WebM</Td>
-                                        <Td>Ogg</Td>
-                                    </Tr>
-                                </Thead>
-                                <Tbody>
-                                    <Tr>
-                                        <Td>Chrome</Td>
-                                        <Td>YES</Td>
-                                        <Td>YES</Td>
-                                        <Td>YES</Td>
-                                    </Tr>
-                                    <Tr bg={'#233242'} > 
-                                        <Td>Firefox </Td>
-                                        <Td>YES</Td>
-                                        <Td>YES</Td>
-                                        <Td>YES</Td>
-                                    </Tr>
-                                    <Tr>
-                                        <Td>Firefox </Td>
-                                        <Td>YES</Td>
-                                        <Td>YES</Td>
-                                        <Td>YES</Td>
-                                    </Tr>
-                                    <Tr bg={'#233242'} >
-                                        <Td>Safari</Td>
-                                        <Td>YES</Td>
-                                        <Td>YES</Td>
-                                        <Td>NO</Td>
-                                    </Tr>
-                                    <Tr>
-                                        <Td>Opera</Td>
-                                        <Td>YES</Td>
-                                        <Td>YES</Td>
-                                        <Td>YES</Td>
-                                    </Tr>
-                                </Tbody>
-                                
-                            </Table>
-                        </TableContainer>
-               
-                    </Box>
-
-                </Box>
-            <Divider mt={'20px'} />
-
-
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'10vh'}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>HTML Audio - Media turlari</Heading>
-
-                    <Box  display={'flex'} flexDirection={'column'} gap={'20px'} pt={'20px'} minHeight={'30vh'}>
-                        <TableContainer>
-                            <Table border={'1px'} variant='simple' width={'90%'}>
-                                
-                                <Thead>
-                                    <Tr fontWeight={'bold'} bg={'#233242'} >
-                                        <Td>File Format</Td>
-                                        <Td>audio/mpeg</Td>
-                                    </Tr>
-                                </Thead>
-                                <Tbody>
-                                    <Tr>
-                                        <Td>MP3</Td>
-                                        <Td>audio/mpeg</Td>
-                                    </Tr>
-                                    <Tr bg={'#233242'} > 
-                                        <Td>OGG </Td>
-                                        <Td>audio/ogg</Td>
-                                    </Tr>
-                                    <Tr>
-                                        <Td>WAV  </Td>
-                                        <Td>audio/wav</Td>
-                                    </Tr>
-                                </Tbody>
-                                
-                            </Table>
-                        </TableContainer>
-               
-                    </Box>
-
-            </Box>
-            <Divider mt={'20px'} />
-
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'30vh'}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>HTML Audio - Method lari, Property lari, va Event lari</Heading>
-                <Text fontSize={'20px'}>HTML DOM <span className='red'>{`<audio>`}</span> elementi uchun usullar, xususiyatlar va hodisalarni belgilaydi.</Text>
-                <Text fontSize={'20px'}>Bu sizga audiolarni yuklash, ijro etish va pauza qilish, shuningdek, davomiylik va ovoz balandligini belgilash imkonini beradi.</Text>
-                <Text fontSize={'20px'}>Bundan tashqari, audio o'ynay boshlaganda, to'xtatilganda va hokazolarda sizga xabar beradigan DOM hodisalari mavjud.</Text>
-                
-            </Box>
-            <Divider mt={'20px'} />
-
-
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'20vh'}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>HTML audio teglar</Heading>
-
-                <Box  display={'flex'} flexDirection={'column'} gap={'20px'} pt={'20px'} minHeight={'30vh'}>
-                    <TableContainer>
-                        <Table border={'1px'} variant='simple' width={'90%'}>
-                            
-                            <Thead>
-                                <Tr fontWeight={'bold'} bg={'#233242'} >
-                                    <Td>Tag</Td>
-                                    <Td>Tavsif</Td>
-                                </Tr>
-                            </Thead>
-                            <Tbody>
-                                <Tr>
-                                    <Td>{`<audio>`}</Td>
-                                    <Td>Video yoki filmni belgilaydi</Td>
-                                </Tr>
-                                <Tr bg={'#233242'}> 
-                                    <Td>{`<source>`}</Td>
-                                    <Td>{`<video> va <audio> kabi media elementlari uchun bir nechta media resurslarini belgilaydi`}</Td>
-                                </Tr>
-                            </Tbody>
-                            
-                        </Table>
-                    </TableContainer>
             
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'90vh'}>
+                <Heading fontSize={{base: '30px' , md: '50px'}}>YouTube Autoplay + Mute</Heading>
+                <Text fontSize={'25px'}>YouTube URL manziliga autoplay=1 qo‘shish orqali foydalanuvchi sahifaga tashrif <br /> buyurganida videongizni avtomatik o‘ynay boshlashiga ruxsat berishingiz mumkin. <br /> Biroq, videoni avtomatik ravishda boshlash tashrif buyuruvchilaringiz uchun zerikarli!</Text>
+                <Text fontSize={'25px'}>Eslatma: Chromium brauzerlari ko'p hollarda avtomatik ijroga ruxsat bermaydi. <br /> Biroq, ovozsiz avtomatik ijroga har doim ruxsat beriladi.</Text>
+                <Text fontSize={'25px'}>Videongiz avtomatik ijro etilishi uchun (lekin ovozi oʻchirilgan) <br /> uchun avtomatik ijro=1dan keyin ovozni oʻchirish=1 qoʻshing.</Text>
+
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={'350px'} rounded={'20px'}>
+                    <Heading>YouTube - Autoplay + Muted</Heading>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'160px'} bg={'#0A1624'}>
+                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`<iframe  `} <span className='red'>controls autoplay</span>  {'>'} </Text>
+                        
+                        <Text pl={'20px'} color={'#9D5EBB'} fontSize={'20px'}>{`<iframe `} <span className='red'>width=</span>  <span className='yellow'>"420" </span> <span className='red'>height=</span>  <span className='yellow'>"315"</span>  <span className='red'>src=</span>  <span className='yellow'>"https://www.youtube.com/embed/tgbNymZ7vqY"</span> {'>'} </Text>
+                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`</iframe>`}</Text>
+
+                       
+                    </Box>
+                    <CopyToClipboard text={`<iframe width="420" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>`} onCopy={handleClip} >
+                        <Button bg={'#7FFFD4'}>Nusxa olish</Button>
+                    </CopyToClipboard>
                 </Box>
 
+               
             </Box>
+            <Divider mt={'20px'} />
+            
+
+
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'23vh'}>
+                <Heading fontSize={{base: '30px' , md: '50px'}}>YouTube Playlist</Heading>
+                <Text fontSize={'20px'}>A comma separated list of videos to play (in addition to the original URL).</Text>
+            </Box>
+            <Divider mt={'20px'} />
+
+
+
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'70vh'}>
+                <Heading fontSize={{base: '30px' , md: '50px'}}>YouTube Loop</Heading>
+                <Text fontSize={'25px'}>Add loop=1 to let your video loop forever.</Text>
+                <Text fontSize={'25px'}>Qiymat 0 (standart): Video faqat bir marta ijro etiladi.</Text>
+                <Text fontSize={'25px'}>1-qiymat: video ko'chadan chiqadi (abadiy).</Text>
+
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={'350px'} rounded={'20px'}>
+                    <Heading>YouTube - Loop</Heading>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'160px'} bg={'#0A1624'}>
+                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`<iframe  `} <span className='red'>controls autoplay</span>  {'>'} </Text>
+                        
+                        <Text pl={'20px'} color={'#9D5EBB'} fontSize={'20px'}>{`<iframe `} <span className='red'>width=</span>  <span className='yellow'>"420" </span> <span className='red'>height=</span>  <span className='yellow'>"315"</span>  <span className='red'>src=</span>  <span className='yellow'>"https://www.youtube.com/embed/tgbNymZ7vqY"</span> {'>'} </Text>
+                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`</iframe>`}</Text>
+
+                       
+                    </Box>
+                    <CopyToClipboard text={`<iframe width="420" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>`} onCopy={handleClip} >
+                        <Button bg={'#7FFFD4'}>Nusxa olish</Button>
+                    </CopyToClipboard>
+                </Box>
+
+               
+            </Box>
+            <Divider mt={'20px'} />
+
+
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'70vh'}>
+                <Heading fontSize={{base: '30px' , md: '50px'}}>YouTube Controls</Heading>
+                <Text fontSize={'25px'}>Video pleerda boshqaruv elementlarini ko‘rsatmaslik uchun boshqaruv elementlarini qo‘shing=0.</Text>
+                <Text fontSize={'25px'}>Qiymat 0: Pleyer boshqaruvlari ko'rsatilmaydi.</Text>
+                <Text fontSize={'25px'}>Qiymat 1 (standart): Pleyer boshqaruvlari ekrani.</Text>
+
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={'350px'} rounded={'20px'}>
+                    <Heading>YouTube Controls</Heading>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'160px'} bg={'#0A1624'}>
+                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`<iframe  `} <span className='red'>controls autoplay</span>  {'>'} </Text>
+                        
+                        <Text pl={'20px'} color={'#9D5EBB'} fontSize={'20px'}>{`<iframe `} <span className='red'>width=</span>  <span className='yellow'>"420" </span> <span className='red'>height=</span>  <span className='yellow'>"315"</span>  <span className='red'>src=</span>  <span className='yellow'>"https://www.youtube.com/embed/tgbNymZ7vqY"</span> {'>'} </Text>
+                        <Text color={'#9D5EBB'} fontSize={'20px'}>{`</iframe>`}</Text>
+
+                       
+                    </Box>
+                    <CopyToClipboard text={`<iframe width="420" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>`} onCopy={handleClip} >
+                        <Button bg={'#7FFFD4'}>Nusxa olish</Button>
+                    </CopyToClipboard>
+                </Box>
+
+               
+            </Box>
+            <Divider mt={'20px'} />
+
+
+
 
         </Box>
     </Box>

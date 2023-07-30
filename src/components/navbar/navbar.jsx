@@ -42,7 +42,7 @@ const Navbar = () => {
                 <Flex display={{base: 'none' , md: 'block'}} >
                     <Box fontSize={{base: '20px' , xl: '25px'}} className={'nav'} display={'flex'}   alignItems={'center'} gap={{base: '15px' , xl: '40px'}}>
                             
-                            <NavLink style={({isActive}) => {return{background: isActive ? '#7FFFD4' : '', color: isActive ? '#111' : 'white' , fontWeight: isActive ? 'bold' : 'normal' , padding: isActive ? '20px' : ''}}} className='link' to={'/html'}>
+                            <NavLink  className='link' to={'/html'}>
                                 HTML
                             </NavLink>
                             <NavLink   onClick={onOpen} className='link'>
@@ -141,10 +141,10 @@ const Navbar = () => {
                             </MenuButton>
                             <MenuList border={'none'} bg={'#233242'}>
                                 <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.0.0</MenuItem>
-                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.0.1</MenuItem>
-                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.0.2</MenuItem>
+                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.1.3</MenuItem>
+                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.2.4</MenuItem>
                                 <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.0.3</MenuItem>
-                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.1.4</MenuItem>
+                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.1.5</MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>

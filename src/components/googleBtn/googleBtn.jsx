@@ -4,12 +4,15 @@ import { auth } from '../../firebase'
 import { useToast , Box , Button , Image , Text , Heading } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 import { Goog } from '../../assets'
-
-
+import { enterGoogle } from '../../assets'
 const GoogleBtn = () => {
     const googleProvider = new GoogleAuthProvider
     const toast = useToast()
     const navigate = useNavigate()
+
+    const handleEnterGoogle = () => {
+      new Audio(enterGoogle).play()
+    }
 
     const handleUser =  () => {
         try {
@@ -23,6 +26,7 @@ const GoogleBtn = () => {
                     ),
                 })
                 navigate('/')
+                handleEnterGoogle()
             })
             
         } catch {

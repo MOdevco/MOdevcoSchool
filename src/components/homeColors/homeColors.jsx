@@ -5,7 +5,7 @@ const HomeColors = () => {
     
   return (
     <Box width={'100%'} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} >
-        <Box display={'flex'} gap={'40px'} flexDirection={{base: 'column' ,md: 'row'}} >
+        <Box display={'flex'} gap={'40px'} className={'wrap'} flexDirection={{base: 'column' ,md: 'row'}} >
             <ColorCards cardBg={'#D3D3D3'} copy={'#D3D3D3'} copyColor={'#D3D3D'} title={'LightGrey'} textColor={'#000'} colorName={'#D3D3D3'} />
             <ColorCards cardBg={'#00FFFF'} copy={'#00FFFF'} copyColor={'#00FFFF'}  title={'Aqua'} textColor={'#000'} colorName={'#00FFFF'} />
             <ColorCards cardBg={'#A52A2A'} copy={'#A52A2A'} copyColor={'#A52A2A'}  title={' Brown'} textColor={'#000'} colorName={'#A52A2A'} />

@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 import { Goog, Ins, Tg, You } from '../assets'
 import GoogleBtn from '../components/googleBtn/googleBtn'
 import { auth } from '../firebase'
+import { audio  , loginAudio , errorAudio} from '../assets'
 const Register = () => {
     const [show, setShow] = useState(false)
     const handleClick = () => setShow(!show)
@@ -30,6 +31,17 @@ const Register = () => {
     const closeRegister = () => {
         setRegister(true)
     }
+
+    const handleAudio = () => {
+        new Audio(audio).play()
+    }
+    const loginAudion = () => {
+        new Audio(loginAudio).play()
+    }
+    const errorAudion = () => {
+        new Audio(errorAudio).play()
+    }
+    
 
     const Register = async () => {
         if(registerEmail.length == '') {
@@ -56,6 +68,7 @@ const Register = () => {
                     ),
                 })
                 navigate('/')
+                handleAudio()
             })
 
         } catch (error) {
@@ -67,6 +80,7 @@ const Register = () => {
                   </Box>
                 ),
             })
+            errorAudion()
         }
 
         setRegisterEmail("")
@@ -97,6 +111,7 @@ const Register = () => {
                     ),
                 })
                 navigate('/')
+                loginAudion()
             })
 
         } catch (error) {
@@ -108,10 +123,12 @@ const Register = () => {
                   </Box>
                 ),
             })
+            errorAudion()
         }
         setLoginEmail("")
         setLoginPassword("")
     }
+
     
     
 

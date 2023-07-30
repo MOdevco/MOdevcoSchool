@@ -9,14 +9,15 @@ import HomeHtml from '../components/homeHtml/homeHtml'
 import HomeJavascipt from '../components/homeJavascript/homeJavascipt'
 import HomeLessons from '../components/homeLessons/homeLessons'
 import HomeReact from '../components/homeReact/homeReact'
+import HomeVideo from '../components/homeVideo/homeVideo'
 import MainTitle from '../components/mainTitle/mainTitle'
 import TexnologiIcon from '../components/texnologiIcon/texnologiIcon'
 
 const Home = () => {
 
-  useEffect(() => {
-    window.scroll(0,0)
-  }, [])
+  // useEffect(() => {
+  //   window.scroll(0,0)
+  // }, [])
   return (
     <Box >
         <MainTitle />
@@ -26,6 +27,7 @@ const Home = () => {
         <HomeReact />
         <HomeLessons />
         <TexnologiIcon />
+        <HomeVideo />
         <HomeColors />
         <FrontCard />
         <BeckCard />
