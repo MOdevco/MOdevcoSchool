@@ -29,6 +29,7 @@ import Html16dars from './pages/html16dars'
 import Html17dars from './pages/html17dars'
 import Html18dars from './pages/html18dars'
 import Register from './pages/register'
+import Html19dars from './pages/html19dars'
 
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -105,6 +106,7 @@ function App() {
         <Route path='/html16dars' element={<Html16dars />} ></Route>
         <Route path='/html17dars' element={<Html17dars />} ></Route>
         <Route path='/html18dars' element={<Html18dars />} ></Route>
+        <Route path='/html19dars' element={<Html19dars />}></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>

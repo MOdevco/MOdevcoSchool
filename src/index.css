@@ -142,3 +142,13 @@ input {
     height: 50vh !important;
   }
 }
+
+
+
+
+/* ul li css */
+.ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
