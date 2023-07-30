@@ -96,6 +96,11 @@ const Html19dars = () => {
                 <Text fontSize={'20px'}>Ushbu bobda HTML <span className='red'> {`<input> `}</span> elementi uchun turli shakl* atributlari tasvirlangan.</Text>
             </Box>
             <Divider mt={'20px'} />
+
+
+            {/* 1 */}
+            
+            
            
             
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
@@ -111,24 +116,27 @@ const Html19dars = () => {
                       
                       <Text fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span>   <span className='red'>id=</span> <span className='yellow'>"form1"</span> {`>`}</Text>
                       <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"fname"</span> {`>`}<span className='white'>First name:</span>{`</label>`}</Text>
-                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"fname"</span>  <span className='red'>name=</span> <span className='yellow'>"fname"</span> {`>`} {`<br/>`} {`<br/>`} </Text>
-                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`} </Text>
+                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"fname"</span>  <span className='red'>name=</span> <span className='yellow'>"fname"</span> {`>`}{`</input>`} {`<br/>`} {`<br/>`}  </Text>
+                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`} {`</input>`} </Text>
                       <Text color={'#9D5EBB'} fontSize={'25px'}>{`</form>`}</Text>
 
                       <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"lname"</span> {`>`}<span className='white'>Last name:</span>{`</label>`}</Text>
-                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"lname"</span> <span className='red'>form=</span> <span className='yellow'>"form1"</span> {`>`}</Text>
+                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"lname"</span> <span className='red'>form=</span> <span className='yellow'>"form1"</span> {`>`}{`</input>`}</Text>
                       
                         
                     </Box>
-                    <CopyToClipboard text={`<form><label for= "fname"> First name: </label > <br><input type= "text" "id=" "fname" name= "fname" > </input > <br><label for="fname"> Last name: </label > <br><input type= "text" "id=" "fname" name= "fname" > </input > <br></form>`} onCopy={handleClip} >
+                    <CopyToClipboard text={`<form action= "/action_page.php" id= "form1" > <label for= "fname" >First name:</label> <input type= "text" id= "fname" name= "fname" ></input> <br/> <br/> <input type= "submit" value= "Submit" > </input> </form> <label for= "lname" >Last name:</label> <input type= "text" id= "lname" form= "form1" ></input>`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
             </Box>
             <Divider mt={'20px'} />
             
+            
 
 
+            {/* 2 */}
+                    
 
 
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
@@ -144,29 +152,29 @@ const Html19dars = () => {
                       
                     <Text mt={'10px'} fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span> {`>`}</Text>
                         <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"fname"</span> {`>`}<span className='white'>First name:</span>{`</label>`}</Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"fname"</span> <span className='red'>name=</span> <span className='yellow'>fname</span> {`>`} <span className='red'>{`<br/> <br/>`}</span></Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"fname"</span> <span className='red'>name=</span> <span className='yellow'>"fname"</span> {`>`}{`</label>`} <span className='red'>{`<br/> <br/>`}</span></Text>
                         <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"lname"</span> {`>`}<span className='white'>Last name:</span>{`</label>`}</Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"lname"</span> <span className='red'>name=</span> <span className='yellow'>lname</span> {`>`} <span className='red'>{`<br/> <br/>`}</span></Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`} </Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>formaction=</span> <span className='yellow'>"/action_page2.php"</span> <span className='red'>value=</span> <span className='yellow'>"Submit as Admin"</span> {`>`} </Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"lname"</span> <span className='red'>name=</span> <span className='yellow'>"lname"</span> {`>`}{`</input>`} <span className='red'>{`<br/> <br/>`}</span></Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`}{`</input>`} </Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>formaction=</span> <span className='yellow'>"/action_page2.php"</span> <span className='red'>value=</span> <span className='yellow'>"Submit as Admin"</span> {`>`}{`</input>`} </Text>
                         <Text color={'#9D5EBB'} fontSize={'25px'}>{`</form>`}</Text>
                       
                         
                     </Box>
-                    <CopyToClipboard text={`<form><label for= "fname"> First name: </label > <br><input type= "text" "id=" "fname" name= "fname" > </input > <br><label for="fname"> Last name: </label > <br><input type= "text" "id=" "fname" name= "fname" > </input > <br></form>`} onCopy={handleClip} >
+                    <CopyToClipboard text={`<form action= "/action_page.php" > <label for= "fname" >First name:</label> <label type= "text" id= "fname" name= "fname" ></label> <br/> <br/> <label for= "lname" >Last name:</label> <input type= "text" id= "lname" name="lname" ></input> <br/> <br/> <input type= "submit" value= "Submit" ></input> <input type= "submit" formaction= "/action_page2.php" value= "Submit as Admin" ></input> </form>`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
             </Box>
             <Divider mt={'20px'} />
 
-
-
-
+            
 
             
+            
                 
-
+                {/* 3 */}
+                
 
 
               <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
@@ -182,13 +190,13 @@ const Html19dars = () => {
                         
                       <Text fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page_binary.asp"</span> {`>`}</Text>
                         <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"fname"</span> {`>`}<span className='white'>First name:</span>{`</label>`}</Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`} </Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>formaction=</span> <span className='yellow'>"Multipart/form-data"</span> <span className='red'>value=</span> <span className='yellow'>"Submit as Multipart/form-data"</span> {`>`} </Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`}{`</input>`} </Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>formaction=</span> <span className='yellow'>"Multipart/form-data"</span> <span className='red'>value=</span> <span className='yellow'>"Submit as Multipart/form-data"</span> {`>`}{`</input>`} </Text>
                         <Text color={'#9D5EBB'} fontSize={'25px'}>{`</form>`}</Text>
                         
                           
                       </Box>
-                      <CopyToClipboard text={`<form><label for= "fname"> First name: </label > <br><input type= "text" "id=" "fname" name= "fname" > </input > <br><label for="fname"> Last name: </label > <br><input type= "text" "id=" "fname" name= "fname" > </input > <br></form>`} onCopy={handleClip} >
+                      <CopyToClipboard text={`<form action= "/action_page_binary.asp" > <label for= "fname" >First name:</label> <input type= "submit" value= "Submit" ></input> <input type= "submit" formaction= "Multipart/form-data" value= "Submit as Multipart/form-data" ></input> </form>`} onCopy={handleClip} >
                           <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                       </CopyToClipboard>
                   </Box>
@@ -201,7 +209,7 @@ const Html19dars = () => {
                  
                     
 
-
+            {/* 4 */}
 
               <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
                     <Heading fontSize={{base: '30px' , md: '50px'}}>Formmethod Attribute</Heading>
@@ -233,25 +241,25 @@ const Html19dars = () => {
                       <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'250px'} bg={'#0A1624'} pt={'0'}>
                       <Text color={'#9D5EBB'} fontSize={'25px'}>{`<form>`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span> <span className='red'>method=</span> <span className='yellow'>"get"</span> </Text>
                       <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"fname"</span> {`>`}<span className='white'>First name:</span>{`</label>`}</Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"fname"</span> <span className='red'>name=</span> <span className='yellow'>fname</span> {`>`} <span className='red'>{`<br/> <br/>`}</span></Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span><span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"fname"</span> <span className='red'>name=</span> <span className='yellow'>"fname"</span> {`>`}{`</input>`} <span className='red'>{`<br/> <br/>`}</span></Text>
                         <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"lname"</span> {`>`}<span className='white'>Last name:</span>{`</label>`}</Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"lname"</span> <span className='red'>name=</span> <span className='yellow'>lname</span> {`>`} <span className='red'>{`<br/> <br/>`}</span></Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit using Get"</span> {`>`} </Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>formmethod=</span> <span className='yellow'>"post"</span>   <span className='red'>value=</span> <span className='yellow'>"Submit using Post"</span> {`>`} </Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span><span className='yellow'>"lname"</span> <span className='red'>name=</span><span className='yellow'>"lname"</span> {`>`}{`</label>`} <span className='red'>{`<br/> <br/>`}</span></Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit using Get"</span> {`>`}{`</input>`} </Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span><span className='yellow'>"submit"</span> <span className='red'>formmethod=</span><span className='yellow'>"post"</span>   <span className='red'>value=</span><span className='yellow'>"Submit using Post"</span> {`>`}{`</input>`} </Text>
                         <Text color={'#9D5EBB'} fontSize={'25px'}>{`</form>`}</Text>
                         
                           
                       </Box>
-                      <CopyToClipboard text={`<form><label for= "fname"> First name: </label > <br><input type= "text" "id=" "fname" name= "fname" > </input > <br><label for="fname"> Last name: </label > <br><input type= "text" "id=" "fname" name= "fname" > </input > <br></form>`} onCopy={handleClip} >
-                          <Button bg={'#7FFFD4'}>Nusxa olish</Button>
+                      <CopyToClipboard text={`<form> action= "/action_page.php" method= "get" <label for= "fname" >First name:</label> <input type="text" id= "fname" name="fname" ></input> <br/> <br/> <label for= "lname" >Last name:</label> <label type= "text" id="lname" name="lname" ></label> <br/> <br/> <input type= "submit" value= "Submit using Get" ></input> <input type="submit" formmethod="post" value="Submit using Post" ></input> </form>`} onCopy={handleClip} >
+                        <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                       </CopyToClipboard>
                   </Box>
               </Box>
             <Divider mt={'20px'} />
 
 
-
-
+            
+            {/* 5 */}
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
               
             <Heading fontSize={{base: '30px' , md: '50px'}}>Formtarget Attribute</Heading>
@@ -267,76 +275,80 @@ const Html19dars = () => {
                       
                     <Text mt={'10px'} fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span> {`>`}</Text>
                         <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"fname"</span> {`>`}<span className='white'>First name:</span>{`</label>`}</Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"fname"</span> <span className='red'>name=</span> <span className='yellow'>fname</span> {`>`} <span className='red'>{`<br/> <br/>`}</span></Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"fname"</span> <span className='red'>name=</span> <span className='yellow'>"fname"</span> {`>`}{`</label>`} <span className='red'>{`<br/> <br/>`}</span></Text>
                         <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"lname"</span> {`>`}<span className='white'>Last name:</span>{`</label>`}</Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"lname"</span> <span className='red'>name=</span> <span className='yellow'>lname</span> {`>`} <span className='red'>{`<br/> <br/>`}</span></Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`} </Text>
-                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>formtrget=</span> <span className='yellow'>"_blank"</span> <span className='red'>value=</span> <span className='yellow'>"Submit to a new window/tab"</span> {`>`} </Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"text"</span> <span className='red'>id=</span> <span className='yellow'>"lname"</span> <span className='red'>name=</span> <span className='yellow'>"lname"</span> {`>`}{`</input>`} <span className='red'>{`<br/> <br/>`}</span></Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`}{`</input>`} </Text>
+                        <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>formtrget=</span> <span className='yellow'>"_blank"</span> <span className='red'>value=</span> <span className='yellow'>"Submit to a new window/tab"</span> {`>`}{`</input>`} </Text>
                         <Text color={'#9D5EBB'} fontSize={'25px'}>{`</form>`}</Text>
                       
                         
                     </Box>
-                    <CopyToClipboard text={`<form><label for= "fname"> First name: </label > <br><input type= "text" "id=" "fname" name= "fname" > </input > <br><label for="fname"> Last name: </label > <br><input type= "text" "id=" "fname" name= "fname" > </input > <br></form>`} onCopy={handleClip} >
+                    <CopyToClipboard text={`<form action= "/action_page.php" > <label for= "fname" >First name:</label> <label type= "text" id= "fname" name= "fname" ></label> <br/> <br/> <label for= "lname" >Last name:</label> <input type= "text" id= "lname" name="lname" ></input> <br/> <br/> <input type= "submit" value= "Submit" ></input> <input type= "submit" formtrget= "_blank" value= "Submit to a new window/tab" ></input> </form>`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
             </Box>
             <Divider mt={'20px'} />
 
+            
 
 
+            {/* 6 */}
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'70vh'}>
                 <Heading fontSize={{base: '30px' , md: '50px'}}>Formnovalidate Attribute</Heading>
                 <Text fontSize={'20px'}>Input formnovalidate atributi <span className='red'>{`<input>`}</span> elementi yuborilganda tasdiqlanmasligi kerakligini bildiradi.</Text>
                 <Text fontSize={'20px'}>Eslatma: Bu atribut <span className='red'>{`<form>`}</span> elementining novalidate atributini bekor qiladi.</Text>
                 <Text fontSize={'20px'}>Formnovalidate atributi quyidagi kiritish turlari bilan ishlaydi: yuborish.</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={'550px'} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={{md:'550px', base: '590px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'25px'}>Ikkita yuborish tugmasi bo'lgan shakl (tasdiqlangan va tasdiqlanmagan):</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'300px'} bg={'#0A1624'}>
                     <Text fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span> {`>`}</Text>
                       <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"email"</span> {`>`}<span className='white'>Enter Your Email</span>{`</label>`}</Text>
 
-                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"email"</span> <span className='red'>id=</span> <span className='yellow'>"email"</span>  <span className='red'>name=</span> <span className='yellow'>"email"</span> {`>`} <span className='red'>{`<br/>`} {`<br/>`}</span> </Text>
-                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`} </Text>
-                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>formnovalidate=</span> <span className='yellow'>"formnovalidate"</span> <span className='red'>value=</span> <span className='yellow'>"Submit whithout validation"</span>  {`>`} </Text>
+                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"email"</span> <span className='red'>id=</span> <span className='yellow'>"email"</span>  <span className='red'>name=</span> <span className='yellow'>"email"</span> {`>`}{`</input>`} <span className='red'>{`<br/>`} {`<br/>`}</span> </Text>
+                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`}{`</input>`} </Text>
+                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>formnovalidate=</span> <span className='yellow'>"formnovalidate"</span> <span className='red'>value=</span> <span className='yellow'>"Submit whithout validation"</span> {`>`}{`</input>`} </Text>
                       <Text color={'#9D5EBB'} fontSize={'25px'}>{`</form>`}</Text>
 
                       
                     </Box>
-                    <CopyToClipboard text={`<form><input type="radio" id="html" name="sev_til" value="HTML"><label for="html">HTML</label><br><input type="radio" id="css"name="sev_til" value="CSS"><label for="css">CSS</label><br><input type="radio" id="javascript" name="sev_til" value="JavaScript"><labelfor="javascript">JavaScript</label><br></form>`} onCopy={handleClip} >
+                    <CopyToClipboard text={`<form action= "/action_page.php" > <label for= "email" >Enter Your Email</label> <input type= "email" id= "email" name= "email" ></input> <br/> <br/> <input type= "submit" value= "Submit" ></input> <input type= "submit" formnovalidate= "formnovalidate" value= "Submit whithout validation" ></input> </form>`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
             </Box>
             <Divider mt={'20px'} />
             
+            
 
 
 
-
+            {/* 7 */}
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'70vh'}>
                 <Heading fontSize={{base: '30px' , md: '50px'}}>Novalidate Attribute</Heading>
                 <Text fontSize={'20px'}>Novalidate atributi <span className='red'>{`<form>`}</span> atributidir.</Text>
                 <Text fontSize={'20px'}>Agar mavjud bo'lsa, novalidate barcha shakl ma'lumotlari yuborilganda tasdiqlanmasligi kerakligini bildiradi.</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={'470px'} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'}alignItems={'flex-start'} bg={'#233242'} height={{md:'470px',base:'550px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'25px'}>Taqdim etilganda hech qanday shakl ma'lumotlari tasdiqlanmasligi kerakligini belgilang:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'220px'} bg={'#0A1624'}>
                     <Text fontSize={'25px'} color={'#9D5EBB'}>{`<form`} <span className='red'>action=</span> <span className='yellow'>"/action_page.php"</span> {`>`}</Text>
                       <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<label`} <span className='red'>for=</span> <span className='yellow'>"email"</span> {`>`}<span className='white'>Enter Your Email</span>{`</label>`}</Text>
 
-                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"email"</span> <span className='red'>id=</span> <span className='yellow'>"email"</span>  <span className='red'>name=</span> <span className='yellow'>"email"</span> {`>`} <span className='red'>{`<br/>`} {`<br/>`}</span>  </Text>
-                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`} </Text>
+                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"email"</span> <span className='red'>id=</span> <span className='yellow'>"email"</span>  <span className='red'>name=</span> <span className='yellow'>"email"</span> {`>`}{`</input>`} <span className='red'>{`<br/>`} {`<br/>`}</span>  </Text>
+                      <Text pl={'20px'} fontSize={'25px'} color={'#9D5EBB'}>{`<input`} <span className='red'>type=</span> <span className='yellow'>"submit"</span> <span className='red'>value=</span> <span className='yellow'>"Submit"</span> {`>`}{`</input>`} </Text>
                       <Text color={'#9D5EBB'} fontSize={'25px'}>{`</form>`}</Text>
                     </Box>
-                    <CopyToClipboard text={`<form><input type="checkbox" id="avtomobil 1" name="avtomobil 1" value="Velli"><label for="avtomobil 1"> Mening velosipedim bor</abel><br><input type="checkbox" id="avtomobil 2" name="avtomobil 2" value="Moshina"><label for="avtomobil 2"> Mening moshinam bor</label><br><inputtype="checkbox" id="avtomobil 3" name="avtomobil 3" value="Qayiq"><label for="avtomobil 3"> Mening qayig’im  bor</label><br></form>`} onCopy={handleClip} >
+                    <CopyToClipboard text={`<form action= "/action_page.php" > <label for= "email" >Enter Your Email</label> <input type= "email" id= "email" name= "email" ></input> <br/> <br/> <input type= "submit" value= "Submit" ></input> </form>`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
                 
             </Box>
             <Divider mt={'20px'} />
+            
 
 
 
