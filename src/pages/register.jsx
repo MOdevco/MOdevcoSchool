@@ -125,7 +125,7 @@ const Register = () => {
         <Box display={'flex'} width={'100%'} flexDirection={'column'} alignItems="center" justifyContent={'center'} minHeight={'100vh'}> 
 
             {register ? (
-                <Box height={'675px'} mt={'100px'} width={'600px'} className={'register'} bg={'#233242'} borderTop={'4px'} p={{base: '30px' , xl: '40px'}} borderColor={'#7FFFD4'}>
+                <Box height={'675px'} mt={'150px'} width={'600px'} className={'register'} bg={'#233242'} borderTop={'4px'} p={{base: '30px' , xl: '40px'}} borderColor={'#7FFFD4'}>
 
 
                     <Box width={'100%'} height={'100%' }   rounded={'20px'} alignItems="center" p={'20px'} bg={'#0A1624'}>
@@ -203,7 +203,7 @@ const Register = () => {
                 </Box>
 
             ): (
-                <Box height={'675px'} mt={'100px'} width={'600px'} className={'register'} bg={'#233242'} borderTop={'4px'} p={{base: '30px' , xl: '40px'}} borderColor={'#7FFFD4'}>
+                <Box height={'675px'} mt={'150px'} width={'600px'} className={'register'} bg={'#233242'} borderTop={'4px'} p={{base: '30px' , xl: '40px'}} borderColor={'#7FFFD4'}>
 
 
                 <Box width={'100%'} height={'100%' }   rounded={'20px'} alignItems="center" p={'20px'} bg={'#0A1624'}>
