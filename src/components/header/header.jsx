@@ -53,9 +53,9 @@ const Header = () => {
         handleCloseAudio()
     }
     return (
-        <Box pt={{base: '5px' , xl: '1px'}} className={'header'} bg={'#050E17'}  h={{base: '13vh' , xl: '10vh' }}  px={{base: '20px' , md: '0'}}>
+        <Box pt={{base: '1px' , xl: '1px'}} className={'header'} bg={'#050E17'}  h={{base: '13vh' , xl: '10vh' }}  px={{base: '20px' , md: '0'}}>
             <Text  position={'absolute'} bg={'#7FFFD4'} className={'shadow'} width={'100%'} height={'5px'} style={{transform: `translateX(${completion - 100}%)`}}></Text>
-            <Box maxW={'1195px'} mx={'auto'} mt={{base: '30px' , xl: '20px'}} >
+            <Box maxW={'1195px'} mx={'auto'} mt={{base: '5px' , xl: '20px'}} classNam={'load'} >
                 <Flex alignItems={'center'} justifyContent={'space-between'} >
                     
                     <Link to={'/'}>
