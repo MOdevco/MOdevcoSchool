@@ -1,0 +1,145 @@
+import { Box , Flex , Heading , Button , Text , Image , Input , FormLabel, HStack, Radio, RadioGroup} from '@chakra-ui/react'
+import { HamburgerIcon , CloseIcon } from '@chakra-ui/icons'
+import Sidebar from '../components/sidebar/sidebar'
+import {
+    Drawer,
+    DrawerBody,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerOverlay,
+    DrawerContent,
+    DrawerCloseButton,
+    useDisclosure,
+    useToast,Divider,
+    UnorderedList,
+    ListItem
+  } from '@chakra-ui/react'
+import AccordionItenm from '../components/accordion/accordion'
+import CopyToClipboard from 'react-copy-to-clipboard'
+import { useEffect, useState } from 'react'
+import {
+    Table,
+    Thead,
+    Tbody,
+    Tfoot,
+    Tr,
+    Th,
+    Td,
+    TableCaption,
+    TableContainer,
+  } from '@chakra-ui/react'
+import { Search2Icon } from '@chakra-ui/icons'
+import { data } from '../htmlCode'
+const HtmlCode = () => {
+    console.log(data)
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const [placement, setPlacement] = useState('left')
+    const [size, setSize] = useState('')
+    const [clipboard , setClipboard] = useState(false)
+    const toast = useToast()
+    const [search , setSearch] = useState("")
+    console.log(search)
+    const handleClip = () => {
+        setClipboard(true)
+        toast({
+            position: 'top-right',
+            render: () => (
+              <Box color='white' p={3} bg='blue.500'>
+                Nusxa olindi!
+              </Box>
+            ),
+        })
+    }
+    const handleClick = (newSize) => {
+        setSize(newSize)
+        onOpen()
+    }
+    const nandleClose = () => {
+        onClose()
+    }
+    const sizes = ['md']
+    useEffect(() => {
+        window.scroll(0,0)
+      }, [])
+  return (
+    <Box pt={'300px'} width={'100%'} bg={'#1A202C'} height={'100%'}>
+        <Box >
+            <Flex >
+                {onOpen && <Box>
+                    <Sidebar title={'HTML DARSLARI'} elementName={'Bosh sahifa'}html1={'/html1dars'} html2={'/html2dars'} html3={'/html3dars'} html4={'/html4dars'}  html5={'/html5dars'}  html6={'/html6dars'}  html7={'/html7dars'}  html8={'/html8dars'}  html9={'/html9dars'}  html10={'/html10dars'} html11={'/html11dars'} html12={'/html12dars'} html13={'/html13dars'}    lesson1={'1-Mavzu: Html O’rnatish'} lesson2={'2-Mavzu: Html Asosiy Misollar'} lesson3={'3-Mavzu: Html Hedinglar'} lesson4={'4-Mavzu: Html Paragraphlar'} lesson5={'1-Mavzu: HTML Formatlash'} lesson6={'2-Mavzu: Html Komentariya'} lesson7={'3-Mavzu: Html Link'} lesson8={'1-Mavzu: Html Image'} lesson9={'2-Mavzu: Html Favicon va Tittle'} lesson10={'3-Mavzu: Html Table'} lesson11={'1-Mavzu: Html Listlar'} lesson12={'2-Mavzu: Html Block va Inline'} lesson13={'3-Mavzu: Html Emojilar '} lesson14={'1-Mavzu: Html Formalar'}  lesson15={'2-Mavzu: Html Form Attributlari'} lesson16={'3-Mavzu: Html Form Elemtlari'} lesson17={'1-Mavzu: Html Input turlari'} lesson18={'2-Mavzu: Html Input Attributlari'} lesson19={'3-Mavzu: Html Input va Formla'} lesson20={'1-Mavzu: Html Medialar'} lesson21={'2-Mavzu: Html Video'} lesson22={'3-Mavzu: Html Audio '} lesson23={'4-Mavzu: Html YouTube '} amalyot1={'1-Mavzu: Amaliyot'} amalyot2={'2-Mavzu: Amaliyot'}  />
+                </Box>}
+                <Box ml={{base: '30px' , md: '450px'}}   display={'flex'}  alignItems={'center'} gap={'20px'}>
+                    {sizes.map((size) => (
+                        <Button  onClick={ () => handleClick(size)} bg={'#233242'} _hover={{bg: '#222'}} display={{base: 'block' , md: 'none'}}>
+                            <HamburgerIcon />
+                        </Button>
+                        
+                    ))}
+                    <Drawer placement={placement}  onClose={onClose} size={size} isOpen={isOpen}>
+                        <DrawerOverlay />
+                        <DrawerContent>
+                        <DrawerBody bg={'#0A1624'} display={'flex'} justifyContent={'center'} minHeight={'100vh'} >
+                        <CloseIcon onClick={nandleClose} position={'absolute'} right={'10px'} />
+                            <AccordionItenm html1={'/html1dars'} html2={'/html2dars'} html3={'/html3dars'} html4={'/html4dars'}  html5={'/html5dars'}  html6={'/html6dars'}  html7={'/html7dars'}  html8={'/html8dars'}  html9={'/html9dars'}  html10={'/html10dars'} html11={'/html11dars'} html12={'/html12dars'} html13={'/html13dars'}    lesson1={'1-Mavzu: Html O’rnatish'} lesson2={'2-Mavzu: Html Asosiy Misollar'} lesson3={'3-Mavzu: Html Hedinglar'} lesson4={'4-Mavzu: Html Paragraphlar'} lesson5={'1-Mavzu: HTML Formatlash'} lesson6={'2-Mavzu: Html Komentariya'} lesson7={'3-Mavzu: Html Link'} lesson8={'1-Mavzu: Html Image'} lesson9={'2-Mavzu: Html Favicon va Tittle'} lesson10={'3-Mavzu: Html Table'} lesson11={'1-Mavzu: Html Listlar'} lesson12={'2-Mavzu: Html Block va Inline'} lesson13={'3-Mavzu: Html Emojilar '} lesson14={'1-Mavzu: Html Formalar'}  lesson15={'2-Mavzu: Html Form Attributlari'} lesson16={'3-Mavzu: Html Form Elemtlari'} lesson17={'1-Mavzu: Html Input turlari'} lesson18={'2-Mavzu: Html Input Attributlari'} lesson19={'3-Mavzu: Html Input va Formla'} lesson20={'1-Mavzu: Html Medialar'} lesson21={'2-Mavzu: Html Video'} lesson22={'3-Mavzu: Html Audio '} lesson23={'4-Mavzu: Html YouTube '} amalyot1={'1-Mavzu: Amaliyot'} amalyot2={'2-Mavzu: Amaliyot'}  />
+                        </DrawerBody>
+                        </DrawerContent>
+                    </Drawer>
+                    
+                    <Box>
+                        <Heading fontSize={{base: '30px' , md: '50px'}}>HTML Teglari Alifbo Tartibida Tartiblangan</Heading>
+                    </Box>
+                </Box>
+            </Flex>
+            <Divider mt={'20px'} />
+
+
+
+
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'100vh'}>
+                    <Box border={'1px'} display={'flex'} color={'black'}  bg={'#233242'} alignItems={'center'} width={{base: '100%' , xl: '90%'}} p={'10px'} borderColor={'white'}>
+                        <Search2Icon fontSize={'30px'}  />
+                        <input placeholder='Qidirish' className='outline' onChange={e => setSearch(e.target.value)}    ></input>
+                    </Box>
+
+                    <Box  display={'flex'} flexDirection={'column'} gap={'20px'} pt={'20px'} minHeight={'45vh'}>
+                        <TableContainer>
+                                <Table border={'1px'} variant='simple' width={{base: '100%' , xl: '90%'}}>
+                                    
+                                    <Thead>
+                                        <Tr fontWeight={'bold'} bg={'#233242'} >
+                                            <Td>Turi</Td>
+                                            <Td>Tavsif</Td>
+                                        </Tr>
+                                    </Thead>
+                                    <Tbody width={'100%'}>
+                                        {data.filter((item => {
+                                            return search.toLowerCase() == '' ? item : item.tag.toLowerCase().includes(search)
+                                        })).map((item) => (
+                                            <Tr width={'100%'} key={item.id} >
+                                                <Td width={'100%'} >{item.tag}</Td>
+                                                <Td width={'100%'}>{item.desc}</Td>
+                                            </Tr>
+                                            
+                                        ))}
+                                    </Tbody>
+                                    
+                                </Table>
+                        </TableContainer>
+                        
+                        <Box height={'10vh'}>
+                            <Heading fontSize={{base: '20px' ,xl: '50px'}}>Taglar soni {data.length} ta dan iborat</Heading>
+                        </Box>
+                    </Box>
+
+                </Box>
+            </Box>
+                    
+
+
+
+            
+    </Box>
+  )
+}
+
+export default HtmlCode

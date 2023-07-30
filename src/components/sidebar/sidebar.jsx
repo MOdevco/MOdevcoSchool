@@ -1,13 +1,13 @@
 import { Box , Heading , Button , Divider  } from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
+import { Link , NavLink} from 'react-router-dom'
 
 
 const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , lesson5 , lesson6 , lesson7 , lesson8 , lesson9 , lesson10 , lesson11 , lesson12 , lesson13 , lesson14 , lesson15 , lesson16 , html1 , html2, html3 , html4,  html5 , html6 , html7 , html8 , html9, html10 , html11, html12 , html13 , lesson17 , lesson18 , lesson19 , lesson20 , lesson21 , lesson22 , lesson23 , amalyot1 , amalyot2}) => {
     
    
   return (
-    <Box  display={{base: 'none' , md: 'block'}}>
-        <Box position={'fixed'} zIndex={'1'} display={'flex'} borderRight={'2px'} overflowY={'scroll'} borderColor={'#2D2D2D'} justifyContent={'center'} alignItems={'flex-start'} textAlign={'center'} pt={'250px'}  width={'365.02px'} height={'100vh'} bg={'#050E17'} top={{base: '100px' , xl: '50px'}}>
+    <Box  display={{base: 'none' , md: 'block'}} className={'sidebar'}>
+        <Box position={'fixed'} zIndex={'1'} display={'flex'} borderRight={'2px'} overflowY={'scroll'} borderColor={'#2D2D2D'} justifyContent={'center'} alignItems={'flex-start'} textAlign={'center'} pt={'190px'}  width={'365.02px'} height={'100vh'} bg={'#050E17'} top={{base: '100px' , xl: '50px'}}>
             <Box display={'flex'} flexDirection={'column'} gap={'20px'}>
                 <Box>
                     <Heading color={'white'} fontSize={'35px'}>{title}</Heading>
@@ -26,18 +26,29 @@ const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , 
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>1-Modul</Button>
                             <Divider />
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>1-Dars</Button>
-                            <Link to={html1}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson1}</Button>
-                            </Link>
-                            <Link to={html2}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson2}</Button>
-                            </Link>
-                            <Link to={html3}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson3}</Button>
-                            </Link>
-                            <Link to={html4}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson4}</Button>
-                            </Link>
+
+                                
+                                <Button  bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html1}>
+                                            {lesson1}
+                                    </NavLink>
+                                </Button>
+
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html2}>
+                                        {lesson2}
+                                    </NavLink>
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html3}>
+                                        {lesson3}
+                                    </NavLink>
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html4}>
+                                        {lesson4}
+                                    </NavLink>
+                                </Button>
                             
                             <Divider />
                         </Box>
@@ -45,30 +56,42 @@ const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , 
                         {/* =================2-dars===================== */}
                         <Box display={'flex'} flexDirection={'column'} gap={'20px'}>
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>2-Dars</Button>
-                            <Link to={html5}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson5}</Button>
-                            </Link>
-                            <Link to={html6}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson6}</Button>
-                            </Link>
-                            <Link to={html7}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson7}</Button>
-                            </Link>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html5}>
+                                        {lesson5}
+                                    </NavLink>
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html6}>
+                                        {lesson6}
+                                    </NavLink>
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html7}>
+                                        {lesson7}
+                                    </NavLink>
+                                </Button>
                             <Divider />
                         </Box>
 
                         {/* ===========3-dars================ */}
                         <Box  display={'flex'} flexDirection={'column'} gap={'20px'} minHeight={'40vh'}>
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>3-Dars</Button>
-                            <Link to={html8}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson8}</Button>
-                            </Link>
-                            <Link to={html9}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson9}</Button>
-                            </Link>
-                            <Link to={html10}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson10}</Button>
-                            </Link>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html8}>
+                                        {lesson8}
+                                    </NavLink >
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html9}>
+                                        {lesson9}
+                                    </NavLink >
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html10}>
+                                        {lesson10}
+                                    </NavLink >
+                                </Button>
                         </Box>
                     </Box>
 
@@ -79,15 +102,21 @@ const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , 
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>2-Modul</Button>
                             <Divider />
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>1-Dars</Button>
-                            <Link to={html11}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson11}</Button>
-                            </Link>
-                            <Link to={html12}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson12}</Button>
-                            </Link>
-                            <Link to={html13}>
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson13}</Button>
-                            </Link>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html11}>
+                                        {lesson11}
+                                    </NavLink >
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html12}>
+                                        {lesson12}
+                                    </NavLink >
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? '#7FFFD4' : 'white' , fontWeight: isActive ? 'bold' : 'normal'}}} to={html13}>
+                                        {lesson13}
+                                    </NavLink >
+                                </Button>
                             <Divider />
                         </Box>
 
@@ -129,18 +158,26 @@ const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , 
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>3-Modul</Button>
                             <Divider />
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>1-Dars</Button>
-                            <Link >
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson20}</Button>
-                            </Link>
-                            <Link >
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson21}</Button>
-                            </Link>
-                            <Link >
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson22}</Button>
-                            </Link>
-                            <Link >
-                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{lesson23}</Button>
-                            </Link>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink  >
+                                        {lesson20}
+                                    </NavLink>
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink  >
+                                        {lesson21}
+                                    </NavLink>
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink  >
+                                        {lesson22}
+                                    </NavLink>
+                                </Button>
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>
+                                    <NavLink  >
+                                        {lesson23}
+                                    </NavLink>
+                                </Button>
                         </Box>
 
                     </Box>
@@ -151,12 +188,16 @@ const Sidebar = ({title , elementName , lesson1 , lesson2 , lesson3 , lesson4 , 
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>4-Modul</Button>
                             <Divider />
                             <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'25px'} color={'white'}>1-Dars</Button>
-                            <Link >
+                            <NavLink >
                                 <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{amalyot1}</Button>
-                            </Link>
-                            <Link >
+                            </NavLink>
+                            <NavLink >
                                 <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>{amalyot2}</Button>
-                            </Link>
+                            </NavLink>
+
+                            <NavLink >
+                                <Button bg={'#0A1624'} width={'100%'} height={'50px'} _hover={{bg: '#222'}} fontSize={'17px'} color={'white'}>Barcha kod</Button>
+                            </NavLink>
                         </Box>
 
                     </Box>

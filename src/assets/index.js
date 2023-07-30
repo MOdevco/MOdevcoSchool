@@ -22,5 +22,7 @@ import materPast from './materPast.png'
 import tailPast from './tailPast.png'
 import reatcPast from './reatcPast.png'
 import favicon from './favicon.jpg'
+import media from './media.jpg'
+import video from './video.mp4'
 
-export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider , htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon}
+export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider , htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon , media , video}

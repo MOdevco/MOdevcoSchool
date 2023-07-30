@@ -38,7 +38,7 @@ const Navbar = () => {
                 </ModalBody>
                 </ModalContent>
             </Modal>
-            <Flex fontSize={'20px'}   alignItems={'center'} pt={{base: '10px' , xl: '1px'}} gap={'40px'} minHeight={'7vh'}>
+            <Flex fontSize={'20px'}   alignItems={'center'} pt={{base: '0px' , xl: '1px'}} gap={'40px'} minHeight={'7vh'}>
                 <Flex display={{base: 'none' , md: 'block'}} >
                     <Box fontSize={{base: '20px' , xl: '25px'}} className={'nav'} display={'flex'}   alignItems={'center'} gap={{base: '15px' , xl: '40px'}}>
                             

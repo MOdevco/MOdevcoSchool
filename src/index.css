@@ -41,7 +41,16 @@ input {
   color: black;
 }
 
-
+.outline {
+  outline: none;
+  width: 100%;
+  background: transparent;
+  color: white;
+  padding-left: 20px;
+}
+.shadow {
+  filter: drop-shadow(3px 3px 3px  #7FFFD4);
+}
 
 
 
@@ -77,6 +86,9 @@ input {
   .over {
     height: 8vh !important;
   }
+  .footerHeading {
+    font-size: 20px !important;
+  }
 }
 
 @media (max-width: 761px) {
@@ -93,6 +105,9 @@ input {
   }
   .over {
     height: 8vh !important;
+  }
+  .footer {
+    padding-left: 0 !important;
   }
 }
 

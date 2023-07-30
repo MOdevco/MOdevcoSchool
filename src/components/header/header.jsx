@@ -28,12 +28,14 @@ import {
 import { Goog, Ins, Logo, Tg, You } from '../../assets'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import useProgres from '../../hooks/useProgres'
 
 
 const Header = () => {
     const [ user , loading] = useAuthState(auth)
     const { isOpen, onOpen, onClose } = useDisclosure()
     const toast = useToast()
+    const completion = useProgres()
 
     const handleClose = () => {
         auth.signOut()
@@ -47,9 +49,9 @@ const Header = () => {
         })
     }
     return (
-        <Box pt={{base: '30px' , xl: '15px'}} className={'header'} bg={'#050E17'}  h={{base: '13vh' , xl: '10vh' }}  px={{base: '20px' , md: '0'}}>
-            
-            <Box maxW={'1195px'} mx={'auto'} >
+        <Box pt={{base: '5px' , xl: '1px'}} className={'header'} bg={'#050E17'}  h={{base: '13vh' , xl: '10vh' }}  px={{base: '20px' , md: '0'}}>
+            <Text  position={'absolute'} bg={'#7FFFD4'} className={'shadow'} width={'100%'} height={'5px'} style={{transform: `translateX(${completion - 100}%)`}}></Text>
+            <Box maxW={'1195px'} mx={'auto'} mt={{base: '30px' , xl: '20px'}} >
                 <Flex alignItems={'center'} justifyContent={'space-between'} >
                     
                     <Link to={'/'}>
@@ -81,7 +83,6 @@ const Header = () => {
                     }
                 </Flex>  
             </Box>
-
         </Box>
     )
 }
