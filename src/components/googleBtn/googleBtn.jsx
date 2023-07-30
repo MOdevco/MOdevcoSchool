@@ -32,9 +32,9 @@ const GoogleBtn = () => {
     }
   return (
     <Box>
-        <Button fontSize={{base: '13px' , xl: '20px'}} onClick={handleUser} mt={'30px'} width={'100%'} bg={'#7FFFD4'} _hover={{bg: '#4FFFD4'}}>
+        <Button fontSize={{base: '10px' , xl: '20px'}} onClick={handleUser} mt={'30px'} width={'100%'} bg={'#7FFFD4'} _hover={{bg: '#4FFFD4'}}>
         <Image width={{base: '20px' , xl: '40px'}} src={Goog}></Image>
-        Google yordamida ro’yxatdan o’tish
+          Google yordamida ro’yxatdan o’tish
         </Button>
     </Box>
   )
