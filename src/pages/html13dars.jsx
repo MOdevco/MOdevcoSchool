@@ -63,7 +63,7 @@ const Html13dars = () => {
         window.scroll(0,0)
       }, [])
   return (
-    <Box pt={'300px'} width={'100%'} bg={'#1A202C'} height={'100%'}>
+    <Box  width={'100%'} pt={'250px'} className={'bgImage'} height={'100%'}>
         <Box >
             <Flex >
                 {onOpen && <Box>

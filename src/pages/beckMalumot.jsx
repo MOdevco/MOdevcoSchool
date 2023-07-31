@@ -12,7 +12,7 @@ const BeckMalumot = () => {
     }, [])
     
   return (
-    <Box height={'100%'} pt={'250px'} px={{base: '25px', xl: '0'}} width={'100%'} display={'flex'} justifyContent={'center'} alignItems={'flex-start'}>
+    <Box height={'100%'} pt={'250px'} className={'bgImage'} px={{base: '25px', xl: '0'}} width={'100%'} display={'flex'} justifyContent={'center'} alignItems={'flex-start'}>
         <Box mb={'100px'} display={'flex'} flexDirection={'column'} gap={'70px'}>
             <Box height={'100%'}>
                 <Heading fontSize={{base: '30px' , xl: '50px'}}>

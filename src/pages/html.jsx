@@ -47,7 +47,7 @@ const Html = () => {
     }, [])
 
   return (
-    <Box pt={'300px'} width={'100%'} bg={'#1A202C'} height={'100%'}>
+    <Box pt={'300px'} width={'100%'} className={'bgImage'} height={'100%'}>
         <Box >
             <Flex >
                 {onOpen && <Box>
