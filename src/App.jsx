@@ -82,7 +82,7 @@ function App() {
 
 
   return (
-    <Box bg={'#1A202C'} >
+    <Box  className={'bgImage'}>
       <Box position={'fixed'} width={'100%'} zIndex={10}>
         <Header />
         <Navbar />
