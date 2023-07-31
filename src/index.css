@@ -126,7 +126,7 @@ input {
 @media (max-width: 540px) {
   .header {
     padding-top: 10px !important;
-    height: 9vh !important;
+    height: 12vh !important;
   }
   .over {
     height: 9vh !important;
@@ -138,14 +138,22 @@ input {
     padding-top: 10px !important;
   }
   .over {
+    padding-top: 10px !important;
     height: 9vh !important;
   }
 
 }
 @media (max-width: 375px) {
   .header {
+    height: 12vh !important;
+    margin-top: 1px !important;
+    margin-top: -10px !important;
+  }
+  .over {
+    padding-top: 5px !important;
     height: 9vh !important;
   }
+  
 
 }
 @media (max-width: 280px) {
