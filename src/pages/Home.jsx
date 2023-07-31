@@ -15,9 +15,9 @@ import TexnologiIcon from '../components/texnologiIcon/texnologiIcon'
 
 const Home = () => {
 
-  // useEffect(() => {
-  //   window.scroll(0,0)
-  // }, [])
+  useEffect(() => {
+    window.scroll(0,0)
+  }, [])
   return (
     <Box >
         <MainTitle />
