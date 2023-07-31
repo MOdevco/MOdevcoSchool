@@ -45,9 +45,23 @@ input {
 }
 
 
+.outline {
+  outline: none;
+  width: 100%;
+  background: transparent;
+  color: white;
+  padding-left: 20px;
+}
+.shadow {
+  filter: drop-shadow(3px 3px 3px  #7FFFD4);
+}
 
 
-
+@media (max-width: 2000px) {
+  .footer {
+    padding-left: 0px !important;
+  }
+}
 
 
 @media (max-width: 1020px) {
@@ -58,6 +72,15 @@ input {
     height: 9vh !important;
   }
 }
+
+@media (max-width: 980px) {
+  .colors {
+    flex-direction: column !important;
+
+  }
+}
+
+
 
 @media (max-width: 912px) {
   .header {
@@ -80,6 +103,9 @@ input {
   .over {
     height: 8vh !important;
   }
+  .footerHeading {
+    font-size: 20px !important;
+  }
 }
 
 @media (max-width: 761px) {
@@ -97,6 +123,9 @@ input {
   .over {
     height: 8vh !important;
   }
+  .footer {
+    padding-left: 0 !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -109,7 +138,7 @@ input {
 @media (max-width: 540px) {
   .header {
     padding-top: 10px !important;
-    height: 9vh !important;
+    height: 12vh !important;
   }
   .over {
     height: 9vh !important;
@@ -121,14 +150,22 @@ input {
     padding-top: 10px !important;
   }
   .over {
+    padding-top: 10px !important;
     height: 9vh !important;
   }
 
 }
 @media (max-width: 375px) {
   .header {
+    height: 12vh !important;
+    margin-top: 1px !important;
+    margin-top: -10px !important;
+  }
+  .over {
+    padding-top: 5px !important;
     height: 9vh !important;
   }
+  
 
 }
 @media (max-width: 280px) {

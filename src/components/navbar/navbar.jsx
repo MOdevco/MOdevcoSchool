@@ -38,11 +38,11 @@ const Navbar = () => {
                 </ModalBody>
                 </ModalContent>
             </Modal>
-            <Flex fontSize={'20px'}   alignItems={'center'} pt={{base: '10px' , xl: '1px'}} gap={'40px'} minHeight={'7vh'}>
+            <Flex fontSize={'20px'}   alignItems={'center'} pt={{base: '0px' , xl: '1px'}} gap={'40px'} minHeight={'7vh'}>
                 <Flex display={{base: 'none' , md: 'block'}} >
-                    <Box fontSize={{base: '20px' , xl: '25px'}} className={'nav'} display={'flex'}   alignItems={'center'} gap={{base: '15px' , xl: '40px'}}>
+                    <Box fontSize={{base: '20px' , xl: '17px'}} className={'nav'} display={'flex'}   alignItems={'center'} gap={{base: '15px' , xl: '40px'}}>
                             
-                            <NavLink style={({isActive}) => {return{background: isActive ? '#7FFFD4' : '', color: isActive ? '#111' : 'white' , fontWeight: isActive ? 'bold' : 'normal' , padding: isActive ? '20px' : ''}}} className='link' to={'/html'}>
+                            <NavLink  className='link' to={'/html'}>
                                 HTML
                             </NavLink>
                             <NavLink   onClick={onOpen} className='link'>
@@ -135,18 +135,23 @@ const Navbar = () => {
                         </Menu>
                     </Box>
                     <Box display={{base: 'none' , xl: 'block'}}>
-                        <Menu >
-                            <MenuButton   bg={'#233242'} _hover={{bg: ''}} as={Button} rightIcon={<ChevronDownIcon />}>
-                                Versiyalar
-                            </MenuButton>
-                            <MenuList border={'none'} bg={'#233242'}>
-                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.0.0</MenuItem>
-                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.0.1</MenuItem>
-                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.0.2</MenuItem>
-                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.0.3</MenuItem>
-                                <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.1.4</MenuItem>
-                            </MenuList>
-                        </Menu>
+                        <Box display={'flex'} alignItems={'center'} gap={'20px'}>
+                            <Menu >
+                                <MenuButton   bg={'#233242'} _hover={{bg: ''}} as={Button} rightIcon={<ChevronDownIcon />}>
+                                    Versiyalar
+                                </MenuButton>
+                                <MenuList border={'none'} bg={'#233242'}>
+                                    <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.0.0</MenuItem>
+                                    <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.1.3</MenuItem>
+                                    <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.2.4</MenuItem>
+                                    <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.0.3</MenuItem>
+                                    <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.1.5</MenuItem>
+                                </MenuList>
+                            </Menu>
+                            <Button color={'white'} _hover={{bg: ''}}  bg={'#233242'}>Ko'p beriladigan savollar</Button>
+                            <Button color={'white'} _hover={{bg: ''}}  bg={'#233242'}>Firk va Takliflar</Button>
+                        </Box>
+
                     </Box>
                 </Box>
 

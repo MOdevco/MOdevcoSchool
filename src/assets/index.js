@@ -22,5 +22,12 @@ import materPast from './materPast.png'
 import tailPast from './tailPast.png'
 import reatcPast from './reatcPast.png'
 import favicon from './favicon.jpg'
+import media from './media.jpg'
+import video from './video.mp4'
+import audio from './audio.mp3'
+import closeAudio from './closeAudio.mp3'
+import loginAudio from './loginAudio.mp3'
+import errorAudio from './error.mp3'
+import enterGoogle from './google.mp3'
 
-export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider , htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon}
+export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider , htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon , media , video , audio , closeAudio , loginAudio , errorAudio , enterGoogle}

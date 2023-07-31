@@ -30,6 +30,11 @@ import Html17dars from './pages/html17dars'
 import Html18dars from './pages/html18dars'
 import Register from './pages/register'
 import Html19dars from './pages/html19dars'
+import HtmlCode from './pages/htmlCode'
+import Html20dars from './pages/html20dars'
+import Html21dars from './pages/html21dars'
+import Html22dars from './pages/html22dars'
+import Html23dars from './pages/html23dars'
 
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -87,6 +92,7 @@ function App() {
         <Route path='/html' element={<Html />} ></Route>
         <Route path='/frontMalumot' element={<FrontMalumot />} ></Route>
         <Route path='/beckMalumot' element={<BeckMalumot />} ></Route>
+        <Route path='/htmlCode' element={<HtmlCode />} ></Route>
         <Route path='/register' element={<Register />} ></Route>
         <Route path='/html1dars' element={<Html1dars />} ></Route>
         <Route path='/html2dars' element={<Html2dars />} ></Route>
@@ -107,6 +113,10 @@ function App() {
         <Route path='/html17dars' element={<Html17dars />} ></Route>
         <Route path='/html18dars' element={<Html18dars />} ></Route>
         <Route path='/html19dars' element={<Html19dars />}></Route>
+        <Route path='/html20dars' element={<Html20dars />}></Route>
+        <Route path='/html21dars' element={<Html21dars />}></Route>
+        <Route path='/html22dars' element={<Html22dars />}></Route>
+        <Route path='/html23dars' element={<Html23dars />}></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>
