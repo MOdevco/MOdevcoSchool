@@ -13,8 +13,8 @@ import {
 const LessonCards = ({title ,text , bg , color , cardBg , cardColor , linkLess}) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <Box display={'flex'} flexDirection={'column'} flexWrap={'wrap'}  alignItems={'center'} justifyContent={'center'} mt={'100px'}>
-        <Box bg={cardBg}  rounded={'10px'} px={{base: '0' , md: '60px'}} width={'100%'} height={'350px '} display={'flex'} flexDirection={'column'} justifyContent={'center'}alignItems={'center'} gap={'20px'} color={cardColor} textAlign={'center'}>
+    <Box display={'flex'} width={'100%'}   alignItems={'center'} justifyContent={'center'} mt={'100px'}>
+        <Box bg={cardBg}  rounded={'10px'} px={{base: '0' , md: '60px'}} display={'flex'} width={{base:'900px' ,xl: '60%'}} height={'350px '}  flexDirection={'column'} justifyContent={'center'}alignItems={'center'} gap={'20px'} color={cardColor} textAlign={'center'}>
             <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent bg={'#233242'}>

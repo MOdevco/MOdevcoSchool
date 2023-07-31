@@ -70,6 +70,15 @@ input {
   }
 }
 
+@media (max-width: 980px) {
+  .colors {
+    flex-direction: column !important;
+
+  }
+}
+
+
+
 @media (max-width: 912px) {
   .header {
     height: 8vh !important;
