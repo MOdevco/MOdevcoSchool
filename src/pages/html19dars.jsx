@@ -353,7 +353,7 @@ const Html19dars = () => {
 
 
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'10vh'}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>HTML teglari</Heading>
+                <Heading fontSize={{base: '30px' , md: '50px'}}>HTML Form and Input Element lari</Heading>
 
                     <Box  display={'flex'} flexDirection={'column'} gap={'20px'} pt={'20px'} >
                         <TableContainer>
@@ -371,7 +371,7 @@ const Html19dars = () => {
                                         <Td>Foydalanuvchi kiritish uchun HTML formasini belgilaydi</Td>
                                     </Tr>
                                     <Tr bg={'#233242'}>
-                                        <Td>{`<form> `}</Td>
+                                        <Td>{`<input> `}</Td>
                                         <Td>Kirish boshqaruvini belgilaydi</Td>
                                     </Tr>
                                 </Tbody>
