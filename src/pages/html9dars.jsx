@@ -97,7 +97,7 @@ const Html9dars = () => {
 
 
             <Box height={{base: '20vh' , md: '15vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
-                <Text fontSize={'25px'}>A favicon is a small image displayed next to the page title in the browser tab.</Text>
+                <Text fontSize={'25px'}>Favikon - bu brauzer yorlig'ida sahifa sarlavhasi yonida ko'rsatiladigan kichik rasm.</Text>
             </Box>
             <Divider mt={'20px'} />
            
@@ -249,7 +249,7 @@ const Html9dars = () => {
 
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'20vh'}>
                 <Heading fontSize={{base: '30px' , md: '50px'}}>HTML Page Title</Heading>
-                <Text fontSize={'25px'}>Every web page should have a page title to describe the meaning of the page.</Text>
+                <Text fontSize={'25px'}>Har bir veb-sahifada sahifaning ma'nosini tavsiflovchi sahifa sarlavhasi bo'lishi kerak.</Text>
             </Box>
             <Divider mt={'20px'} />
 
