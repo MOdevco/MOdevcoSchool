@@ -1,6 +1,6 @@
 import { Box , Button , Heading } from '@chakra-ui/react'
 import { Route, Routes } from 'react-router-dom'
-import Footer from './components/footer/footer'
+// import Footer from './components/footer/footer'
 import Header from './components/header/header'
 import Navbar from './components/navbar/navbar'
 import Home from './pages/Home'
@@ -35,6 +35,7 @@ import Html20dars from './pages/html20dars'
 import Html21dars from './pages/html21dars'
 import Html22dars from './pages/html22dars'
 import Html23dars from './pages/html23dars'
+import Faq from './pages/faq'
 
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -92,6 +93,7 @@ function App() {
         <Route path='/html' element={<Html />} ></Route>
         <Route path='/frontMalumot' element={<FrontMalumot />} ></Route>
         <Route path='/beckMalumot' element={<BeckMalumot />} ></Route>
+        <Route path='/faq' element={<Faq />} ></Route>
         <Route path='/htmlCode' element={<HtmlCode />} ></Route>
         <Route path='/register' element={<Register />} ></Route>
         <Route path='/html1dars' element={<Html1dars />} ></Route>
@@ -125,9 +127,9 @@ function App() {
         </Button>
       </Box>}
 
-      <Box>
+      {/* <Box>
         <Footer />
-      </Box>
+      </Box> */}
     </Box>
   )
 }

@@ -136,7 +136,7 @@ const Register = () => {
 
 
   return (
-    <Box minHeight={'100vh'} width={'100%'}>
+    <Box minHeight={'100vh'} width={'100%'} className={'bgImage'}>
 
 
         <Box display={'flex'} width={'100%'} flexDirection={'column'} alignItems="center" justifyContent={'center'} minHeight={'100vh'}> 

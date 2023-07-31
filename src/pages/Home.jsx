@@ -12,7 +12,7 @@ import HomeReact from '../components/homeReact/homeReact'
 import HomeVideo from '../components/homeVideo/homeVideo'
 import MainTitle from '../components/mainTitle/mainTitle'
 import TexnologiIcon from '../components/texnologiIcon/texnologiIcon'
-
+import Footer from '../components/footer/footer'
 const Home = () => {
 
   useEffect(() => {
@@ -31,6 +31,9 @@ const Home = () => {
         <HomeColors />
         <FrontCard />
         <BeckCard />
+
+        {/* <Footer /> */}
+
     </Box>
   )
 }
