@@ -74,13 +74,13 @@ const UserProfile = () => {
                     </Button>}
                     <Button bg={'#233242'} color={'white'} _hover={{bg: '#333242'}} width={'100%'}>Firk va Takliflar</Button>
                     <Button bg={'#233242'} color={'white'} _hover={{bg: '#333242'}} width={'100%'}>Ko'p beriladigan savollar</Button>
-                    <Button onClick={ () => {
+                    {user && <Button onClick={ () => {
                         handleClose() 
                         onClose()
                     } } bg={'red'}  color={'white'} display={'flex'} alignItems={'center'} gap={'20px'} _hover={{bg: 'red.400'}} width={'100%'}>
                         <ArrowLeftIcon />    
                         Profildan Chiqish
-                    </Button>
+                    </Button>}
 
                 </DrawerBody>
                 </DrawerContent>
