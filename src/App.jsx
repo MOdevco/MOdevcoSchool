@@ -35,7 +35,8 @@ import Html20dars from './pages/html20dars'
 import Html21dars from './pages/html21dars'
 import Html22dars from './pages/html22dars'
 import Html23dars from './pages/html23dars'
-
+import PageNotFound from './pages/pageNotFound'
+import Faq from './pages/faq'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
@@ -94,6 +95,7 @@ function App() {
         <Route path='/beckMalumot' element={<BeckMalumot />} ></Route>
         <Route path='/htmlCode' element={<HtmlCode />} ></Route>
         <Route path='/register' element={<Register />} ></Route>
+        <Route path='/faq' element={<Faq />} ></Route>
         <Route path='/html1dars' element={<Html1dars />} ></Route>
         <Route path='/html2dars' element={<Html2dars />} ></Route>
         <Route path='/html3dars' element={<Html3dars/>} ></Route>
@@ -117,7 +119,7 @@ function App() {
         <Route path='/html21dars' element={<Html21dars />}></Route>
         <Route path='/html22dars' element={<Html22dars />}></Route>
         <Route path='/html23dars' element={<Html23dars />}></Route>
-        <Route path='*' element={ <pageNotFound />}></Route>
+        <Route path='*' element={ <PageNotFound />}></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>

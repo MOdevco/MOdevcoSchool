@@ -27,7 +27,7 @@ const HomeJavascipt = () => {
         })
     }
   return (
-    <Box width={'100%'}  bg={'#DDF1A3'} py={'20px'} mt={'40px'}>
+    <Box width={'100%'}  bg={'#DDF1A3'} className='poligjs' py={'20px'} mt={'40px'}>
 
         <Box display={'flex'} justifyContent={{base: 'flex-start' , md: 'center'}} px={{base: '20px' , md: '0'}}  width={'100%'} flexWrap={'wrap'} gap={'20px'} mt={'100px'} alignItems={{base: 'flex-start' , md: 'center'}}>
             <Box display={'flex'} flexDirection={'column'}  alignItems={{base: 'flex-start' , md: 'center'}} gap={'20px'} >

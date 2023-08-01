@@ -32,7 +32,7 @@ const Home = () => {
         <FrontCard />
         <BeckCard />
 
-        {/* <Footer /> */}
+        <Footer />
 
     </Box>
   )
