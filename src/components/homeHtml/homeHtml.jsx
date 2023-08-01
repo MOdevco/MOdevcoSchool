@@ -60,7 +60,7 @@ const HomeHtml = () => {
                         </ModalContent>
                     </Modal>
                 </Link>
-                <Link>
+                <Link to={'/htmlCode'}>
                     <Button onClick={onOpen} width={'200px'} bg={'#233242'} color={'white'} _hover={{bg: '#222'}}>
                         BARCHA KOD
                     </Button>

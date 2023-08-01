@@ -35,7 +35,6 @@ import Html20dars from './pages/html20dars'
 import Html21dars from './pages/html21dars'
 import Html22dars from './pages/html22dars'
 import Html23dars from './pages/html23dars'
-import Faq from './pages/faq'
 
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -82,7 +81,7 @@ function App() {
 
 
   return (
-    <Box  className={'bgImage'}>
+    <Box bg={'#1A202C'} >
       <Box position={'fixed'} width={'100%'} zIndex={10}>
         <Header />
         <Navbar />
@@ -93,7 +92,6 @@ function App() {
         <Route path='/html' element={<Html />} ></Route>
         <Route path='/frontMalumot' element={<FrontMalumot />} ></Route>
         <Route path='/beckMalumot' element={<BeckMalumot />} ></Route>
-        <Route path='/faq' element={<Faq />} ></Route>
         <Route path='/htmlCode' element={<HtmlCode />} ></Route>
         <Route path='/register' element={<Register />} ></Route>
         <Route path='/html1dars' element={<Html1dars />} ></Route>

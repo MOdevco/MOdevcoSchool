@@ -6,7 +6,7 @@ const HomeVideo = () => {
     <Box display={'flex'} alignItems={'center'} justifyContent={'center'} minHeight={'50vh'}>
 
         <Box>
-            <video style={{width: '980px' , borderRadius: '20px'}} src={video} autoPlay muted loop></video>
+            <video style={{width: '980px' }} src={video} autoPlay muted loop></video>
         </Box>
 
     </Box>

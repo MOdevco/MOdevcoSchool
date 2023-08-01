@@ -19,7 +19,7 @@ const Home = () => {
     window.scroll(0,0)
   }, [])
   return (
-    <Box className={'bgImage'} >
+    <Box  >
         <MainTitle />
         <HomeHtml />
         <HomeCss /> 
