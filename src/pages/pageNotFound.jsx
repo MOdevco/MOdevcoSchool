@@ -48,7 +48,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const pageNotFound = () => {
+const PageNotFound = () => {
   const { classes } = useStyles();
 
   return (
@@ -79,4 +79,4 @@ const pageNotFound = () => {
 }
 
 
-export default pageNotFound
+export default PageNotFound

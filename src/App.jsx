@@ -36,6 +36,7 @@ import Html21dars from './pages/html21dars'
 import Html22dars from './pages/html22dars'
 import Html23dars from './pages/html23dars'
 import Faq from './pages/faq'
+import PageNotFound from './pages/pageNotFound'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
@@ -118,7 +119,7 @@ function App() {
         <Route path='/html21dars' element={<Html21dars />}></Route>
         <Route path='/html22dars' element={<Html22dars />}></Route>
         <Route path='/html23dars' element={<Html23dars />}></Route>
-        <Route path='*' element={ <ServerError />}></Route>
+        <Route path='*' element={ <PageNotFound />}></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>
