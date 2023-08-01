@@ -30,5 +30,6 @@ import loginAudio from './loginAudio.mp3'
 import errorAudio from './error.mp3'
 import enterGoogle from './google.mp3'
 import Bg from './bg.png'
+import notFound from './404.png'
 
-export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider , htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon , media , video , audio , closeAudio , loginAudio , errorAudio , enterGoogle , Bg}
+export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg , htmlSlider , cssSlider , jsSlider , htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon , media , video , audio , closeAudio , loginAudio , errorAudio , enterGoogle , Bg, notFound}

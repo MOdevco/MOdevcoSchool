@@ -118,6 +118,7 @@ function App() {
         <Route path='/html21dars' element={<Html21dars />}></Route>
         <Route path='/html22dars' element={<Html22dars />}></Route>
         <Route path='/html23dars' element={<Html23dars />}></Route>
+        <Route path='*' element={ <ServerError />}></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>
