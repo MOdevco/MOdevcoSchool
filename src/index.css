@@ -61,10 +61,10 @@ input {
 }
 
 
-.bgImage {
+/* .bgImage {
   background: url(./assets/bg.png) !important;
   background-size: cover !important;
-}
+} */
 
 
 @media (max-width: 2000px) {

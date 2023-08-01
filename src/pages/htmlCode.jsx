@@ -31,14 +31,12 @@ import {
 import { Search2Icon } from '@chakra-ui/icons'
 import { data } from '../htmlCode'
 const HtmlCode = () => {
-    console.log(data)
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [placement, setPlacement] = useState('left')
     const [size, setSize] = useState('')
     const [clipboard , setClipboard] = useState(false)
     const toast = useToast()
     const [search , setSearch] = useState("")
-    console.log(search)
     const handleClip = () => {
         setClipboard(true)
         toast({
@@ -69,8 +67,8 @@ const HtmlCode = () => {
                     <Sidebar title={'HTML DARSLARI'} elementName={'Bosh sahifa'} />
                 </Box>}
                 <Box ml={{base: '30px' , md: '450px'}}   display={'flex'}  alignItems={'center'} gap={'20px'}>
-                    {sizes.map((size) => (
-                        <Button  onClick={ () => handleClick(size)} bg={'#233242'} _hover={{bg: '#222'}} display={{base: 'block' , md: 'none'}}>
+                    {sizes.map((size , i) => (
+                        <Button key={i} onClick={ () => handleClick(size)} bg={'#233242'} _hover={{bg: '#222'}} display={{base: 'block' , md: 'none'}}>
                             <HamburgerIcon />
                         </Button>
                         
