@@ -65,7 +65,7 @@ const PageNotFound = () => {
           sahifa boshqa URL manziliga ko'chirildi. Agar buni xato deb hisoblasangiz, qo'llab-quvvatlash xizmatiga murojaat qiling.
           </Text>
           <Button variant="outline" size="md" mt="xl" className={classes.control}>
-            <Link to="/"><ArrowForwardIcon /> Bosh sahifaga qayting</Link>
+            <Link to="/"><ArrowForwardIcon mr={'5px'} /> Bosh sahifaga qayting</Link>
             
           </Button>
         </div>
