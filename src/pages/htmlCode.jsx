@@ -96,7 +96,7 @@ const HtmlCode = () => {
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'100vh'}>
                     <Box border={'1px'} display={'flex'} color={'black'}  bg={'#233242'} alignItems={'center'} width={{base: '100%' , xl: '90%'}} p={'10px'} borderColor={'white'}>
                         <Search2Icon fontSize={'30px'}  />
-                        <input placeholder='Qidirish' className='outline' onChange={e => setSearch(e.target.value)}    ></input>
+                        <input placeholder='Qidirish' className='outline' onChange={e => setSearch(e.target.value)}></input>
                     </Box>
 
                     <Box  display={'flex'} flexDirection={'column'} gap={'20px'} pt={'20px'} minHeight={'45vh'}>
