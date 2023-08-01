@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box , Image } from '@chakra-ui/react'
 import {
     Accordion,
     AccordionItem,
@@ -7,6 +7,8 @@ import {
     AccordionIcon,
   } from '@chakra-ui/react'
   import { AddIcon , MinusIcon } from '@chakra-ui/icons'
+import { Footer } from '@mantine/core'
+import {  FaqImage } from '../../assets'
 const FaqItem = ({title , desc}) => {
   return (
     <Box  >
@@ -40,11 +42,8 @@ const FaqItem = ({title , desc}) => {
              
 
             </Accordion>
-            
-
         </Box>
-
-
+        
     </Box>
   )
 }

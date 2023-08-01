@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react'
 import { useEffect } from 'react'
 import BeckCard from '../components/beckCard/beckCard'
 import ColorCards from '../components/colorCards/colorCards'
+import Footer from '../components/footer/footer'
 import FrontCard from '../components/forntCard/frontCard'
 import HomeColors from '../components/homeColors/homeColors'
 import HomeCss from '../components/homeCss/homeCss'
@@ -12,7 +13,6 @@ import HomeReact from '../components/homeReact/homeReact'
 import HomeVideo from '../components/homeVideo/homeVideo'
 import MainTitle from '../components/mainTitle/mainTitle'
 import TexnologiIcon from '../components/texnologiIcon/texnologiIcon'
-import Footer from '../components/footer/footer'
 const Home = () => {
 
   useEffect(() => {
@@ -32,7 +32,6 @@ const Home = () => {
         <FrontCard />
         <BeckCard />
 
-        <Footer />
 
     </Box>
   )

@@ -12,7 +12,6 @@ import 'swiper/css/pagination';
 import '../mainTitle/mainTitle.css'
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { htmlSlider } from '../../assets';
 import { Link } from 'react-router-dom';
 const MainTitle = () => {
   return (

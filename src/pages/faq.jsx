@@ -1,4 +1,4 @@
-import { Box , Heading, Text } from '@chakra-ui/react'
+import { Box , Heading, Text  , Image} from '@chakra-ui/react'
 import {
     Accordion,
     AccordionItem,
@@ -8,12 +8,20 @@ import {
   } from '@chakra-ui/react'
   import { AddIcon , MinusIcon } from '@chakra-ui/icons'
 import FaqItem from './faq/faqItem'
+import Footer from '../components/footer/footer'
+import { FaqImage } from '../assets'
 const Faq = () => {
   return (
-    <Box minHeight={'100vh'} display={'flex'} justifyContent={'center'} gap={'20px'} flexDirection={'column'} alignItems={'center'} width={'100%'}  pt={'200px'}>
+    <Box minHeight={'100vh'} display={'flex'} justifyContent={'center'} gap={'20px'} flexDirection={'row'} alignItems={'center'} width={'100%'}  pt={'200px'}>
         <Box width={{base: '100%' ,xl: '50%'}} display={'flex'} rounded={'20px'}  flexDirection={'column'}    gap={'10px'} bg={'#233242'} p={'20px'}> 
-            <Heading fontSize={{base: '20px' , xl: '50px'}} textAlign={'start'}>FAQ</Heading>
-            <Text fontSize={'20px'}  pb={'20px'}>Tez-tez so'raladigan savollar</Text>
+            <Box display={'flex'} width={'100%'} flexWrap={'wrap'} justifyContent={'space-between'} alignItems={'center'}>
+                <Box>
+                    <Heading fontSize={{base: '20px' , xl: '50px'}} textAlign={'start'}>FAQ</Heading>
+                    <Text fontSize={'20px'}  pb={'20px'}>Tez-tez so'raladigan savollar</Text>
+                </Box>
+                <Image width={'150px'}  src={FaqImage}></Image>
+                
+            </Box>
            
            <FaqItem title={'Bu platforma bizga nma beradi?'} desc={"Platforma tartibida o'rgansangiz siz kelajakda bemalol ishlarni olib qilishingiz mumkun bo'ladi."} />
 
@@ -31,8 +39,7 @@ const Faq = () => {
            <FaqItem title={'Platforma yoki video darsliklarni yangi chiqgan holatlarini qayerdan bilsam bo’ladi?'} desc={"Telegram kanalimizga kirib yangiliklardan habardor bo'lishingiz mumkun."} />
 
         </Box>
-
-
+        
     </Box>
   )
 }

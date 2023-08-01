@@ -37,6 +37,7 @@ import Html22dars from './pages/html22dars'
 import Html23dars from './pages/html23dars'
 import PageNotFound from './pages/pageNotFound'
 import Faq from './pages/faq'
+import Footer from './components/footer/footer'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
