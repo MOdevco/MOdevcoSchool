@@ -27,7 +27,7 @@ const HomeCss = () => {
         })
     }
   return (
-    <Box width={'100%'} bg={'#5981AA'} py={'20px'} mt={'40px'}>
+    <Box width={'100%'} bg={'#5981AA'} className='polig' roundedTopLeft={'100px'} roundedTopRight={'-100px'} py={'20px'} mt={'40px'}>
 
         <Box display={'flex'} justifyContent={{base: 'flex-start' , md: 'center'}} px={{base: '20px' , md: '0'}}  width={'100%'} flexWrap={'wrap'} gap={'20px'} mt={'100px'} alignItems={{base: 'flex-start' , md: 'center'}}>
             <Box display={'flex'} flexDirection={'column'}  alignItems={{base: 'flex-start' , md: 'center'}} gap={'20px'} >
