@@ -15,7 +15,7 @@ import {
 import AccordionItenm from '../components/accordion/accordion'
 import CopyToClipboard from 'react-copy-to-clipboard'
 import { useEffect, useState } from 'react'
-import { vsc, vsp } from '../assets'
+import { video, vsc, vsp } from '../assets'
 const Html1dars = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [placement, setPlacement] = useState('left')
@@ -135,6 +135,7 @@ const Html1dars = () => {
                     </Box>
                 </Box>
             </Box>
+
         </Box>
     </Box>
   )
