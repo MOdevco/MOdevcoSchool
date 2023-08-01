@@ -9,9 +9,7 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <ChakraProvider>
-      <MantineProvider withGlobalStyles withNormalizeCSS>
-          <App />
-      </MantineProvider>
+      <App />
     </ChakraProvider>
   </BrowserRouter>
 )
