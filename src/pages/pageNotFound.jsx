@@ -11,6 +11,7 @@ import {
 import { notFound} from '../assets'
 import { Link } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -64,7 +65,7 @@ const PageNotFound = () => {
           sahifa boshqa URL manziliga ko'chirildi. Agar buni xato deb hisoblasangiz, qo'llab-quvvatlash xizmatiga murojaat qiling.
           </Text>
           <Button variant="outline" size="md" mt="xl" className={classes.control}>
-            <Link to="/">Bosh sahifaga qayting</Link>
+            <Link to="/"><ArrowForwardIcon /> Bosh sahifaga qayting</Link>
             
           </Button>
         </div>
