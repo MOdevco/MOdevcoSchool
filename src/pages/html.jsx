@@ -1,6 +1,6 @@
 import { Box , Flex ,Button , Heading , Text} from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
-import Sidebar from '../components/sidebar/sidebar'
+import Sidebar from '../components/sidebarhtml/sidebarhtml'
 import { HamburgerIcon , CloseIcon} from '@chakra-ui/icons'
 import {
     Drawer,

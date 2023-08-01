@@ -148,7 +148,9 @@ const Navbar = () => {
                                     <MenuItem   bg={'#233242'} _hover={{bg: ''}}>1.1.5</MenuItem>
                                 </MenuList>
                             </Menu>
-                            <Button color={'white'} _hover={{bg: ''}}  bg={'#233242'}>Ko'p beriladigan savollar</Button>
+                            <Link to={'/faq'}>
+                                <Button  color={'white'} _hover={{bg: ''}}  bg={'#233242'}>FAQ</Button>
+                            </Link>
                             <Button color={'white'} _hover={{bg: ''}}  bg={'#233242'}>Firk va Takliflar</Button>
                         </Box>
 

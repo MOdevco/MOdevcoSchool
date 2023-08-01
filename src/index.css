@@ -18,9 +18,7 @@ body {
 
 }
 
-.polig {
-  clip-path: polygon(46% 3%, 74% 9%, 100% 0, 100% 65%, 100% 100%, 48% 100%, 0 100%, 0 10%, 25% 13%);
-}
+
 
 .link:hover {
   color: gray;
@@ -61,10 +59,6 @@ input {
 }
 
 
-/* .bgImage {
-  background: url(./assets/bg.png) !important;
-  background-size: cover !important;
-} */
 
 
 @media (max-width: 2000px) {
