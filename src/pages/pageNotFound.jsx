@@ -55,8 +55,8 @@ const PageNotFound = () => {
   return (
     <Box bg={'#0A1624'} w={'100%'} >
 
-    <Container style={{minHeight: '100vh'}} pt={{md:'400px', base: '60px'}} className={classes.root}>
-      <SimpleGrid spacing={80} cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1, spacing: 40 }]}>
+    <Container style={{minHeight: '100vh' , flexWrap: 'wrap-reverse'}} pt={{base: '300px' , xl: '400px'}} className={classes.root}>
+      <SimpleGrid spacing={80} cols={2}  breakpoints={[{ maxWidth: 'sm', cols: 1, spacing: 40 }]}>
         <Image className={classes.mobileImage} />
         <div>
           <Title className={classes.title}>Nimadir noto‘g‘ri...</Title>
@@ -71,7 +71,7 @@ const PageNotFound = () => {
         </div>
         <Box display={'flex'} alignItems={'center'} justifyContent={'center'}>
 
-        <Image src={notFound}  />
+          <Image src={notFound}  />
         </Box>
       </SimpleGrid>
     </Container>
