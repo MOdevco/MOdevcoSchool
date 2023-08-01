@@ -58,18 +58,19 @@ const PageNotFound = () => {
       <SimpleGrid spacing={80} cols={2}  breakpoints={[{ maxWidth: 'sm', cols: 1, spacing: 40 }]}>
         <Image className={classes.mobileImage} />
         <div>
-          <Title className={classes.title}>Something is not right...</Title>
+          <Title className={classes.title}>Nimadir noto‘g‘ri...</Title>
           <Text color="dimmed" size="lg">
-            Page you are trying to open does not exist. You may have mistyped the address, or the
-            page has been moved to another URL. If you think this is an error contact support.
+          Siz ochmoqchi bo'lgan sahifa mavjud emas. Siz manzilni yoki manzilni noto'g'ri kiritgan bo'lishingiz mumkin
+          sahifa boshqa URL manziliga ko'chirildi. Agar buni xato deb hisoblasangiz, qo'llab-quvvatlash xizmatiga murojaat qiling.
           </Text>
           <Button variant="outline" size="md" mt="xl" className={classes.control}>
-            <Link to="/">Get back to home page</Link>
+            <Link to="/">Bosh sahifaga qayting</Link>
             
           </Button>
         </div>
         <Box display={'flex'} alignItems={'center'} justifyContent={'center'}>
-          <Image src={notFound} width={'100%'} className={''} />
+
+          <Image src={notFound}  />
         </Box>
       </SimpleGrid>
     </Container>

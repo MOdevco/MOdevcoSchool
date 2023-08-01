@@ -81,7 +81,7 @@ const Header = () => {
                     ): (
                         <Box display={{base: 'none' , xl: 'block'}} >
                             <Link to={'/register'}>
-                                <Button bg={'#7FFFD4'} color={'#111'} _hover={{bg: '#1FFFD0'}} width={{base: '90px' , md: '200px'}} fontSize={{base: '10px' , md: '20px'}}>Ro'yxatdan o'tish</Button>
+                                <Button bg={'#7FFFD4'} color={'#111'} _hover={{bg: '#1FFFD0'}}  width={{base: '90px' , md: '200px'}} fontSize={{base: '10px' , md: '20px'}}>Ro'yxatdan o'tish</Button>
                             </Link>
                         </Box>
                         )

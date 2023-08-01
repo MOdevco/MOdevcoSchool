@@ -35,8 +35,8 @@ import Html20dars from './pages/html20dars'
 import Html21dars from './pages/html21dars'
 import Html22dars from './pages/html22dars'
 import Html23dars from './pages/html23dars'
-import Faq from './pages/faq'
 import PageNotFound from './pages/pageNotFound'
+import Faq from './pages/faq'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
