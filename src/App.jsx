@@ -38,6 +38,8 @@ import Html23dars from './pages/html23dars'
 import PageNotFound from './pages/pageNotFound'
 import Faq from './pages/faq'
 import Footer from './components/footer/footer'
+import Fikr from './pages/fikr'
+import Css from './pages/css'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
@@ -121,6 +123,8 @@ function App() {
         <Route path='/html22dars' element={<Html22dars />}></Route>
         <Route path='/html23dars' element={<Html23dars />}></Route>
         <Route path='*' element={ <PageNotFound />}></Route>
+        <Route path='/fikr' element={ <Fikr />}></Route>
+        <Route path='/css' element={ <Css />}></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>

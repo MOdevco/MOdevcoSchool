@@ -73,6 +73,17 @@ input {
   }
 }
 
+@media (max-width: 1400px) {
+  .side {
+    height: 20% !important;
+  }
+  .wrap {
+    flex-direction: column;
+  }
+}
+
+
+
 
 @media (max-width: 1020px) {
   .header {
@@ -141,6 +152,10 @@ input {
 @media (max-width: 600px) {
   .register {
     width: 100% !important;
+  }
+
+  .wrap2 {
+    flex-direction: column;
   }
 }
 

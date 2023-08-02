@@ -6,7 +6,7 @@ import {
     MenuList,
     MenuItem,
 } from '@chakra-ui/react'
-import {ChevronDownIcon } from '@chakra-ui/icons'
+import {ChevronDownIcon , QuestionOutlineIcon  ,EmailIcon , StarIcon } from '@chakra-ui/icons'
 import {
     Modal,
     ModalOverlay,
@@ -45,7 +45,7 @@ const Navbar = () => {
                             <NavLink  className='link' to={'/html'}>
                                 HTML
                             </NavLink>
-                            <NavLink   onClick={onOpen} className='link'>
+                            <NavLink to={'/css'} className='link'>
                                 CSS
                             </NavLink>
                             <NavLink className='link' onClick={onOpen}>
@@ -87,7 +87,7 @@ const Navbar = () => {
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem bg={'#233242'}>
-                                    <NavLink onClick={onOpen} className='link'>
+                                    <NavLink to={'/css'}  className='link'>
                                         CSS
                                     </NavLink>
                                 </MenuItem>
@@ -149,9 +149,20 @@ const Navbar = () => {
                                 </MenuList>
                             </Menu>
                             <Link to={'/faq'}>
-                                <Button  color={'white'} _hover={{bg: ''}}  bg={'#233242'}>FAQ</Button>
+                                <Button display={'flex'} gap={'10px'}  color={'white'} _hover={{bg: ''}}  bg={'#233242'}>
+                                    FAQ
+                                    <QuestionOutlineIcon />
+                                </Button>
                             </Link>
-                            <Button color={'white'} _hover={{bg: ''}}  bg={'#233242'}>Firk va Takliflar</Button>
+                            <Button display={'flex'} gap={'10px'} color={'white'} _hover={{bg: ''}}  bg={'#233242'}>
+                                Firk va Takliflar
+                                <EmailIcon />
+                            </Button>
+
+                            <Button display={'flex'} gap={'10px'} color={'white'} _hover={{bg: ''}}  bg={'#233242'}>
+                                Qo'lab Quvatlash
+                                <StarIcon />
+                            </Button>
                         </Box>
 
                     </Box>
