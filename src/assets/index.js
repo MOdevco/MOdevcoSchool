@@ -29,5 +29,7 @@ import enterGoogle from './google.mp3'
 import notFound from './404.png'
 import FaqImage  from './faq.png'
 import Heard from './heard.svg'
+import err from './firkErr.mp3'
+import value  from './value.mp3' 
 
-export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg ,   htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon , media , video , audio , closeAudio , loginAudio , errorAudio , enterGoogle ,  notFound , FaqImage , Heard}
+export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg ,   htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon , media , video , audio , closeAudio , loginAudio , errorAudio , enterGoogle ,  notFound , FaqImage , Heard , err , value}

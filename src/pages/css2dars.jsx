@@ -30,6 +30,7 @@ import {
     TableContainer,
   } from '@chakra-ui/react'
   import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
+import SidebarCss from '../components/sidebarCss/sidebarCss'
 
 const Css2dars = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -65,7 +66,7 @@ const Css2dars = () => {
         <Box >
             <Flex >
                 {onOpen && <Box>
-                    <Sidebar title={'HTML DARSLARI'} elementName={'Bosh sahifa'}/>
+                    <SidebarCss title={'HTML DARSLARI'} elementName={'Bosh sahifa'}/>
                 </Box>}
                 <Box ml={{base: '30px' , md: '450px'}}   display={'flex'}  alignItems={'center'} gap={'20px'}>
                     {sizes.map((size) => (

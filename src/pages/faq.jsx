@@ -10,9 +10,11 @@ import {
 import FaqItem from './faq/faqItem'
 import Footer from '../components/footer/footer'
 import { FaqImage } from '../assets'
+import Particl from '../components/particl'
 const Faq = () => {
   return (
     <Box minHeight={'100vh'} display={'flex'} justifyContent={'center'} gap={'20px'} flexDirection={'row'} alignItems={'center'} width={'100%'}  pt={'200px'}>
+      <Particl />
         <Box width={{base: '100%' ,xl: '50%'}} display={'flex'} rounded={'20px'}  flexDirection={'column'}    gap={'10px'} bg={'#233242'} p={'20px'}> 
             <Box display={'flex'} width={'100%'} flexWrap={'wrap'} justifyContent={'space-between'} alignItems={'center'}>
                 <Box>

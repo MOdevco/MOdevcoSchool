@@ -73,9 +73,11 @@ const UserProfile = () => {
                             Ro'yxatdan O'tish
                         </Link>
                     </Button>}
-                    <Button display={'flex'} gap={'10px'} bg={'#233242'} color={'white'} _hover={{bg: '#333242'}} width={'100%'}>
-                        Firk va Takliflar
-                        <EmailIcon />
+                    <Button onClick={onClose} display={'flex'} gap={'10px'} bg={'#233242'} color={'white'} _hover={{bg: '#333242'}} width={'100%'}>
+                        <Link to={'/fikr'}>
+                            Firk va Takliflar
+                            <EmailIcon fontSize={'30px'} pl={'10px'}  />
+                        </Link>
                     </Button>
                     <Button onClick={onClose}  bg={'#233242'} color={'white'} _hover={{bg: '#333242'}} width={'100%'}>
                         <Link to={'/faq'} >

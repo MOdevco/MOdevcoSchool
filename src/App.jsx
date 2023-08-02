@@ -42,6 +42,7 @@ import Fikr from './pages/fikr'
 import Css from './pages/css'
 import Css2dars from './pages/css2dars'
 import Css3dars from './pages/css3dars'
+import Css4dars from './pages/css4dars'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
@@ -61,6 +62,8 @@ function App() {
   const handleClose = () => {
     setTime(false)
   }
+
+
 
 
 
@@ -129,6 +132,7 @@ function App() {
         <Route path='/css' element={ <Css />}></Route>
         <Route path='/css2dars' element={ <Css2dars />}></Route>
         <Route path='/css3dars' element={ <Css3dars />}></Route>
+        <Route path='/css4dars' element={ <Css4dars />}></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>
@@ -140,6 +144,9 @@ function App() {
       {/* <Box>
         <Footer />
       </Box> */}
+
+
+      
     </Box>
   )
 }

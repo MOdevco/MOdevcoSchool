@@ -4,18 +4,18 @@ export const css1dars = [
         name: "1-Mavzu: Css ga Kirish"
     },
     {
-        link: "/",
+        link: "/css2dars",
         name: "2-Mavzu: Css Syntax"
     },
     {
-        link: "/",
+        link: "/css3dars",
         name: "3-Mavzu: Css Selectors"
     }
     
 ]
 export const css2dars = [
     {
-        link: "/",
+        link: "/css4dars",
         name: "1-Mavzu: Css Qanday Qilib"
     },
     {

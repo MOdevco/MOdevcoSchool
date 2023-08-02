@@ -154,10 +154,12 @@ const Navbar = () => {
                                     <QuestionOutlineIcon />
                                 </Button>
                             </Link>
-                            <Button display={'flex'} gap={'10px'} color={'white'} _hover={{bg: ''}}  bg={'#233242'}>
-                                Firk va Takliflar
-                                <EmailIcon />
-                            </Button>
+                            <Link to={'/fikr'}>
+                                <Button display={'flex'} gap={'10px'} color={'white'} _hover={{bg: ''}}  bg={'#233242'}>
+                                    Firk va Takliflar
+                                    <EmailIcon />
+                                </Button>
+                            </Link>
 
                             <Button display={'flex'} gap={'10px'} color={'white'} _hover={{bg: ''}}  bg={'#233242'}>
                                 Qo'lab Quvatlash

@@ -7,6 +7,7 @@ import {
 import { useEffect } from 'react'
 import { ArrowLeftIcon } from '@chakra-ui/icons'
 import { Link } from 'react-router-dom'
+import Particl from '../components/particl'
 
 const FrontMalumot = () => {
 
@@ -15,6 +16,7 @@ const FrontMalumot = () => {
       }, [])
   return (
     <Box height={'100%'} className={'bgImage'} pt={'250px'} px={{base: '25px', xl: '0'}} width={'100%'} display={'flex'} justifyContent={'center'} alignItems={'flex-start'}>
+        <Particl />
     
         <Box mb={'100px'} display={'flex'} flexDirection={'column'} gap={'70px'}>
             <Box height={'100%'}>

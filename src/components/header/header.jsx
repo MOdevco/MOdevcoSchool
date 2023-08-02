@@ -45,6 +45,7 @@ const Header = () => {
         auth.signOut()
         toast({
             position: 'top-right',
+            duration: 3000,
             render: () => (
               <Box color='white' p={3} bg='red.400'>
                 PROFILINGIZDAN CHIQTINGIZ

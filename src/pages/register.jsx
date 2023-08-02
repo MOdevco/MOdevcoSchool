@@ -12,6 +12,7 @@ import { Goog, Ins, Tg, You } from '../assets'
 import GoogleBtn from '../components/googleBtn/googleBtn'
 import { auth } from '../firebase'
 import { audio  , loginAudio , errorAudio} from '../assets'
+import Particl from '../components/particl'
 const Register = () => {
     const [show, setShow] = useState(false)
     const handleClick = () => setShow(!show)
@@ -61,6 +62,7 @@ const Register = () => {
             const user = await createUserWithEmailAndPassword(auth , registerEmail , registerPassword).then((user) => {
                 toast({
                     position: 'top-right',
+                    duration: 3000,
                     render: () => (
                       <Box color='white' p={3} bg='green.300'>
                         Ro'yxatdan O'tdingiz!!!
@@ -74,6 +76,7 @@ const Register = () => {
         } catch (error) {
             toast({
                 position: 'top-right',
+                duration: 3000,
                 render: () => (
                   <Box color='white' p={3} bg='red.500'>
                     Eslatib O'tamiz Ma'lumot Xato!!!
@@ -104,6 +107,7 @@ const Register = () => {
             const user = await signInWithEmailAndPassword(auth , loginEmail , loginPassword).then((user) => {
                 toast({
                     position: 'top-right',
+                    duration: 3000,
                     render: () => (
                       <Box color='white' p={3} bg='green.300'>
                         Profilingizga Kirdingiz!!!
@@ -117,6 +121,7 @@ const Register = () => {
         } catch (error) {
             toast({
                 position: 'top-right',
+                duration: 3000,
                 render: () => (
                   <Box color='white' p={3} bg='red.500'>
                     Bu Email ro'yxatdan O'tmagan!!!
@@ -137,7 +142,7 @@ const Register = () => {
 
   return (
     <Box minHeight={'100vh'} width={'100%'} className={'bgImage'}>
-
+        <Particl />
 
         <Box display={'flex'} width={'100%'} flexDirection={'column'} alignItems="center" justifyContent={'center'} minHeight={'100vh'}> 
 

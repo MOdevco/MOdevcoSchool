@@ -59,7 +59,7 @@ const MainTitle = () => {
                                     Css darslarini mukammal darajada o'rganing <br /> va o'zingizni web ilova yoki sayitingizga asos soling! <br />
                                     css blogiga kiring yoki pastdagi tugmacha yordamida <br /> css darsliklarga kirishingiz mumkun bo'ladi hoziroq boshlang!
                                 </Text>
-                               <Link >
+                               <Link to={'/css'}>
                                     <Button height={{base: '25px',  xl: '40px'}} fontSize={{base: '10px' , xl: '20px'}}>
                                         CSS darslari
                                     </Button>
