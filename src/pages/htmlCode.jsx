@@ -134,7 +134,7 @@ const HtmlCode = () => {
                         </TableContainer>
                         
                         <Box height={'10vh'}>
-                            <Heading fontSize={{base: '20px' ,xl: '50px'}}>Taglar soni {data.length} ta dan iborat</Heading>
+                            <Heading fontSize={{base: '20px', xl: '50px'}}>Taglar soni {data.length} ta dan iborat</Heading>
                         </Box>
                     </Box>
 
