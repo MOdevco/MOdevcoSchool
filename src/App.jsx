@@ -41,6 +41,7 @@ import Footer from './components/footer/footer'
 import Fikr from './pages/fikr'
 import Css from './pages/css'
 import Css2dars from './pages/css2dars'
+import Css3dars from './pages/css3dars'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
@@ -127,6 +128,7 @@ function App() {
         <Route path='/fikr' element={ <Fikr />}></Route>
         <Route path='/css' element={ <Css />}></Route>
         <Route path='/css2dars' element={ <Css2dars />}></Route>
+        <Route path='/css3dars' element={ <Css3dars />}></Route>
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>
