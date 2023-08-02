@@ -11,13 +11,14 @@ import {
     useDisclosure,
     Avatar,
     Text
+    ,Image
 } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import { useState , } from 'react'
-import { HamburgerIcon , ArrowLeftIcon } from '@chakra-ui/icons'
+import { HamburgerIcon , ArrowLeftIcon , EmailIcon , QuestionIcon , StarIcon} from '@chakra-ui/icons'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { auth } from '../../firebase'
-import { closeAudio } from '../../assets'
+import { closeAudio} from '../../assets'
 const UserProfile = () => {
     const handleCloseAudio = () => {
         new Audio(closeAudio).play()
@@ -72,8 +73,20 @@ const UserProfile = () => {
                             Ro'yxatdan O'tish
                         </Link>
                     </Button>}
-                    <Button bg={'#233242'} color={'white'} _hover={{bg: '#333242'}} width={'100%'}>Firk va Takliflar</Button>
-                    <Button bg={'#233242'} color={'white'} _hover={{bg: '#333242'}} width={'100%'}>Ko'p beriladigan savollar</Button>
+                    <Button display={'flex'} gap={'10px'} bg={'#233242'} color={'white'} _hover={{bg: '#333242'}} width={'100%'}>
+                        Firk va Takliflar
+                        <EmailIcon />
+                    </Button>
+                    <Button onClick={onClose}  bg={'#233242'} color={'white'} _hover={{bg: '#333242'}} width={'100%'}>
+                        <Link to={'/faq'} >
+                            FAQ
+                            <QuestionIcon fontSize={'30px'} pl={'10px'} />
+                        </Link>
+                    </Button>
+                    <Button width={'100%'} display={'flex'}gap="10px" bg={'#233242'} color={'white'} _hover={{bg: '#333242'}} >
+                        Qo'lab Quvatlash
+                        <StarIcon />
+                    </Button>
                     {user && <Button onClick={ () => {
                         handleClose() 
                         onClose()
@@ -81,6 +94,8 @@ const UserProfile = () => {
                         <ArrowLeftIcon />    
                         Profildan Chiqish
                     </Button>}
+
+                    
 
                 </DrawerBody>
                 </DrawerContent>

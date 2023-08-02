@@ -2,7 +2,7 @@ import { Box , Heading , Flex , Button  , Avatar , Text } from '@chakra-ui/react
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { auth } from '../../firebase'
 import { signInWithPopup , GoogleAuthProvider } from 'firebase/auth'
-import { ArrowRightIcon } from '@chakra-ui/icons'
+import { ArrowRightIcon , EmailIcon , QuestionIcon } from '@chakra-ui/icons'
 import {
     Modal,
     ModalOverlay,

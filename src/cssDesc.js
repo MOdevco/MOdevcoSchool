@@ -1,6 +1,6 @@
 export const css1dars = [
     {
-        link: "/",
+        link: "/css",
         name: "1-Mavzu: Css ga Kirish"
     },
     {
@@ -516,4 +516,22 @@ export const css21dars = [
         link: "/",
         name: "7-Mavzu: Css Colors"
     }
+]
+
+
+export const css22dars = [
+    
+    {
+        link: "",
+        name: "Amaliyot 1"
+    },
+    {
+        link: "",
+        name: "Amaliyot 2"
+    },
+    {
+        link: "/cssCode",
+        name: "Barcha kod"
+    },
+    
 ]
