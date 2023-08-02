@@ -70,7 +70,6 @@ const PageNotFound = () => {
           </Button>
         </div>
         <Box display={'flex'} alignItems={'center'} justifyContent={'center'}>
-
           <Image src={notFound}  />
         </Box>
       </SimpleGrid>
