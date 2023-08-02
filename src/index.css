@@ -217,3 +217,14 @@ input {
   flex-direction: column;
   gap: 10px;
 }
+.ull li{
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+
+
+/* arrov icon */
+.topicon{
+  color: #000 !important;
+}
