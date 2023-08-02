@@ -168,6 +168,12 @@ input {
   .over {
     height: 9vh !important;
   }
+  .firkColumn {
+    flex-direction: column;
+  }
+  .fikrTop {
+    margin-top: 450px;
+  }
 }
 
 @media (max-width: 420px) {
