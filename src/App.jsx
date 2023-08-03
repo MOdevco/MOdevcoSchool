@@ -43,6 +43,7 @@ import Css from './pages/css'
 import Css2dars from './pages/css2dars'
 import Css3dars from './pages/css3dars'
 import Css4dars from './pages/css4dars'
+import Css5dars from './pages/css5dars'
 import AdminModevcoAdmin from './pages/AdminmodevcoAdmin'
 function App() {
   const [scroll , setScroll] = useState(false)
@@ -135,6 +136,7 @@ function App() {
         <Route path='/css2dars' element={ <Css2dars />}></Route>
         <Route path='/css3dars' element={ <Css3dars />}></Route>
         <Route path='/css4dars' element={ <Css4dars />}></Route>
+        <Route path='/css5dars' element={ <Css5dars />}></Route>x
       </Routes>
 
      {scroll && <Box position={'fixed'} zIndex={'20'} bottom={'30px'} right={'30px'}>
