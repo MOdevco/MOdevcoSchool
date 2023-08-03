@@ -32,5 +32,8 @@ import Heard from './heard.svg'
 import err from './firkErr.mp3'
 import value  from './value.mp3' 
 import cssRek from './cssRek.mp4'
-
-export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg ,   htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon , media , video , audio , closeAudio , loginAudio , errorAudio , enterGoogle ,  notFound , FaqImage , Heard , err , value , cssRek}
+import user from './user.png'
+import taklif from './taklif.png'
+import barchasi from './barchasi.png'
+import messImg from './messImg.png'
+export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg ,   htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon , media , video , audio , closeAudio , loginAudio , errorAudio , enterGoogle ,  notFound , FaqImage , Heard , err , value , cssRek , user , taklif , barchasi , messImg}
