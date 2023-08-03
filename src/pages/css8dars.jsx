@@ -111,9 +111,9 @@ const Css8dars = () => {
                 <Text fontSize={'25px'}>CSS-da rangni quyidagi shaklda o'n oltilik qiymatdan foydalanib belgilash mumkin:</Text>
                 <Text fontWeight={'400'} color={'rgba(255, 255, 255, 1)'} fontSize={'20px'}>#rrggbb</Text>
                 <Text fontSize={'20px'}>Bu erda rr (qizil), gg (yashil) va bb (ko'k) 00 va ff o'rtasidagi o'n oltilik qiymatlardir (o'nlik kasr 0-255 bilan bir xil). <br /> Masalan, #ff0000 qizil rangda ko'rsatiladi, chunki qizil rang eng yuqori qiymatga (ff), qolganlari esa eng <br /> past qiymatga (00) o'rnatiladi. <br /> Qora rangni ko'rsatish uchun barcha qiymatlarni 00 ga o'rnating, masalan: #000000. <br /> Oq rangni ko'rsatish uchun barcha qiymatlarni ff ga o'rnating, masalan: #ffffff. <br /> Quyidagi HEX qiymatlarini aralashtirish orqali tajriba o'tkazing:</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'500px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'320px'} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'0px'}>
                       
                     <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} gap={{base:'1rem', md: '0rem'}} alignItems={'center'} justifyContent={'space-around'}>
                         <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}} pt={{md:'0px', base: '20px'}}>
@@ -136,11 +136,11 @@ const Css8dars = () => {
 
 
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'500px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'320px'} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} gap={{base:'1rem', md: '0rem'}} alignItems={'center'} justifyContent={'space-around'}>
+                    <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}}  alignItems={'center'} justifyContent={'space-around'}>
                         <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}}>
                             <RgbVal text={'#fff'} bgColor={'#3c3c3c'} colorName={'#3c3c3c'} />
                             <RgbVal text={'#fff'} bgColor={'#3c3c3c'} colorName={'#3c3c3c'} />
@@ -177,7 +177,7 @@ const Css8dars = () => {
                 <Text fontSize={'20px'}>Bu erda r, g va b qizil, yashil va ko'k komponentlarni 0 dan f gacha bo'lgan qiymatlari bilan ifodalaydi. <br /> 3 xonali olti burchakli koddan faqat ikkala qiymat (RR, GG va BB) har bir komponent uchun bir xil bo'lganda <br /> foydalanish mumkin. Shunday qilib, agar bizda #ff00cc bo'lsa, u shunday yozilishi mumkin: #f0c. <br /> Mana bir misol:</Text>
                 
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'flex-start'} alignItems={'flex-start'} bg={'#233242'} height={'500px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'flex-start'} alignItems={'flex-start'} bg={'#233242'} height={'500px'} py={{base: '15px', md :'15px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'330px'} bg={'#0A1624'} pt={{md:'10px', base: '20px'}}>
                       
@@ -187,7 +187,7 @@ const Css8dars = () => {
                       
                         
                     </Box>
-                    <CopyToClipboard text={`body { background-color: #fc9; /* same as #ffcc99 */ } h1 { color: #fof; /* same as #ffooff */ }h1 {color: #b58; /* same as #bb5588 */}`} onCopy={handleClip} >
+                    <CopyToClipboard text={`body { background-color: #fc9; /* same as #ffcc99 */ } h1 { color: #fof; /* same as #ffooff */ }h1 {color: #b58; /* same as #bb5588 */}`} onCopy={handleClip}>
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>

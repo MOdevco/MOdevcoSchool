@@ -111,9 +111,9 @@ const Css7dars = () => {
                 <Text fontSize={'25px'}>In CSS, a color can be specified as an RGB value, using this formula:</Text>
                 <Text fontWeight={'400'} color={'rgba(255, 255, 255, 1)'} fontSize={'20px'}>rgb(red, green, blue)</Text>
                 <Text fontSize={'20px'}>Har bir parametr (qizil, yashil va ko'k) rangning intensivligini 0 dan 255 gacha belgilaydi. <br /> Masalan, rgb(255, 0, 0) qizil rangda ko'rsatiladi, chunki qizil rang eng yuqori qiymatga (255), qolganlari esa 0 ga o'rnatiladi. <br /> Qora rangni ko'rsatish uchun barcha rang parametrlarini 0 ga o'rnating, masalan: rgb(0, 0, 0). <br /> Oq rangni ko'rsatish uchun barcha rang parametrlarini 255 ga o'rnating, masalan: rgb(255, 255, 255).<br /> Quyidagi RGB qiymatlarini aralashtirish orqali tajriba qiling:</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'500px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'320px'} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={{md:'10px', base:'0'}}>
                       
                     <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} gap={{base:'1rem', md: '0rem'}} alignItems={'center'} justifyContent={'space-around'}>
                         <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}} pt={{md:'0px', base: '20px'}}>
@@ -136,11 +136,11 @@ const Css7dars = () => {
 
 
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'500px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'320px'} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} gap={{base:'1rem', md: '0rem'}} alignItems={'center'} justifyContent={'space-around'}>
+                    <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} alignItems={'center'} justifyContent={'space-around'}>
                         <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}}>
                             <RgbVal text={'#fff'} bgColor={'rgb(60, 60, 60)'} colorName={'rgb(60, 60, 60)'} />
                             <RgbVal text={'#fff'} bgColor={'rgb(120, 120, 120)'} colorName={'rgb(120, 120, 120)'} />
@@ -175,9 +175,9 @@ const Css7dars = () => {
                 <Text fontSize={'20px'}>Alfa parametri 0,0 (to'liq shaffof) va 1,0 (umuman shaffof emas) orasidagi raqamdir: <br /> Quyidagi RGBA qiymatlarini aralashtirish orqali tajriba o'tkazing:</Text>
                 
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'500px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'320px'} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'10px'}>
                       
                     <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} gap={{base:'1rem', md: '0rem'}} alignItems={'center'} justifyContent={'space-around'}>
                         <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}} pt={{md:'0px', base: '20px'}}>
