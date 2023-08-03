@@ -160,11 +160,12 @@ const Navbar = () => {
                                     <EmailIcon />
                                 </Button>
                             </Link>
-
-                            <Button display={'flex'} gap={'10px'} color={'white'} _hover={{bg: ''}}  bg={'#233242'}>
-                                Qo'lab Quvatlash
-                                <StarIcon />
-                            </Button>
+                            <Link to={'https://t.me/MOdevco'} target={'_blank'}>
+                                <Button display={'flex'} gap={'10px'} color={'white'} _hover={{bg: ''}}  bg={'#233242'}>
+                                    Qo'lab Quvatlash
+                                    <StarIcon />
+                                </Button>
+                            </Link>
                         </Box>
 
                     </Box>
