@@ -37,11 +37,11 @@ export const css3dars = [
         name: "1-Mavzu: Css Colors HEX"
     },
     {
-        link: "/",
+        link: "/css8dars",
         name: "2-Mavzu: Css Colors HSL"
     },
     {
-        link: "/",
+        link: "/css9dars",
         name: "3-Mavzu: Css Background Color"
     }
 ]
