@@ -42,11 +42,20 @@ body {
   color: #ffff;
 }
 
+.blue{
+  color:  #00FFFF;
+}
 input {
   color: black;
 }
 .purple{
   color: #9D5EBB  ;
+}
+.gray{
+  color: #808080;
+}
+.orange{
+  color: #FF6347;
 }
 
 
