@@ -41,7 +41,9 @@ body {
 .white {
   color: #ffff;
 }
-
+.blue{
+  color:  #00FFFF;
+}
 input {
   color: black;
 }
@@ -50,6 +52,9 @@ input {
 }
 .gray{
   color: #808080;
+}
+.orange{
+  color: #FF6347;
 }
 
 
