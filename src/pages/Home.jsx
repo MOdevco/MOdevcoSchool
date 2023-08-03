@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react'
 import { useEffect } from 'react'
 import BeckCard from '../components/beckCard/beckCard'
 import ColorCards from '../components/colorCards/colorCards'
+import CssRek from '../components/cssRek/cssRek'
 import Footer from '../components/footer/footer'
 import FrontCard from '../components/forntCard/frontCard'
 import HomeColors from '../components/homeColors/homeColors'
@@ -21,6 +22,7 @@ const Home = () => {
   return (
     <Box  >
         <MainTitle />
+        {/* <CssRek /> */}
         <HomeHtml />
         <HomeCss /> 
         <HomeJavascipt />
