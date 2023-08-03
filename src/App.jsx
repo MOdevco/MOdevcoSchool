@@ -46,6 +46,7 @@ import Css4dars from './pages/css4dars'
 import Css5dars from './pages/css5dars'
 import AdminModevcoAdmin from './pages/AdminmodevcoAdmin'
 import Css6dars from './pages/css6dars'
+import Css7dars from './pages/css7dars'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
@@ -139,6 +140,7 @@ function App() {
         <Route path='/css4dars' element={ <Css4dars />}></Route>
         <Route path='/css5dars' element={ <Css5dars />}></Route>
         <Route path='/css6dars' element={ <Css6dars />}></Route>
+        <Route path='/css7dars' element={ <Css7dars />}></Route>
         
       </Routes>
 
