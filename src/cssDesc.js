@@ -19,29 +19,29 @@ export const css2dars = [
         name: "1-Mavzu: Css Qanday Qilib"
     },
     {
-        link: "/css5dars",
+        link: "/",
         name: "2-Mavzu: Css Komentariya"
     },
     {
-        link: "/css6dars",
+        link: "/",
         name: "3-Mavzu: Css Colors"
     },
     {
-        link: "/css6dars",
+        link: "/",
         name: "4-Mavzu: Css Colors RGB"
     }
 ]
 export const css3dars = [
     {
-        link: "/css7dars",
+        link: "/",
         name: "1-Mavzu: Css Colors HEX"
     },
     {
-        link: "/css8dars",
+        link: "/=",
         name: "2-Mavzu: Css Colors HSL"
     },
     {
-        link: "/css9dars",
+        link: "/",
         name: "3-Mavzu: Css Background Color"
     }
 ]
