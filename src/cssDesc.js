@@ -27,13 +27,13 @@ export const css2dars = [
         name: "3-Mavzu: Css Colors"
     },
     {
-        link: "/",
+        link: "/css6dars",
         name: "4-Mavzu: Css Colors RGB"
     }
 ]
 export const css3dars = [
     {
-        link: "/",
+        link: "/css7dars",
         name: "1-Mavzu: Css Colors HEX"
     },
     {
