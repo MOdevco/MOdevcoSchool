@@ -111,17 +111,17 @@ const Css9dars = () => {
                 <Text fontSize={'25px'}>CSS-da rangni quyidagi shaklda rang, to'yinganlik va yorug'lik (HSL) yordamida aniqlash mumkin:</Text>
                 <Text fontWeight={'400'} color={'rgba(255, 255, 255, 1)'} fontSize={'20px'}>hsl(hue, saturation, lightness)</Text>
                 <Text fontSize={'20px'}>Hue rang g'ildiragidagi 0 dan 360 gacha bo'lgan darajadir. 0 qizil, 120 yashil va 240 ko'k. <br /> To'yinganlik - bu foizli qiymat. 0% kulrang soyani, 100% esa to'liq rangni anglatadi. <br /> Yengillik ham foiz hisoblanadi. 0% qora, 50% ochiq yoki qorong'i emas, 100% oq <br /> Experiment by mixing the HSL values below:</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'590px', base: '650px', xl:'500px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{xl:'320px', base: '530px', md:'500px'}} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} h={'100%'} gap={{base:'1rem', md: '0rem'}} alignItems={'center'} justifyContent={'space-around'}>
-                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}} pt={{md:'0px', base: '20px'}}>
+                    <Box display={'flex'} flexDirection={{base: 'column', md: 'column', xl:'row'}} h={'100%'} gap={{base:'1rem', md: '1rem', xl:'0'}} alignItems={'center'} justifyContent={'space-around'}>
+                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}} pt={{md:'0px', base: '20px'}}>
                             <RgbVal bgColor={'hsl(0, 100%, 50%)'} colorName={'hsl(0, 100%, 50%)'} />
                             <RgbVal bgColor={'hsl(147, 50%, 47%)'} colorName={'hsl(147, 50%, 47%)'} />
                             <RgbVal bgColor={'hsl(39, 100%, 50%)'} colorName={'hsl(39, 100%, 50%)'} />
                         </Box>
-                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}}>
+                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}}>
                             <RgbVal bgColor={'hsl(240, 100%, 50%)'} colorName={'hsl(240, 100%, 50%)'} />
                             <RgbVal bgColor={'hsl(300, 76%, 72%)'} colorName={'hsl(300, 76%, 72%)'} />
                             <RgbVal bgColor={'hsl(248, 53%, 58%)'} colorName={'hsl(248, 53%, 58%)'} />
@@ -152,17 +152,17 @@ const Css9dars = () => {
                 <Text fontSize={'20px'}>0% butunlay kulrang; endi rangni ko'ra olmaysiz.</Text>
                 
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'590px', base: '650px', xl:'500px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{xl:'320px', base: '530px', md:'500px'}} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} gap={{base:'1rem', md: '0rem'}} alignItems={'center'} justifyContent={'space-around'}>
-                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}} pt={{md:'0px', base: '20px'}}>
+                    <Box display={'flex'} flexDirection={{base: 'column', md: 'column', xl:'row'}} gap={{base:'1rem', md: '1rem'}} alignItems={'center'} justifyContent={'space-around'}>
+                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}} pt={{md:'0px', base: '20px'}}>
                             <RgbVal bgColor={'hsl(0, 100%, 50%)'} colorName={'hsl(0, 100%, 50%)'} />
                             <RgbVal bgColor={'hsl(0, 60%, 50%)'} colorName={'rgba(255, 99, 71, 0.4)'} />
                             <RgbVal bgColor={'hsl(0, 20%, 50%)'} colorName={'rgba(255, 99, 71, 0.8)'} />
                         </Box>
-                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}}>
+                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}}>
                             <RgbVal bgColor={'hsl(0, 80%, 50%)'} colorName={'hsl(0, 80%, 50%)'} />
                             <RgbVal bgColor={'hsl(0, 40%, 50%)'} colorName={'hsl(0, 40%, 50%)'} />
                             <RgbVal bgColor={'hsl(0, 0%, 50%)'} colorName={'hsl(0, 0%, 50%)'} />
@@ -183,17 +183,17 @@ const Css9dars = () => {
                   <Heading fontSize={{base: '30px' , md: '50px'}}>Lightness</Heading>
                     <Text fontSize={'25px'}>CSS-da rangni quyidagi shaklda rang, to'yinganlik va yorug'lik (HSL) yordamida aniqlash mumkin:</Text>
                     <Text fontSize={'20px'}>Rangning ochiqligini rangga qanchalik yorug'lik berishni xohlayotganingizni tasvirlash mumkin, bu erda 0% yorug'lik yo'q (qora), 50% 50% yorug'lik (na qorong'i, na yorug'lik) <br /> va 100% to'liq ochiqlik (oq) degan ma'noni anglatadi. .</Text>
-                    <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                    <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{xl:'500px', base: '650px', md:'590px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                         <Heading>Misol</Heading>
-                        <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'10px'}>
+                        <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{xl:'320px', base: '530px', md:'500px'}} bg={'#0A1624'} pt={'10px'}>
                           
-                        <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} alignItems={'center'} justifyContent={'space-around'}>
-                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}}>
+                        <Box display={'flex'} flexDirection={{base: 'column', md: 'column', xl:'row'}} alignItems={'center'} justifyContent={'space-around'}>
+                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}}>
                                 <RgbVal text={'#fff'} bgColor={'hsl(0, 100%, 0%)'} colorName={'hsl(0, 100%, 0%)'} />
                                 <RgbVal text={'#fff'} bgColor={'hsl(0, 100%, 50%)'} colorName={'hsl(0, 100%, 50%)'} />
                                 <RgbVal text={'#000'} bgColor={'hsl(0, 100%, 90%)'} colorName={'hsl(0, 100%, 90%)'} />
                             </Box>
-                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}} pt={{md:'0px', base: '20px'}}>
+                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}} pt={{md:'0px', base: '20px'}}>
                                 <RgbVal text={'#fff'} bgColor={'hsl(0, 100%, 25%)'} colorName={'hsl(0, 100%, 25%)'} />
                                 <RgbVal text={'#fff'} bgColor={'hsl(0, 100%, 75%)'} colorName={'hsl(0, 100%, 75%)'} />
                                 <RgbVal text={'#000'} bgColor={'hsl(0, 100%, 100%)'} colorName={'hsl(0, 100%, 100%)'} />
@@ -215,17 +215,17 @@ const Css9dars = () => {
                   <Heading fontSize={{base: '30px' , md: '50px'}}>Shades of Gray</Heading>
                     <Text fontSize={'25px'}>CSS-da rangni quyidagi shaklda rang, to'yinganlik va yorug'lik (HSL) yordamida aniqlash mumkin:</Text>
                     <Text fontSize={'20px'}>Kulrang soyalar ko'pincha rang va to'yinganlikni 0 ga o'rnatish orqali aniqlanadi va quyuqroq/ochiqroq soyalarni olish <br /> uchun yorug'likni 0% dan 100% gacha sozlang:</Text>
-                    <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                    <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{xl:'500px', base: '650px', md:'590px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                         <Heading>Misol</Heading>
-                        <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'10px'}>
+                        <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'500px', base: '530px', xl:'320px'}} bg={'#0A1624'} pt={'10px'}>
                           
-                        <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} alignItems={'center'} justifyContent={'space-around'}>
-                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}}>
+                        <Box display={'flex'} flexDirection={{base: 'column', md: 'column', xl:'row'}} alignItems={'center'} justifyContent={'space-around'}>
+                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem', xl:'2rem'}}>
                                 <RgbVal text={'#fff'} bgColor={'hsl(0, 0%, 0%)'} colorName={'hsl(0, 0%, 0%)'} />
                                 <RgbVal text={'#fff'} bgColor={'hsl(0, 0%, 47%)'} colorName={'hsl(0, 0%, 47%)'} />
                                 <RgbVal text={'#000'} bgColor={'hsl(0, 0%, 94%)'} colorName={'hsl(0, 0%, 94%)'} />
                             </Box>
-                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}} pt={{md:'0px', base: '20px'}}>
+                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}} pt={{md:'0px', base: '20px'}}>
                                 <RgbVal text={'#fff'} bgColor={'hsl(0, 0%, 24%)'} colorName={'hsl(0, 0%, 24%)'} />
                                 <RgbVal text={'#fff'} bgColor={'hsl(0, 0%, 71%)'} colorName={'hsl(0, 0%, 71%)'} />
                                 <RgbVal text={'#000'} bgColor={'hsl(0, 0%, 100%)'} colorName={'hsl(0, 0%, 100%)'} />
@@ -248,17 +248,17 @@ const Css9dars = () => {
                     <Text fontSize={'25px'}>HSLA rang qiymatlari HSL rang qiymatlarining alfa kanalli kengaytmasi bo'lib, u rang uchun shaffoflikni belgilaydi. <br /> An HSLA color value is specified with:</Text>
                     <Text fontSize={'20px'} fontWeight={'400'}>hsla(hue, saturation, lightness, alpha)</Text>
                     <Text fontSize={'20px'}>Alfa parametri 0,0 (to'liq shaffof) va 1,0 (umuman shaffof emas) orasidagi raqamdir: <br /> Quyidagi HSLA qiymatlarini aralashtirish orqali tajriba qiling:</Text>
-                    <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                    <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{xl:'500px', base: '650px', md:'590px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                         <Heading>Misol</Heading>
-                        <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'10px'}>
+                        <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{xl:'320px', base: '530px', md:'500px'}} bg={'#0A1624'} pt={'10px'}>
                           
-                        <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} alignItems={'center'} justifyContent={'space-around'}>
-                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}}>
+                        <Box display={'flex'} flexDirection={{base: 'column', md: 'column', xl:'row'}} alignItems={'center'} justifyContent={'space-around'}>
+                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}}>
                                 <RgbVal text={'#fff'} bgColor={'hsla(9, 100%, 64%, 0)'} colorName={'hsla(9, 100%, 64%, 0)'} />
                                 <RgbVal text={'#fff'} bgColor={'hsla(9, 100%, 64%, 0.4)'} colorName={'hsla(9, 100%, 64%, 0.4)'} />
                                 <RgbVal text={'#000'} bgColor={'hsl(0, 0%, 94%)'} colorName={'hsla(9, 100%, 64%, 0.8)'} />
                             </Box>
-                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem '}} pt={{md:'0px', base: '20px'}}>
+                            <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}} pt={{md:'0px', base: '20px'}}>
                                 <RgbVal text={'#fff'} bgColor={'hsl(0, 0%, 24%)'} colorName={'hsla(9, 100%, 64%, 0.2)'} />
                                 <RgbVal text={'rgba(0, 0, 0, 0.67)'} bgColor={'hsla(9, 100%, 64%, 0.6)'} colorName={'hsla(9, 100%, 64%, 0.6)'} />
                                 <RgbVal text={'#000'} bgColor={'hsla(9, 100%, 64%, 1)'} colorName={'hsla(9, 100%, 64%, 1)'} />

@@ -94,7 +94,7 @@ const Css8dars = () => {
             <Divider mt={'20px'} />
 
 
-            <Box height={{base: '25vh' , md: '8vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
+            <Box height={{base: '25vh' , md: '15vh', lg:'12vh', xl:'8vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
                 <Text fontSize={'20px'}>O'n oltilik rang quyidagilar bilan belgilanadi: #RRGGBB, bu erda RR (qizil), GG (yashil) va BB (ko'k) <br /> o'n oltilik butun sonlar rang komponentlarini belgilaydi.</Text>
             </Box>
             <Divider mt={'20px'} />
@@ -111,17 +111,17 @@ const Css8dars = () => {
                 <Text fontSize={'25px'}>CSS-da rangni quyidagi shaklda o'n oltilik qiymatdan foydalanib belgilash mumkin:</Text>
                 <Text fontWeight={'400'} color={'rgba(255, 255, 255, 1)'} fontSize={'20px'}>#rrggbb</Text>
                 <Text fontSize={'20px'}>Bu erda rr (qizil), gg (yashil) va bb (ko'k) 00 va ff o'rtasidagi o'n oltilik qiymatlardir (o'nlik kasr 0-255 bilan bir xil). <br /> Masalan, #ff0000 qizil rangda ko'rsatiladi, chunki qizil rang eng yuqori qiymatga (ff), qolganlari esa eng <br /> past qiymatga (00) o'rnatiladi. <br /> Qora rangni ko'rsatish uchun barcha qiymatlarni 00 ga o'rnating, masalan: #000000. <br /> Oq rangni ko'rsatish uchun barcha qiymatlarni ff ga o'rnating, masalan: #ffffff. <br /> Quyidagi HEX qiymatlarini aralashtirish orqali tajriba o'tkazing:</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'590px', base: '650px', xl:'500px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'0px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'500px', base: '530px',xl:'320px'}} bg={'#0A1624'} pt={'0px'}>
                       
-                    <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}} gap={{base:'1rem', md: '0rem'}} alignItems={'center'} justifyContent={'space-around'}>
-                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}} pt={{md:'0px', base: '20px'}}>
+                    <Box display={'flex'} flexDirection={{base: 'column', md: 'column', xl:'row'}} gap={{base:'1rem', md: '0rem'}} alignItems={'center'} justifyContent={'space-around'}>
+                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}} pt={{md:'0px', base: '20px'}}>
                             <RgbVal bgColor={'#ff0000'} colorName={'#ff0000'} />
                             <RgbVal bgColor={'#3cb371'} colorName={'#3cb371'} />
                             <RgbVal bgColor={'#ffa500'} colorName={'#ffa500'} />
                         </Box>
-                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}}>
+                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}}>
                             <RgbVal bgColor={'#0000ff'} colorName={'#0000ff'} />
                             <RgbVal bgColor={'#ee82ee'} colorName={'#ee82ee'} />
                             <RgbVal bgColor={'#6a5acd'} colorName={'#6a5acd'} />
@@ -136,17 +136,17 @@ const Css8dars = () => {
 
 
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'500px', base: '650px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'590px', base: '650px', xl:'500px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'320px', base: '530px'}} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{md:'500px', base: '530px',xl:'320px'}} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Box display={'flex'} flexDirection={{base: 'column', md: 'row'}}  alignItems={'center'} justifyContent={'space-around'}>
-                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}}>
+                    <Box display={'flex'} flexDirection={{base: 'column', md: 'column', xl:'row'}}  alignItems={'center'} justifyContent={'space-around'}>
+                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}}>
                             <RgbVal text={'#fff'} bgColor={'#3c3c3c'} colorName={'#3c3c3c'} />
                             <RgbVal text={'#fff'} bgColor={'#3c3c3c'} colorName={'#3c3c3c'} />
                             <RgbVal text={'#000'} bgColor={'#f0f0f0'} colorName={'#f0f0f0'} />
                         </Box>
-                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '2rem'}} pt={{md:'0px', base: '20px'}}>
+                        <Box display={'flex'} flexDirection={'column'} gap={{base:'1rem', md: '1rem', xl:'2rem'}} pt={{md:'0px', base: '20px'}}>
                             <RgbVal text={'#fff'} bgColor={'#616161'} colorName={'#616161'} />
                             <RgbVal text={'#fff'} bgColor={'#b4b4b4'} colorName={'#b4b4b4'} />
                             <RgbVal text={'#000'} bgColor={'#f9f9f9'} colorName={'#f9f9f9'} />
