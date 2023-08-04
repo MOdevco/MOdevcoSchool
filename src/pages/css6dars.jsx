@@ -103,7 +103,7 @@ const Css3dars = ({bgColor, textColor, title}) => {
 
             {/* 1 */}
 
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{md:'50vh', base: '170vh'}}>
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{md:'140vh', base: '170vh', xl: '50vh',lg:'190vh'}}>
               
             <Heading fontSize={{base: '30px' , md: '50px'}}>CSS Rang Nomlari</Heading>
                 <Text fontSize={'25px'}>CSS-da rang oldindan belgilangan rang nomi yordamida belgilanishi mumkin:</Text>
@@ -111,16 +111,16 @@ const Css3dars = ({bgColor, textColor, title}) => {
 
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'}  justifyContent={'center'} alignItems={'flex-start'}  height={{base:'100%', md: '340px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     
-                    <Box width={'100%'} display={'flex'} flexDirection={'column'} gap={{md:'4rem', base: '1rem'}} justifyContent={'flex-start'}  height={{md:'300px', base: '400px'}}>
+                    <Box width={'100%'} display={'flex'} flexDirection={'column'} gap={{xl:'4rem', base: '1rem', md:'1rem', lg:'1rem'}} justifyContent={'flex-start'}  height={{md:'300px', base: '400px'}}>
                         
-                        <Box display={'flex'} gap={{base:'1rem', md :'0'}} alignItems={'center'} flexDirection={{base:'column', md: 'row'}} justifyContent={'space-around'} >
+                        <Box display={'flex'} gap={{base:'1rem', md:'1rem', lg:'1rem', xl:'0'}} alignItems={'center'} flexDirection={{base:'column', md: 'column',lg:'column',xl:'row'}} justifyContent={'space-around'} >
 
                         <PropsColor bgColor={'#FF6347'} colorName={'Tomato'} />
                         <PropsColor bgColor={'#FFA500'} colorName={'Orange'} />
                         <PropsColor bgColor={'#1E90FF'} colorName={'DodgerBlue'} />
                         <PropsColor bgColor={'#3CB371'} colorName={'MediumSeaGreen'} />
                         </Box>
-                        <Box display={'flex'} alignItems={'center'} gap={{base:'1rem', md :'0'}} flexDirection={{base:'column', md: 'row'}} justifyContent={'space-around'}>
+                        <Box display={'flex'} alignItems={'center'} gap={{base:'1rem', md :'1em', lg:'1rem', xl:'0' }} flexDirection={{base:'column', md: 'column', lg:'column',xl:'row'}} justifyContent={'space-around'}>
                         <PropsColor bgColor={'#808080'} colorName={'Grey'} />
                         <PropsColor bgColor={'#6A5ACD'} colorName={'SlateBlue'} />
                         <PropsColor bgColor={'#EE82EE'} colorName={'Violet'} />
@@ -141,22 +141,21 @@ const Css3dars = ({bgColor, textColor, title}) => {
 
             {/* 2 */}
 
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} h={{base:'150vh', md: '80vh'}}>
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} h={{base:'150vh',xl: '80vh', md:'120vh',lg:'140vh'}}>
               
-            <Heading fontSize={{base: '30px' , md: '50px'}}>CSS Background Color</Heading>
+            <Heading fontSize={{base: '30px' , md: '50px'}} w={{lg:'400px', base:'100%', xl:'100%'}}>CSS Background Color</Heading>
                 <Text fontSize={'25px'}>CSS-da rang oldindan belgilangan rang nomi yordamida belgilanishi mumkin:</Text>
                 <Text fontSize={'30px'} textAlign={'center'} bg={'#0094FF'} display={'flex'} alignItems={'center'} justifyContent={'center'} w={{md:'80%', base: '95%'}} h={'58px'}>Hello World</Text>
-                <Text pl={'10px'} mt={'10px'} w={{md:'80%', base: '95%'}} h={{md:'151px', base: '100%'}} bg={'#FF6347'} display={'flex'} alignItems={'center'} justifyContent={'center'} fontSize={'20px'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod <br /> tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis <br /> nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
+                <Text pl={'10px'} mt={'10px'} w={{md:'80%', base: '95%',}} h={{lg:'200px', base: '100%', md: '280px',xl:'151px'}} bg={'#FF6347'} display={'flex'} alignItems={'center'} justifyContent={'center'} fontSize={'20px'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod <br /> tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis <br /> nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
 
-                <Box mt={'20px'} width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'310px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box mt={'20px'} width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'310px', base:'310px', md: '320px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'90px'} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
                       
                     <Text fontSize={'20px'} className='purple'>{`<h1`} <span className='blue'>style="</span><span className='red'>background-color:</span><span className='yellow'>DodgerBlue;</span><span className='blue'>"</span>{`>`}<span className='white'>Hello World</span>{`</h1>`}</Text>
                     <Text fontSize={'20px'} className='purple'>{`<h1`} <span className='blue'>style="</span><span className='red'>background-color:</span><span className='yellow'>Tomato;</span><span className='blue'>"</span>{`>`}<span className='white'>Lorem ipsum...</span>{`</h1>`}</Text>
                         
                     </Box>
-                    <Text fontSize={'20px'}>Eslatma: ID nomi raqam bilan boshlanmaydi!</Text>
                     <CopyToClipboard text={`<h1 style="background-color:DodgerBlue;">Hello World</h1> <h1 style="background-color:Tomato;">Lorem ipsum...</h1>`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
@@ -173,7 +172,7 @@ const Css3dars = ({bgColor, textColor, title}) => {
                 
 
 
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{lg:'50vh', base:'50vh', md: '120vh'}}>
               
               <Heading fontSize={{base: '30px' , md: '50px'}}>CSS Text Color</Heading>
                   <Text fontSize={'25px'}>Siz matn rangini belgilashingiz mumkin:</Text>
@@ -182,7 +181,7 @@ const Css3dars = ({bgColor, textColor, title}) => {
                   <Text fontSize={'20px'} color={'#128000'}>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
                   
   
-                  <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{base:'430px', md: '340px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                  <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{base:'430px', lg: '340px', md:'510px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                       <Heading>Misol</Heading>
                       <Text fontSize={'20px'}>Ushbu misolda <span className='red'>class=</span><span className='yellow'>"center"</span> ga ega bo'lgan barcha HTML elementlari qizil rangda bo'ladi va markazga tekislanadi:</Text>
                       <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
@@ -213,10 +212,10 @@ const Css3dars = ({bgColor, textColor, title}) => {
                   <Text fontSize={'25px'} display={'flex'} alignItems={'center'} pl={'20px'}  w={{md:'80%', base: '95%'}} h={'58px'} border={'2px'} borderColor={'#FF6347'}>Hello World</Text>
                   <Text fontSize={'25px'} display={'flex'} alignItems={'center'} pl={'20px'}  w={{md:'80%', base: '95%'}} h={'58px'} border={'2px'} borderColor={'#0094FF'}>Hello World</Text>
                   <Text fontSize={'25px'} display={'flex'} alignItems={'center'} pl={'20px'}  w={{md:'80%', base: '95%'}} h={'58px'} border={'2px'} borderColor={'#EE82EE'}>Hello World</Text>
-                  <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'400px', base: '450px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                  <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'400px',md:'600px', base: '450px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                       <Heading>Misol</Heading>
                       <Text fontSize={'20px'}>Quyidagi CSS qoidasi sahifadagi har bir HTML elementiga ta'sir qiladi:</Text>
-                      <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
+                      <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{lg:'120px',md:'200px'}} bg={'#0A1624'} pt={'10px'}>
                         
                         <Text fontSize={'20px'} className='purple'>{`<h1`} <span className='blue'>style="</span><span className='red'>border:</span><span className='yellow'>2px solid Tomato;</span><span className='blue'>"</span>{`>`}<span className='white'>Hello World</span>{`</h1>`}</Text>
                         <Text fontSize={'20px'} className='purple'>{`<p`} <span className='blue'>style="</span><span className='red'>border:</span><span className='yellow'>2px solidDodgerBlue;</span><span className='blue'>"</span>{`>`}<span className='white'>Lorem ipsum...</span>{`</p>`}</Text>
@@ -249,10 +248,10 @@ const Css3dars = ({bgColor, textColor, title}) => {
                     <ColorVal colorName={'hsl(9, 100%, 64%)'} bgColor={'rgba(255, 99, 71, 0.5)'} />
                   
   
-                  <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'480px', base: "%))"}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                  <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'480px', base: "480px",md:'680px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                       <Heading>Misol</Heading>
                       <Text fontSize={'20px'}>Quyidagi CSS qoidasi sahifadagi har bir HTML elementiga ta'sir qiladi:</Text>
-                      <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'200px'} bg={'#0A1624'} pt={'9px'}>
+                      <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={{lg:'200px', base:'200px', md:'280px'}} bg={'#0A1624'} pt={'9px'}>
                         
                         <Text fontSize={'20px'} className='purple'>{`<h1`} <span className='blue'>style="</span><span className='red'>background-color:</span><span className='yellow'>rgb(255, 99, 71);</span><span className='blue'>"</span>{`>`}<span className='white'>...</span>{`</h1>`}</Text>
                         <Text fontSize={'20px'} className='purple'>{`<h1`} <span className='blue'>style="</span><span className='red'>background-color:</span><span className='yellow'>#ff6347;</span><span className='blue'>"</span>{`>`}<span className='white'>...</span>{`</h1>`}</Text>
