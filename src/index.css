@@ -136,6 +136,9 @@ input {
   .footerHeading {
     font-size: 20px !important;
   }
+  .hide {
+    display: none;
+  }
 }
 
 @media (max-width: 761px) {

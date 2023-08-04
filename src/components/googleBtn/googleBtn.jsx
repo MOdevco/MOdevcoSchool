@@ -20,7 +20,7 @@ const GoogleBtn = () => {
         setLoad(true)
 
         try {
-            const res = signInWithPopup(auth , googleProvider).then(() => {
+            const res = signInWithPopup(auth , googleProvider).then((res) => {
                 toast({
                     position: 'top-right',
                     duration: 3000,
@@ -30,6 +30,7 @@ const GoogleBtn = () => {
                       </Box>
                     ),
                 })
+                console.log(res)
                 navigate('/')
                 handleEnterGoogle()
             })
@@ -55,6 +56,7 @@ const GoogleBtn = () => {
         >
           Submit
         </Button>}
+        
     </Box>
   )
 }

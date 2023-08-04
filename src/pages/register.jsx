@@ -72,6 +72,7 @@ const Register = () => {
                 navigate('/')
                 handleAudio()
             })
+            createUserDocument(database(user))
 
         } catch (error) {
             toast({
