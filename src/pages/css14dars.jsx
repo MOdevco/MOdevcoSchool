@@ -103,7 +103,7 @@ const Css14dars = () => {
                 <Text fontSize={'25px'}>Kodni qisqartirish uchun barcha fon xususiyatlarini bitta xususiyatda ko'rsatish ham <br /> mumkin. Bu stenografiya xususiyati deb ataladi. <br /> Yozish o'rniga:</Text>
                 
 
-                <Box  width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{base:'400px', lg: '450px', md: '523px', xl: '440px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box  width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{base:'400px', lg: '450px', md: '530px', xl: '440px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'20px'}>Orqa fon tasvirini tuzatish kerakligini belgilang:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'210px'} bg={'#0A1624'} pt={'10px'}>
