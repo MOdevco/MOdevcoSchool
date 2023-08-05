@@ -15,7 +15,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { value } from '../../assets'
 
-const SidebarAdmin = ({setData , data}) => {
+const SidebarAdmin = ({setData , data , handleAll , handleTaklif , handleXodim , handleKomment}) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const initialRef = React.useRef(null)
     const finalRef = React.useRef(null)
@@ -46,11 +46,11 @@ const SidebarAdmin = ({setData , data}) => {
   return (
     <Box width={'350px'} position={'fixed'} top={'0'} left={'0'} borderRight={'2px'} borderColor={'#2D2D2D'} height={'100vh'} bg={'#050E17'}>
         <Box pt={'250px'} display={'flex'} gap={'20px'} px={'20px'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
-            <Button  bg={'#7FFFD4'} _hover={{bg: '#4FFFD4'}} width={'100%'} fontSize={'22px'}>BARCHASI</Button>
-            <Button bg={'#7FFFD4'} _hover={{bg: '#4FFFD4'}} width={'100%'} fontSize={'22px'}>XODIMLAR</Button>
-            <Button bg={'#7FFFD4'} _hover={{bg: '#4FFFD4'}} width={'100%'} fontSize={'22px'}>TAKLIFLAR</Button>
-            <Button bg={'#7FFFD4'} _hover={{bg: '#4FFFD4'}} width={'100%'} fontSize={'22px'}>KOMMENTARIYALAR</Button>
-            <Button onClick={onOpen} bg={'#7FFFD4'} _hover={{bg: '#4FFFD4'}} width={'100%'} fontSize={'22px'}>XODIM QO'SHISH</Button>
+            <Button onClick={handleAll} color={'#fff'}  bg={'#233242'} _hover={{bg: '#333242'}} width={'100%'} fontSize={'22px'}>BARCHASI</Button>
+            <Button onClick={handleXodim} color={'#fff'} bg={'#233242'} _hover={{bg: '#333242'}} width={'100%'} fontSize={'22px'}>XODIMLAR</Button>
+            <Button onClick={handleTaklif} color={'#fff'} bg={'#233242'} _hover={{bg: '#333242'}} width={'100%'} fontSize={'22px'}>TAKLIFLAR</Button>
+            <Button onClick={handleKomment} color={'#fff'} bg={'#233242'} _hover={{bg: '#333242'}} width={'100%'} fontSize={'22px'}>KOMMENTARIYALAR</Button>
+            <Button color={'#fff'} onClick={onOpen} bg={'#233242'} _hover={{bg: '#333242'}} width={'100%'} fontSize={'22px'}>XODIM QO'SHISH</Button>
 
             <Box>
                 <Modal
