@@ -13,7 +13,6 @@ import {
     useDisclosure,
     useToast
   } from '@chakra-ui/react'
-import AccordionItenm from '../components/accordion/accordion'
 import CopyToClipboard from 'react-copy-to-clipboard'
 import {
     List,
@@ -23,6 +22,7 @@ import {
     UnorderedList,
   } from '@chakra-ui/react'
 import SidebarCss from '../components/sidebarCss/sidebarCss'
+import CssAccordion from '../components/cssAccordion/cssAccordion'
 const Html = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [placement, setPlacement] = useState('left')
@@ -142,9 +142,9 @@ const Html = () => {
         onClose()
     }
     const sizes = ['md']
-    // useEffect(() => {
-    //     window.scroll(0,0)
-    // }, [])
+    useEffect(() => {
+        window.scroll(0,0)
+    }, [])
 
   return (
     <Box pt={'300px'} width={'100%'} bg={'#1A202C'} height={'100%'}>
@@ -165,7 +165,7 @@ const Html = () => {
                         <DrawerContent>
                         <DrawerBody bg={'#0A1624'} display={'flex'} justifyContent={'center'} minHeight={'100vh'} >
                         <CloseIcon onClick={nandleClose} position={'absolute'} right={'10px'} />
-                            <AccordionItenm   />
+                            <CssAccordion />
                         </DrawerBody>
                         </DrawerContent>
                     </Drawer>

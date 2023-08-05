@@ -31,6 +31,7 @@ import {
   } from '@chakra-ui/react'
   import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
 import SidebarCss from '../components/sidebarCss/sidebarCss'
+import CssAccordion from '../components/cssAccordion/cssAccordion'
 
 const Css4dars = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -58,9 +59,9 @@ const Css4dars = () => {
         onClose()
     }
     const sizes = ['md']
-    // useEffect(() => {
-    //     window.scroll(0,0)
-    //   }, [])
+    useEffect(() => {
+        window.scroll(0,0)
+      }, [])
   return (
     <Box pt={'300px'} width={'100%'} bg={'#1A202C'} height={'100%'}>
     <Box >
@@ -80,7 +81,7 @@ const Css4dars = () => {
                     <DrawerContent>
                     <DrawerBody bg={'#0A1624'} display={'flex'} justifyContent={'center'} minHeight={'100vh'} >
                     <CloseIcon onClick={nandleClose} position={'absolute'} right={'10px'} />
-                        <AccordionItenm  />
+                        <CssAccordion  />
                     </DrawerBody>
                     </DrawerContent>
                 </Drawer>

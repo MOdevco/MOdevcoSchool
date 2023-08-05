@@ -32,6 +32,7 @@ import {
   import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
 import SidebarCss from '../components/sidebarCss/sidebarCss'
 import RgbVal from '../components/rgbVal/rgbVal'
+import CssAccordion from '../components/cssAccordion/cssAccordion'
 
 const Css8dars = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -81,7 +82,7 @@ const Css8dars = () => {
                         <DrawerContent>
                         <DrawerBody bg={'#0A1624'} display={'flex'} justifyContent={'center'} minHeight={'100vh'} >
                         <CloseIcon onClick={nandleClose} position={'absolute'} right={'10px'} />
-                            <AccordionItenm  />
+                            <CssAccordion  />
                         </DrawerBody>
                         </DrawerContent>
                     </Drawer>

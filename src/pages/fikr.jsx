@@ -98,8 +98,8 @@ const Fikr = () => {
               <Input value={email} onChange={(e) => setEmail(e.target.value)} color={'white'} bg={'#122435'} border={'none'} type={'email'} width={'100%'} placeholder={'Email...'}></Input>
               <FormLabel fontSize={'20px'}>Mavzu</FormLabel>
               <Input value={desc} onChange={(e) => setDesc(e.target.value)} color={'white'} bg={'#122435'} border={'none'} type={'text'} width={'100%'} placeholder={'Mavzu...'}></Input>
-              <FormLabel fontSize={'20px'}>Habaringiz</FormLabel>
-              <Textarea value={message} onChange={(e) => setMessage(e.target.value)} color={'white'} bg={'#122435'} border={'none'} placeholder="Habar..."></Textarea>
+              <FormLabel fontSize={'20px'}>Xabaringiz</FormLabel>
+              <Textarea value={message} onChange={(e) => setMessage(e.target.value)} color={'white'} bg={'#122435'} border={'none'} placeholder="Xabar..."></Textarea>
               {!loading && <Button onClick={handleMess} bg={'#7FFFD4'} _hover={{bg: '#4FFFD4'}} width={'100%'} mt={'20px'}>Jo'natish</Button>}
               {loading && <Button
                 isLoading

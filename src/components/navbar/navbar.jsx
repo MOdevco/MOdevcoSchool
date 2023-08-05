@@ -87,7 +87,7 @@ const Navbar = () => {
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem bg={'#233242'}>
-                                    <NavLink to={'/css'}  className='link'>
+                                    <NavLink style={({isActive}) => {return{color: isActive ? 'red' : '' , fontWeight: isActive ? 'bold' : 'normal'}}}  to={'/css'}  className='link'>
                                         CSS
                                     </NavLink>
                                 </MenuItem>

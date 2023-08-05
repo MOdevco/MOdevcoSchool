@@ -33,6 +33,7 @@ import {
 import SidebarCss from '../components/sidebarCss/sidebarCss'
 import PropsColor from '../components/propsColor/propsColor'
 import ColorVal from '../components/colorVal/colorVal'
+import CssAccordion from '../components/cssAccordion/cssAccordion'
 
 const Css3dars = ({bgColor, textColor, title}) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -82,7 +83,7 @@ const Css3dars = ({bgColor, textColor, title}) => {
                         <DrawerContent>
                         <DrawerBody bg={'#0A1624'} display={'flex'} justifyContent={'center'} minHeight={'100vh'} >
                         <CloseIcon onClick={nandleClose} position={'absolute'} right={'10px'} />
-                            <AccordionItenm  />
+                            <CssAccordion  />
                         </DrawerBody>
                         </DrawerContent>
                     </Drawer>
