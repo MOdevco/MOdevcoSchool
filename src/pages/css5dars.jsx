@@ -93,7 +93,7 @@ const Css5dars = () => {
             <Divider mt={'20px'} />
 
 
-            <Box height={{base: '25vh' , md: '8vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
+            <Box height={{base: '25vh' , md: '12vh', lg: '8vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
                 <Text fontSize={'20px'}>CSS Komentariyalari kodni tushuntirish uchun ishlatiladi va keyinroq manba kodini tahrir qilganingizda yordam berishi mumkin. brauzerda ko'rsatilmaydi, lekin ular manba kodingizni hujjatlashtirishga yordam beradi.</Text>
             </Box>
             <Divider mt={'20px'} />
