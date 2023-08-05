@@ -173,7 +173,7 @@ const Css3dars = ({bgColor, textColor, title}) => {
                 
 
 
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{lg:'50vh', base:'50vh', md: '120vh'}} id='acrr'>
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{lg:'50vh', base:'50vh', md: '90vh'}} id='acrr'>
               
               <Heading fontSize={{base: '30px' , md: '50px'}}>CSS Text Color</Heading>
                   <Text fontSize={'25px'}>Siz matn rangini belgilashingiz mumkin:</Text>
