@@ -51,11 +51,11 @@ export const css4dars = [
         name: "1-Mavzu: Css Background Image"
     },
     {
-        link: "/",
+        link: "/css12dars",
         name: "2-Mavzu: Css Background Repeat"
     },
     {
-        link: "/",
+        link: "/css13dars",
         name: "3-Mavzu: CSS Background Attachment"
     },
     {
