@@ -67,7 +67,7 @@ const Css5dars = () => {
         <Box >
             <Flex >
                 {onOpen && <Box>
-                    <SidebarCss title={'HTML DARSLARI'} elementName={'Bosh sahifa'}/>
+                    <SidebarCss title={'CSS DARSLARI'} elementName={'Bosh sahifa'}/>
                 </Box>}
                 <Box ml={{base: '30px' , md: '450px'}}   display={'flex'}  alignItems={'center'} gap={'20px'}>
                     {sizes.map((size) => (
