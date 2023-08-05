@@ -135,7 +135,7 @@ const Css3dars = ({bgColor, textColor, title}) => {
                     </Box>
                 </Box>
             </Box>
-            <Divider mt={'20px'} />
+            <Divider mt={{md:'20px', base: '290px'}} />
             
             
 
@@ -151,7 +151,7 @@ const Css3dars = ({bgColor, textColor, title}) => {
 
                 <Box mt={'20px'} width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'310px', base:'310px', md: '320px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'100px'} bg={'#0A1624'} pt={'10px'}>
                       
                     <Text fontSize={'20px'} className='purple'>{`<h1`} <span className='blue'>style="</span><span className='red'>background-color:</span><span className='yellow'>DodgerBlue;</span><span className='blue'>"</span>{`>`}<span className='white'>Hello World</span>{`</h1>`}</Text>
                     <Text fontSize={'20px'} className='purple'>{`<h1`} <span className='blue'>style="</span><span className='red'>background-color:</span><span className='yellow'>Tomato;</span><span className='blue'>"</span>{`>`}<span className='white'>Lorem ipsum...</span>{`</h1>`}</Text>
