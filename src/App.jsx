@@ -49,6 +49,11 @@ import Css6dars from './pages/css6dars'
 import Css7dars from './pages/css7dars'
 import Css8dars from './pages/css8dars'
 import Css9dars from './pages/css9dars'
+import Css10dars from './pages/css10dars'
+import Css11dars from './pages/css11dars'
+import Css12dars from './pages/css12dars'
+import Css13dars from './pages/css13dars'
+import Css14dars from './pages/css14dars'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
@@ -145,6 +150,11 @@ function App() {
         <Route path='/css7dars' element={ <Css7dars />}></Route>
         <Route path='/css8dars' element={ <Css8dars />}></Route>
         <Route path='/css9dars' element={ <Css9dars />}></Route>
+        <Route path='/css10dars' element={ <Css10dars />}></Route>
+        <Route path='/css11dars' element={ <Css11dars />}></Route>
+        <Route path='/css12dars' element={ <Css12dars />}></Route>
+        <Route path='/css13dars' element={ <Css13dars />}></Route>
+        <Route path='/css14dars' element={ <Css14dars />}></Route>
         
       </Routes>
 

@@ -96,7 +96,7 @@ const Css3dars = ({bgColor, textColor, title}) => {
             <Divider mt={'20px'} />
 
 
-            <Box height={{base: '20vh' , md: '8vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
+            <Box className='mini' height={{base: '20vh' , md: '8vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
                 <Text fontSize={'20px'}>Ranglar oldindan belgilangan rang nomlari yoki RGB, HEX, HSL, RGBA, HSLA qiymatlari yordamida aniqlanadi.</Text>
             </Box>
             <Divider mt={'20px'} />
@@ -104,15 +104,15 @@ const Css3dars = ({bgColor, textColor, title}) => {
 
             {/* 1 */}
 
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{md:'140vh', base: '170vh', xl: '50vh',lg:'190vh'}}>
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} h={{md:'100vh', base: '170vh', xl: '50vh',lg:'190vh'}} id='acr' className='base'>
               
             <Heading fontSize={{base: '30px' , md: '50px'}}>CSS Rang Nomlari</Heading>
                 <Text fontSize={'25px'}>CSS-da rang oldindan belgilangan rang nomi yordamida belgilanishi mumkin:</Text>
                 
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'}  justifyContent={'center'} alignItems={'flex-start'}  height={{base:'100%', md: '340px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'}  justifyContent={'center'} alignItems={'flex-start'}  height={{base:'150vh', md: '340px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     
-                    <Box width={'100%'} display={'flex'} flexDirection={'column'} gap={{xl:'4rem', base: '1rem', md:'1rem', lg:'1rem'}} justifyContent={'flex-start'}  height={{md:'300px', base: '400px'}}>
+                    <Box width={'100%'} display={'flex'} flexDirection={'column'} gap={{xl:'4rem', base: '1rem', md:'1rem', lg:'1rem'}} justifyContent={'flex-start'}  height={{md:'300px', base: '1300px'}}>
                         
                         <Box display={'flex'} gap={{base:'1rem', md:'1rem', lg:'1rem', xl:'0'}} alignItems={'center'} flexDirection={{base:'column', md: 'column',lg:'column',xl:'row'}} justifyContent={'space-around'} >
 
@@ -135,23 +135,23 @@ const Css3dars = ({bgColor, textColor, title}) => {
                     </Box>
                 </Box>
             </Box>
-            <Divider mt={'20px'} />
+            <Divider mt={{md:'20px', base: '290px'}} />
             
             
 
 
             {/* 2 */}
 
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} h={{base:'150vh',xl: '80vh', md:'120vh',lg:'140vh'}}>
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} h={{base:'150vh',xl: '90vh', md:'100%',lg:'140vh', xl2: '80vh'}} className='surface2'>
               
             <Heading fontSize={{base: '30px' , md: '50px'}} w={{lg:'400px', base:'100%', xl:'100%'}}>CSS Background Color</Heading>
                 <Text fontSize={'25px'}>CSS-da rang oldindan belgilangan rang nomi yordamida belgilanishi mumkin:</Text>
                 <Text fontSize={'30px'} textAlign={'center'} bg={'#0094FF'} display={'flex'} alignItems={'center'} justifyContent={'center'} w={{md:'80%', base: '95%'}} h={'58px'}>Hello World</Text>
-                <Text pl={'10px'} mt={'10px'} w={{md:'80%', base: '95%',}} h={{lg:'200px', base: '100%', md: '280px',xl:'151px'}} bg={'#FF6347'} display={'flex'} alignItems={'center'} justifyContent={'center'} fontSize={'20px'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod <br /> tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis <br /> nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
+                <Text pl={'10px'} mt={'10px'} w={{md:'80%', base: '95%',}} h={{lg:'200px', base: '100%', md: '320px',xl:'180px'}} bg={'#FF6347'} display={'flex'} alignItems={'center'} justifyContent={'center'} id='txt' fontSize={'20px'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod <br /> tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis <br /> nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</Text>
 
                 <Box mt={'20px'} width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'310px', base:'310px', md: '320px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'100px'} bg={'#0A1624'} pt={'10px'}>
                       
                     <Text fontSize={'20px'} className='purple'>{`<h1`} <span className='blue'>style="</span><span className='red'>background-color:</span><span className='yellow'>DodgerBlue;</span><span className='blue'>"</span>{`>`}<span className='white'>Hello World</span>{`</h1>`}</Text>
                     <Text fontSize={'20px'} className='purple'>{`<h1`} <span className='blue'>style="</span><span className='red'>background-color:</span><span className='yellow'>Tomato;</span><span className='blue'>"</span>{`>`}<span className='white'>Lorem ipsum...</span>{`</h1>`}</Text>
@@ -173,7 +173,7 @@ const Css3dars = ({bgColor, textColor, title}) => {
                 
 
 
-            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{lg:'50vh', base:'50vh', md: '120vh'}}>
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{lg:'50vh', base:'50vh', md: '90vh'}} id='acrr'>
               
               <Heading fontSize={{base: '30px' , md: '50px'}}>CSS Text Color</Heading>
                   <Text fontSize={'25px'}>Siz matn rangini belgilashingiz mumkin:</Text>
@@ -223,7 +223,6 @@ const Css3dars = ({bgColor, textColor, title}) => {
                         <Text fontSize={'20px'} className='purple'>{`<p`} <span className='blue'>style="</span><span className='red'>border:</span><span className='yellow'>2px solid MediumSeaGreen;</span><span className='blue'>"</span>{`>`}<span className='white'>Lorem ipsum...</span>{`</p>`}</Text>
                           
                       </Box>
-                      <Text fontSize={'20px'}>Eslatma: ID nomi raqam bilan boshlanmaydi!</Text>
                       <CopyToClipboard text={`<h1 style="border:2px solid Tomato;">Hello World</h1> <p style="border:2px solidDodgerBlue;">Lorem ipsum...</p> <p style="border:2px solid MediumSeaGreen;">Lorem ipsum...</p>`} onCopy={handleClip}>
                           <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                       </CopyToClipboard>

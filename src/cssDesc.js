@@ -41,25 +41,25 @@ export const css3dars = [
         name: "2-Mavzu: Css Colors HSL"
     },
     {
-        link: "/",
+        link: "/css10dars",
         name: "3-Mavzu: Css Background Color"
     }
 ]
 export const css4dars = [
     {
-        link: "/",
+        link: "/css11dars",
         name: "1-Mavzu: Css Background Image"
     },
     {
-        link: "/",
+        link: "/css12dars",
         name: "2-Mavzu: Css Background Repeat"
     },
     {
-        link: "/",
+        link: "/css13dars",
         name: "3-Mavzu: CSS Background Attachment"
     },
     {
-        link: "/",
+        link: "/css14dars",
         name: "4-Mavzu: CSS Background Shorthand"
     }
 ]
