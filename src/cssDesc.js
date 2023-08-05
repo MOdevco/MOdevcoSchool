@@ -59,7 +59,7 @@ export const css4dars = [
         name: "3-Mavzu: CSS Background Attachment"
     },
     {
-        link: "/",
+        link: "/css14dars",
         name: "4-Mavzu: CSS Background Shorthand"
     }
 ]
