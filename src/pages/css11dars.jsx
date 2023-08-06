@@ -66,7 +66,7 @@ const Css11dars = () => {
         <Box >
             <Flex >
                 {onOpen && <Box>
-                    <Sidebar title={'HTML DARSLARI'} elementName={'Bosh sahifa'}/>
+                    <Sidebar title={'CSS DARSLARI'} elementName={'Bosh sahifa'}/>
                 </Box>}
                 <Box ml={{base: '30px' , md: '450px'}}   display={'flex'}  alignItems={'center'} gap={'20px'}>
                     {sizes.map((size) => (
