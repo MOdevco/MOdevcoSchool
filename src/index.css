@@ -132,6 +132,8 @@ input {
   .header {
     padding-top: 20000px;
   }
+  
+  
  
 }
 
@@ -164,7 +166,7 @@ input {
   .over {
     height: 8vh !important;
   }
-  
+
   
 }
 @media (max-width: 770px) {
