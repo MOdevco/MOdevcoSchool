@@ -138,8 +138,6 @@ const Css15dars = () => {
             
 
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
-                  <Heading>CSS background - Shorthand Xususiyati</Heading>
-                <Text fontSize={'25px'}>Kodni qisqartirish uchun barcha fon xususiyatlarini bitta xususiyatda ko'rsatish ham <br /> mumkin. Bu stenografiya xususiyati deb ataladi. <br /> Yozish o'rniga:</Text>
                 
 
                 <Box  width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{md:'1600px', base: '1450px', xl: '1500px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
