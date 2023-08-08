@@ -65,27 +65,27 @@ export const css4dars = [
 ]
 export const css5dars = [
     {
-        link: "/",
+        link: "/css15dars",
         name: "1-Mavzu: Css Border"
     },
     {
-        link: "/",
+        link: "/css16dars",
         name: "2-Mavzu: Css Border Width"
     },
     {
-        link: "/",
+        link: "/css17dars",
         name: "3-Mavzu: CSS Border Color"
     },
     {
-        link: "/",
+        link: "/css18dars",
         name: "4-Mavzu: CSS Border Sides"
     },
     {
-        link: "/",
+        link: "/css19dars",
         name: "5-Mavzu: CSS Border Shorthands"
     },
     {
-        link: "/",
+        link: "/css20dars",
         name: "6-Mavzu: CSS Rounded Borders"
     }
 ]
