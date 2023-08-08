@@ -280,8 +280,32 @@ const Css21dars = () => {
 
 
 
+            <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
+                  <Heading>Inherit Qiymati</Heading>
+                  <Text fontSize={'20px'}>Bu misol <span className='purple'>{`<p`}</span> <span className='red'>class=</span> <span className='yellow'>"ex1"</span> {`>`} elementining chap chetini asosiy elementdan {`(<div>)`} meros qilib <br /> olish imkonini beradi:</Text>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'500px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                    <Heading>Misol</Heading>
+                    <Text fontSize={'20px'}>Margin: auto dan foidalaning</Text>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'300px'} bg={'#0A1624'} pt={'10px'}>
+                      
+                    <Text fontSize={'20px'} className='purple'>div{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>border:</span><span className='yellow'>1px solid red;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-left:</span><span className='yellow'>auto;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>border:</span><span className='yellow'>1px solid red;</span> <br />{`}`}</Text>
+                    <Text fontSize={'20px'} className='purple'>p.ex1{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-left:</span><span className='yellow'>inerhit;</span> <br />{`}`}</Text>
+                      
+                        
+                    </Box>
+                    <CopyToClipboard text={`div {border: px solid red; margin-left: auto; }p.ex1 {   margin-left: inherit; }`} onCopy={handleClip} >
+                        <Button bg={'#7FFFD4'}>Nusxa olish</Button>
+                    </CopyToClipboard>
+                </Box>
+                
+
+            </Box>
+            <Divider mt={'20px'} />
+
+
+
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'10vh'}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>CSS Background Image Xususiyati</Heading>
+                <Heading fontSize={{base: '30px' , md: '50px'}}>Barcha CSS Border Xususiyatlari</Heading>
 
                     <Box  display={'flex'} flexDirection={'column'} gap={'20px'} pt={'20px'} >
                         <TableContainer>
@@ -295,10 +319,25 @@ const Css21dars = () => {
                                 </Thead>
                                 <Tbody>
                                     <Tr>
-                                        <Td>background-image</Td>
-                                        <Td>Element uchun fon tasvirini o'rnatadi</Td>
+                                        <Td>margin</Td>
+                                        <Td>Bitta deklaratsiyada barcha marj xususiyatlarini o'rnatish uchun <br /> stenografiya xususiyati</Td>
                                     </Tr>
-
+                                    <Tr bg={'#233242'}>
+                                        <Td>margin-bottom</Td>
+                                        <Td>Elementning pastki chetini o'rnatadi</Td>
+                                    </Tr>
+                                    <Tr>
+                                        <Td>margin-left</Td>
+                                        <Td>Elementning chap chetini o'rnatadi</Td>
+                                    </Tr>
+                                    <Tr bg={'#233242'}>
+                                        <Td>margin-left</Td>
+                                        <Td>Elementning o'ng chetini o'rnatadi</Td>
+                                    </Tr >
+                                    <Tr>
+                                        <Td>margin-top</Td>
+                                        <Td>Elementning yuqori chetini o'rnatadi</Td>
+                                    </Tr>
                                 </Tbody>
                                 
                             </Table>
@@ -306,6 +345,10 @@ const Css21dars = () => {
                     </Box>
             </Box>
             <Divider mt={'100px'} />
+
+
+
+
             
 
             </Box>
