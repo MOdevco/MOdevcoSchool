@@ -15,7 +15,6 @@ import {
     ListItem,
    
   } from '@chakra-ui/react'
-import AccordionItenm from '../components/accordion/accordion'
 import CopyToClipboard from 'react-copy-to-clipboard'
 import { useEffect, useState } from 'react'
 import {
@@ -29,11 +28,9 @@ import {
     TableCaption,
     TableContainer,
   } from '@chakra-ui/react'
-  import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
-import OpacityCard from '../components/opacityCard/opacityCard'
 import CssAccordion from '../components/cssAccordion/cssAccordion'
 
-const Css21dars = () => {
+const Css23dars = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [placement, setPlacement] = useState('left')
     const [size, setSize] = useState('')
@@ -87,28 +84,23 @@ const Css21dars = () => {
                     </Drawer>
                     
                     <Box>
-                        <Heading fontSize={{base: '30px' , md: '50px'}}>CSS Margins</Heading>
+                        <Heading fontSize={{base: '30px' , md: '50px'}}>CSS Padding</Heading>
                     </Box>
                 </Box>
             </Flex>
             <Divider mt={'20px'} />
-            <Box height={{md:'8vh', base: '16vh'}} display={'flex'} alignItems={'center'} pt={4} pl={{base: '20px' , md: '450px'}}>
-                <Text fontSize={'20px'}>Cheklar har qanday belgilangan chegaralardan tashqarida elementlar atrofida bo'sh joy yaratish uchun ishlatiladi.</Text>
+            <Box height={'32vh'} display={'flex'} alignItems={'flex-start'} gap={'3rem'} flexDirection={'column'} pt={4} pl={{base: '20px' , md: '450px'}}>
+                <Text fontSize={'20px'}>To'ldirish element tarkibi atrofida, har qanday belgilangan chegaralar ichida bo'sh joy <br /> yaratish uchun ishlatiladi.</Text>
+                <Box w={{md: '100%', lg: '874px', base: '100%'}} h={'170px'} border={'1px solid #008000'}>
+                        <Text fontSize={'20px'} padding={'70px'}>Ushbu element 70px hajmga ega.</Text>
+                </Box>
             </Box>
             <Divider mt={'20px'} />
 
-
-            <Box minH={'8vh'} pt={{md:'10px', base: '14px', lg: '15px', xl: '10px'}} pl={{base: '20px' , md: '450px'}} display={'flex'} alignItems={'center'} justifyContent={'flex-start'}>
-                <Box w={{base: '90%', md: '874px'}} h={'41px'} border={'1px'} borderColor={'rgba(0, 128, 0, 1)'}>
-                <Text fontSize={'20px'} pl={{md:'10px', base: '10px'}} pt={'2px'}>Bu element 70px chetiga ega.</Text>
-            </Box>
-                </Box>           
-            <Divider mt={'20px'} />
-
-            <Box h={{md:'24vh', base: '50vh', lg: '38vh', xl: '24vh'}} pl={{base: '20px' , md: '450px'}} pt={4} display={'flex'} flexDirection={'column'} gap={'10px'}>
-                <Heading fontSize={{base: '30px', md: '50px'}}>CSS Margins</Heading>
-                <Text fontSize={'20px'}>CSS margin xususiyatlari har qanday belgilangan chegaralardan tashqarida elementlar atrofida bo'sh joy yaratish <br /> uchun ishlatiladi.</Text>
-                <Text fontSize={'20px'}>CSS yordamida siz chekkalarni to'liq nazorat qilasiz. Elementning har bir tomoni (yuqori, o'ng, pastki <br /> va chap) uchun chekka o'rnatish xususiyatlari mavjud.</Text>
+            <Box h={{md:'24vh', base: '50vh', lg: '38vh', xl: '23vh'}} pl={{base: '20px' , md: '450px'}} pt={4} display={'flex'} flexDirection={'column'} gap={'10px'}>
+                <Heading fontSize={{base: '30px', md: '50px'}}>CSS Padding</Heading>
+                <Text fontSize={'20px'}>CSS to'ldirish xususiyatlari har qanday belgilangan chegaralar ichida element tarkibi <br /> atrofida bo'sh joy yaratish uchun ishlatiladi.</Text>
+                <Text fontSize={'20px'}>CSS yordamida siz to'ldirishni to'liq boshqarishingiz mumkin. Elementning har bir tomoni (yuqori, <br /> o'ng, pastki va chap) uchun to'ldirishni o'rnatish uchun xususiyatlar mavjud.</Text>
             </Box>
             <Divider mt={'20px'} />
 
@@ -122,33 +114,32 @@ const Css21dars = () => {
            
             
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
-                  <Heading>Margin - Individual Tomonlar</Heading>
-                <Text fontSize={'25px'}>CSS elementning har bir tomoni uchun chegarani belgilash uchun xususiyatlarga ega:</Text>
+                  <Heading>Padding - Individual Tomonlar</Heading>
+                <Text fontSize={'25px'}>CSS elementning har bir tomoni uchun to'ldirishni belgilash uchun xususiyatlarga ega:</Text>
                 <ul className='ull'>
-                    <li>margin-top</li>
-                    <li>margin-right</li>
-                    <li>margin-botom</li>
-                    <li>margin-left</li>
+                    <li>padding-top</li>
+                    <li>padding-right</li>
+                    <li>padding-botom</li>
+                    <li>padding-left</li>
                 </ul>
-                <Text>Barcha marj xususiyatlari quyidagi qiymatlarga ega bo'lishi mumkin:</Text>
+                <Text>Barcha to'ldirish xususiyatlari quyidagi qiymatlarga ega bo'lishi mumkin:</Text>
                 <ul className='ull'>
-                    <li>auto - brauzer chegarani hisoblab chiqadi</li>
-                    <li>length - px, pt, sm va hokazolarda chegarani belgilaydi.</li>
-                    <li>% - o'z ichiga olgan element kengligining % da chetini belgilaydi</li>
-                    <li>inherit - chekka asosiy elementdan meros bo'lishi kerakligini bildiradi</li>
+                    <li>length - px, pt, sm va hokazolarda to'ldirishni belgilaydi</li>
+                    <li>% - o'z ichiga olgan element kengligining % da to'ldirishni belgilaydi</li>
+                    <li>inherit  - to'ldirish asosiy elementdan meros bo'lishi kerakligini bildiradi</li>
                 </ul>
-                <Text fontSize={'20px'}>Maslahat: Salbiy qiymatlarga ruxsat beriladi.</Text>
+                <Text fontSize={'20px'}>Eslatma: Salbiy qiymatlarga ruxsat berilmaydi.</Text>
 
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'440px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Text fontSize={'20px'}>{`<p>`} elementining barcha to'rt tomoni uchun turli chekkalarni o'rnating:</Text>
+                    <Text fontSize={'20px'}> <span className='red'>{`<div>`}</span> elementining barcha to'rt tomoni uchun turli xil to'ldirishni o'rnating:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'210px'} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Text fontSize={'20px'} className='purple'>p{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-top:</span><span className='yellow'>100px;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-bottom</span><span className='yellow'>100px;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-right</span><span className='yellow'>150px;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-left</span><span className='yellow'>80px;</span> <br />{`}`}</Text>
+                    <Text fontSize={'20px'} className='purple'>div{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-top:</span><span className='yellow'>50px;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-bottom</span><span className='yellow'>30px;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-right</span><span className='yellow'>50px;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-left</span><span className='yellow'>80px;</span> <br />{`}`}</Text>
                       
                         
                     </Box>
-                    <CopyToClipboard text={`p { margin-top: 100px;  margin-bottom: 100px; margin-right: 150px;  margin-left: 80px;}`} onCopy={handleClip} >
+                    <CopyToClipboard text={`div { padding-top: 50px;  padding-right: 30px; padding-bottom: 50px;  margin-left: 80px;}`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
@@ -159,71 +150,71 @@ const Css21dars = () => {
 
             {/* 2 */}
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
-                  <Heading>Margin - Shorthand Xususiyati</Heading>
-                  <Text fontSize={'20px'}>Kodni qisqartirish uchun barcha chegara xususiyatlarini bitta xususiyatda ko'rsatish mumkin.</Text>
-                <Text fontSize={'25px'}>Margin xususiyati quyidagi individual marja xususiyatlari uchun stenografiya xususiyatidir:</Text>
+                  <Heading>Padding - Shorthand Xususiyati</Heading>
+                  <Text fontSize={'20px'}>Kodni qisqartirish uchun barcha to'ldirish xususiyatlarini bitta xususiyatda ko'rsatish mumkin.</Text>
+                <Text fontSize={'25px'}>To'ldirish xususiyati quyidagi individual to'ldirish xususiyatlari uchun qisqartma xususiyatdir:</Text>
                 <ul className='ull'>
-                    <li>margin-top</li>
-                    <li>margin-right</li>
-                    <li>margin-botom</li>
-                    <li>margin-left</li>
+                    <li>padding-top</li>
+                    <li>padding-right</li>
+                    <li>padding-botom</li>
+                    <li>padding-left</li>
                 </ul>
                 <Text fontSize={'20px'}>Shunday qilib, bu qanday ishlaydi:</Text>
-                <Text fontSize={'20px'}>Agar margin xususiyati to'rtta qiymatga ega bo'lsa:</Text>
-                <Text fontSize={'20px'} display={'flex'} pl={'5px'} alignItems={'center'} gap={'10px'} fontWeight={'500'}><Text w={'8px'} h={'8px'} rounded={'50%'} bg={'rgba(217, 217, 217, 1)'}></Text>margin: 25px 50px 75px 100px;</Text>
+                <Text fontSize={'20px'}>Agar padding xususiyati to'rtta qiymatga ega bo'lsa:</Text>
+                <Text fontSize={'20px'} display={'flex'} pl={'5px'} alignItems={'center'} gap={'10px'} fontWeight={'500'}><Text w={'8px'} h={'8px'} rounded={'50%'} bg={'rgba(217, 217, 217, 1)'}></Text>padding: 25px 50px 75px 100px;</Text>
                 <ul style={{paddingLeft: '60px', fontSize: '20px'}}>
-                    <li>top margin 25px</li>
-                    <li>right margin 50px</li>
-                    <li>bottom margin 75px</li>
-                    <li>left margin 100px</li>
+                    <li>top padding 25px</li>
+                    <li>right padding 50px</li>
+                    <li>bottom padding 75px</li>
+                    <li>left padding 100px</li>
                 </ul>
 
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'350px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Text fontSize={'20px'}>Sahifa uchun fon rasmini o'rnating:</Text>
+                    <Text fontSize={'20px'}>Padding stenografiya xususiyatidan to'rtta qiymat bilan foydalaning:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Text fontSize={'20px'} className='purple'>p{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>margin:</span><span className='yellow'>25px 50px 75px 100px;</span> <br />{`}`}</Text>
+                    <Text fontSize={'20px'} className='purple'>div{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>padding:</span><span className='yellow'>25px 50px 75px 100px;</span> <br />{`}`}</Text>
                       
                         
                     </Box>
-                    <CopyToClipboard text={`p {margin: 25px 50px 75px 100px; }`} onCopy={handleClip} >
+                    <CopyToClipboard text={`div {padding: 25px 50px 75px 100px; }`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
-                <Text fontSize={'20px'}>Agar margin xususiyati uchta qiymatga ega bo'lsa:</Text>
-                <Text fontSize={'20px'} display={'flex'} pl={'5px'} alignItems={'center'} gap={'10px'} fontWeight={'500'}><Text w={'8px'} h={'8px'} rounded={'50%'} bg={'rgba(217, 217, 217, 1)'}></Text>margin: 25px 50px 75px;</Text>
+                <Text fontSize={'20px'}>Agar padding xususiyati uchta qiymatga ega bo'lsa:</Text>
+                <Text fontSize={'20px'} display={'flex'} pl={'5px'} alignItems={'center'} gap={'10px'} fontWeight={'500'}><Text w={'8px'} h={'8px'} rounded={'50%'} bg={'rgba(217, 217, 217, 1)'}></Text>padding: 25px 50px 75px;</Text>
                 <ul style={{paddingLeft: '60px', fontSize: '20px'}}>
-                    <li>top margin 25px</li>
-                    <li>right left margin 50px</li>
-                    <li>bottom margin is 75px</li>
+                    <li>top padding 25px</li>
+                    <li>right left padding 50px</li>
+                    <li>bottom padding is 75px</li>
                 </ul>
 
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'350px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Text fontSize={'20px'}>Margin stenografiya xususiyatidan uchta qiymat bilan foydalaning:</Text>
+                    <Text fontSize={'20px'}>Padding stenografiya xususiyatidan uchta qiymat bilan foydalaning:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Text fontSize={'20px'} className='purple'>p{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>margin:</span><span className='yellow'>25px 50px 75px;</span> <br />{`}`}</Text>
+                    <Text fontSize={'20px'} className='purple'>div{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>padding:</span><span className='yellow'>25px 50px 75px;</span> <br />{`}`}</Text>
                       
                         
                     </Box>
-                    <CopyToClipboard text={`p {margin: 25px 50px 75px; }`} onCopy={handleClip} >
+                    <CopyToClipboard text={`div {padding: 25px 50px 75px; }`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
-                <Text>Agar margin xususiyati ikkita qiymatga ega bo'lsa:</Text>
-                <Text fontSize={'20px'} display={'flex'} pl={'5px'} alignItems={'center'} gap={'10px'} fontWeight={'500'}><Text w={'8px'} h={'8px'} rounded={'50%'} bg={'rgba(217, 217, 217, 1)'}></Text>margin: 25px 50px</Text>
+                <Text>Agar margin xususiyati ikki qiymatga ega bo'lsa:</Text>
+                <Text fontSize={'20px'} display={'flex'} pl={'5px'} alignItems={'center'} gap={'10px'} fontWeight={'500'}><Text w={'8px'} h={'8px'} rounded={'50%'} bg={'rgba(217, 217, 217, 1)'}></Text>padding: 25px 50px</Text>
                 <ul style={{paddingLeft: '60px', fontSize: '20px'}}>
-                    <li>top va bottom margin lari 25px</li>
-                    <li>right va left margin lari  50px</li>
+                    <li>top va bottom padding lari 25px</li>
+                    <li>right va left padding lari  50px</li>
                 </ul>
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'350px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Text fontSize={'20px'}>Margin stenografiya xususiyatidan ikkita qiymat bilan foydalaning:</Text>
+                    <Text fontSize={'20px'}>Padding stenografiya xususiyatidan ikkita qiymat bilan foydalaning:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Text fontSize={'20px'} className='purple'>p{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>margin:</span><span className='yellow'>25px 50px;</span> <br />{`}`}</Text>
+                    <Text fontSize={'20px'} className='purple'>div{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>padding:</span><span className='yellow'>25px 50px;</span> <br />{`}`}</Text>
                       
                         
                     </Box>
@@ -231,22 +222,22 @@ const Css21dars = () => {
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
-                <Text fontSize={'20px'}>Agar margin xususiyati bitta qiymatga ega bo'lsa:</Text>
-                <Text fontSize={'20px'} display={'flex'} pl={'5px'} alignItems={'center'} gap={'10px'} fontWeight={'500'}><Text w={'8px'} h={'8px'} rounded={'50%'} bg={'rgba(217, 217, 217, 1)'}></Text>margin: 25px</Text>
+                <Text fontSize={'20px'}>Agar padding xususiyati bitta qiymatga ega bo'lsa:</Text>
+                <Text fontSize={'20px'} display={'flex'} pl={'5px'} alignItems={'center'} gap={'10px'} fontWeight={'500'}><Text w={'8px'} h={'8px'} rounded={'50%'} bg={'rgba(217, 217, 217, 1)'}></Text>padding: 25px</Text>
                 <ul style={{paddingLeft: '60px', fontSize: '20px'}}>
                     <li>to'rtta chekkaning hammasi 25px</li>
                 </ul>
 
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'350px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Text fontSize={'20px'}>Margin stenografiya xususiyatidan bitta qiymat bilan foydalaning:</Text>
+                    <Text fontSize={'20px'}>Padding stenografiya xususiyatidan bitta qiymat bilan foydalaning:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Text fontSize={'20px'} className='purple'>p{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>margin:</span><span className='yellow'>25px;</span> <br />{`}`}</Text>
+                    <Text fontSize={'20px'} className='purple'>div{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>padding:</span><span className='yellow'>25px;</span> <br />{`}`}</Text>
                       
                         
                     </Box>
-                    <CopyToClipboard text={`p {margin: 25px; }`} onCopy={handleClip} >
+                    <CopyToClipboard text={`div {padding: 25px; }`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
@@ -257,43 +248,40 @@ const Css21dars = () => {
 
 
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
-                  <Heading>Auto Qiymat</Heading>
-                  <Text fontSize={'20px'}>Elementni konteyner ichida gorizontal markazlashtirish uchun margin xususiyatini <br /> avtomatik qilib sozlashingiz mumkin.</Text>
-                  <Text fontSize={'20px'}>Keyin element belgilangan kenglikni egallaydi va qolgan bo'sh joy chap va o'ng chekkalar orasida <br /> teng ravishda bo'linadi.</Text>
+                  <Heading>Padding va Element Width</Heading>
+                  <Text fontSize={'20px'}>CSS width xususiyati elementning kontent maydonining kengligini belgilaydi. Kontent <br /> maydoni - bu elementning to'ldirish, chegara va chetidagi qism (box modeli).</Text>
+                  <Text fontSize={'20px'}>Shunday qilib, agar element belgilangan kenglikka ega bo'lsa, ushbu elementga qo'shilgan to'ldirish <br /> elementning umumiy kengligiga qo'shiladi. Bu ko'pincha istalmagan natijadir.</Text>
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'420px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Text fontSize={'20px'}>Margin: auto dan foidalaning</Text>
+                    <Text fontSize={'20px'}>Bu yerda {`<div>`} elementiga 300px kenglik berilgan. Biroq, {`<div>`} elementining haqiqiy kengligi 350px <br /> (300px + 25px chap toʻldirish + 25px oʻng toʻldirish) boʻladi:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'180px'} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Text fontSize={'20px'} className='purple'>div{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>width:</span><span className='yellow'>300px;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>margin:</span><span className='yellow'>auto;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>border:</span><span className='yellow'>1px solid red;</span> <br />{`}`}</Text>
+                    <Text fontSize={'20px'} className='purple'>div{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>width:</span><span className='yellow'>300px;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>padding:</span><span className='yellow'>25px;</span> <br /> {`}`}</Text>
                       
                         
                     </Box>
-                    <CopyToClipboard text={`div { width: 300px;  margin: auto;  border: 1px solid red; }`} onCopy={handleClip} >
+                    <CopyToClipboard text={`div { width: 300px;  padding: 25px; }`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
                 
-
+                        <Text>Kenglikni 300px da saqlash uchun, toʻldirish miqdoridan qatʼiy nazar, box-sizing xususiyatidan foydalanishingiz <br />mumkin. Bu elementning haqiqiy kengligini saqlab qolishiga olib keladi; agar siz to'ldirishni oshirsangiz, mavjud <br /> kontent maydoni kamayadi.</Text>
             </Box>
-            <Divider mt={'20px'} />
 
 
 
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
-                  <Heading>Inherit Qiymati</Heading>
-                  <Text fontSize={'20px'}>Bu misol <span className='purple'>{`<p`}</span> <span className='red'>class=</span> <span className='yellow'>"ex1"</span> {`>`} elementining chap chetini asosiy elementdan {`(<div>)`} meros qilib <br /> olish imkonini beradi:</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'500px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'400px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    <Text fontSize={'20px'}>Margin: auto dan foidalaning</Text>
-                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'300px'} bg={'#0A1624'} pt={'10px'}>
+                    <Text fontSize={'20px'}>To'ldirish miqdoridan qat'i nazar, kengligi 300 pikselda ushlab turish uchun box-sizing xususiyatidan foydalaning:</Text>
+                    <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'180px'} bg={'#0A1624'} pt={'10px'}>
                       
-                    <Text fontSize={'20px'} className='purple'>div{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>border:</span><span className='yellow'>1px solid red;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-left:</span><span className='yellow'>auto;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>border:</span><span className='yellow'>1px solid red;</span> <br />{`}`}</Text>
-                    <Text fontSize={'20px'} className='purple'>p.ex1{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>margin-left:</span><span className='yellow'>inerhit;</span> <br />{`}`}</Text>
+                    <Text fontSize={'20px'} className='purple'>div{`{`} <br /> <span style={{paddingLeft:'20px'}} className='red'>width:</span><span className='yellow'>300px;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>padding:</span><span className='yellow'>25px;</span> <br /> <span style={{paddingLeft:'20px'}} className='red'>box-sizing:</span><span className='yellow'>border-box;</span> <br /> {`}`}</Text>
                       
                         
                     </Box>
-                    <CopyToClipboard text={`div {border: px solid red; margin-left: auto; }p.ex1 {   margin-left: inherit; }`} onCopy={handleClip} >
+                    <CopyToClipboard text={`div { width: 300px;  padding: 25px;     box-sizing: border-box; }`} onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
                 </Box>
@@ -319,24 +307,24 @@ const Css21dars = () => {
                                 </Thead>
                                 <Tbody>
                                     <Tr>
-                                        <Td>margin</Td>
-                                        <Td>Bitta deklaratsiyada barcha marj xususiyatlarini o'rnatish uchun <br /> stenografiya xususiyati</Td>
+                                        <Td>padding</Td>
+                                        <Td>Bitta deklaratsiyada barcha to'ldirish xususiyatlarini o'rnatish uchun <br /> stenografiya xususiyati</Td>
                                     </Tr>
                                     <Tr bg={'#233242'}>
-                                        <Td>margin-bottom</Td>
-                                        <Td>Elementning pastki chetini o'rnatadi</Td>
+                                        <Td>padding-bottom</Td>
+                                        <Td>Elementning pastki qoplamasini o'rnatadi</Td>
                                     </Tr>
                                     <Tr>
-                                        <Td>margin-left</Td>
-                                        <Td>Elementning chap chetini o'rnatadi</Td>
+                                        <Td>padding-left</Td>
+                                        <Td>Elementning chap toʻldirishini oʻrnatadi</Td>
                                     </Tr>
                                     <Tr bg={'#233242'}>
-                                        <Td>margin-left</Td>
-                                        <Td>Elementning o'ng chetini o'rnatadi</Td>
+                                        <Td>padding-right</Td>
+                                        <Td>Elementning to'g'ri to'ldirishini o'rnatadi</Td>
                                     </Tr >
                                     <Tr>
-                                        <Td>margin-top</Td>
-                                        <Td>Elementning yuqori chetini o'rnatadi</Td>
+                                        <Td>padding-top</Td>
+                                        <Td>Elementning yuqori toʻldirishini oʻrnatadi</Td>
                                     </Tr>
                                 </Tbody>
                                 
@@ -356,4 +344,4 @@ const Css21dars = () => {
   )
 }
 
-export default Css21dars
+export default Css23dars

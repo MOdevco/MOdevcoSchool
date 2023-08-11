@@ -166,6 +166,7 @@ input {
   .over {
     height: 8vh !important;
   }
+ 
 
   
 }
@@ -188,7 +189,9 @@ input {
   }.mini{
     height: 13vh !important;
   }
-  
+  .margin{
+    height: 41vh !important;
+  }
 }
 
 @media (max-width: 600px) {

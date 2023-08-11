@@ -93,7 +93,7 @@ export const css5dars = [
 
 export const css6dars = [
     {
-        link: "/",
+        link: "/css21dars",
         name: "1-Mavzu: Css Margin"
     },
     {
