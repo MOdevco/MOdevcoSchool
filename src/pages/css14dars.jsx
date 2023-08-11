@@ -31,6 +31,7 @@ import {
   } from '@chakra-ui/react'
   import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
 import OpacityCard from '../components/opacityCard/opacityCard'
+import SidebarCss from '../components/sidebarCss/sidebarCss'
 import CssAccordion from '../components/cssAccordion/cssAccordion'
 
 const Css14dars = () => {
@@ -67,7 +68,7 @@ const Css14dars = () => {
         <Box >
             <Flex >
                 {onOpen && <Box>
-                    <Sidebar title={'CSS DARSLARI'} elementName={'Bosh sahifa'}/>
+                    <SidebarCss title={'CSS DARSLARI'} elementName={'Bosh sahifa'}/>
                 </Box>}
                 <Box ml={{base: '30px' , md: '450px'}}   display={'flex'}  alignItems={'center'} gap={'20px'}>
                     {sizes.map((size) => (
@@ -210,8 +211,6 @@ const Css14dars = () => {
                     </Box>
             </Box>
             <Divider mt={'100px'} />
-            
-
             </Box>
     </Box>
   )

@@ -1,12 +1,67 @@
 {
   "users": [
     {
-      "id": 1,
-      "url": "https://img.freepik.com/vector-premium/dibujos-animados-ronda-avatar-imagen-vector-arte-ilustracion_1056-4433.jpg?w=2000",
       "name": "Muhammadali",
       "lastname": "Anvarov",
-      "phone": 998911233212,
-      "email": "modevco@gmail.com"
+      "phone": "998916595582",
+      "email": "modevco05@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Diyorbek",
+      "lastname": "Ahmadjonov",
+      "phone": "998907822309",
+      "email": "diyorbekuzbek@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Husniddin",
+      "lastname": "Muxtorov",
+      "phone": "998912824262",
+      "email": "muhtorovhusniddin@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Azizbek",
+      "lastname": "Abduhakimov",
+      "phone": "998913248992",
+      "email": "codewizard@gmail.com",
+      "id": 4
+    }
+  ],
+  "taklif": [
+    {
+      "ism": "Muhammadali",
+      "email": "modevco05@gmail.com",
+      "mavzu": "Omad",
+      "xabar": "Assalomu alekum sizlarga omad tilayman  va video darsliklarniham chiqaringlar shuni so'ramoqchi edim",
+      "id": 21
+    }
+  ],
+  "komment": [
+    {
+      "komment": "Judaham zo'r qilganszlar barchaga omad",
+      "id": 1
+    },
+    {
+      "komment": "Judaham zo'r qilganszlar barchaga omad Judaham zo'r qilganszlar barchaga omadJudaham zo'r qilganszlar barchaga omadJudaham zo'r qilganszlar barchaga omadJudaham zo'r qilganszlar barchaga omad",
+      "id": 2
+    },
+    {
+      "komment": "Judaham zo'r qilganszlar barchaga omad",
+      "id": 3
+    },
+    {
+      "komment": "Judaham zo'r qilganszlar barchaga omad",
+      "id": 3
+    },
+    {
+      "komment": "Judaham zo'r qilganszlar barchaga omad",
+      "id": 3
+    },
+    {
+      "komment": "Judaham zo'r qilganszlar barchaga omad",
+      "id": 3
     }
   ]
 }

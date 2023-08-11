@@ -1,18 +1,43 @@
 import { Box, Button, FormControl, FormLabel, Input, useToast , Image,  useDisclosure, Divider } from "@chakra-ui/react"
-import {   useState  } from "react"
+import {   useEffect, useState  } from "react"
 import {  Logo} from "../assets"
 import Hodimlar from "../components/hodimlar/hodimlar"
+import Komment from "../components/komment/komment"
 import SidebarAdmin from "../components/sidebarAdmi/sidebarAdmin"
+import Takliflar from "../components/takliflar/takliflar"
 
 
 
 const AdminModevcoAdmin = () => {
     const [admin , setAdmin] = useState("")
     const [password , setPassword] = useState("")
-    const [showPanel , setShowPanel] = useState(true)
+    const [showPanel , setShowPanel] = useState(false)
     const toast = useToast()
     const [data ,setData] = useState([])
-  
+    const [barchasi , setBarchasi] = useState(true)
+    const [xodim , setXodim] = useState(true)
+    const [taklif , setTaklif] = useState(true)
+    const [komment , setKomment] = useState(true)
+    const handleAll = () => {
+        setXodim(true)
+        setTaklif(true)
+        setKomment(true)
+    }
+    const handleTaklif = () => {
+        setXodim(false)
+        setTaklif(true)
+        setKomment(false)
+    }
+    const handleXodim = () => {
+        setXodim(true)
+        setTaklif(false)
+        setKomment(false)
+    }
+    const handleKomment = () => {
+        setXodim(false)
+        setTaklif(false)
+        setKomment(true)
+    }
     const handleClose = () => {
         if(admin === "modevco" && password === '1122') {
             setShowPanel(false)
@@ -27,10 +52,15 @@ const AdminModevcoAdmin = () => {
         }
     }
 
+
+
+    
   
 
   
-
+    useEffect(() => {
+        window.scroll(0,0)
+    })
     return (
 
         <Box minHeight={'100vh'}>
@@ -59,11 +89,13 @@ const AdminModevcoAdmin = () => {
 
             <Box width={'100%'} display={'flex'} pl={'400px'}   >
                 <Box>
-                    <SidebarAdmin setData={setData} data={data}  />
+                    <SidebarAdmin handleAll={handleAll} handleTaklif={handleTaklif} handleKomment={handleKomment} handleXodim={handleXodim} setData={setData} data={data}  />
                 </Box>
 
                 <Box width={'100%'}>
-                    <Hodimlar setData={setData} data={data} />
+                    {xodim && <Hodimlar setData={setData} data={data} />}
+                    {taklif && <Takliflar />}
+                    {komment && <Komment />}
                 </Box>
 
             </Box>
