@@ -63,6 +63,17 @@ import Css20dars from './pages/css20dars'
 import Css21dars from './pages/css21dars'
 import Css22dars from './pages/css22dars'
 import Css23dars from './pages/css23dars'
+import Css24dars from './pages/css24dars'
+import Css25dars from './pages/css25dars'
+import Css26dars from './pages/css26dars'
+import Css27dars from './pages/css27dars'
+import Css28dars from './pages/css28dars'
+import Css29dars from './pages/css29dars'
+import Css30dars from './pages/css30dars'
+import Css31dars from './pages/css31dars'
+import Css32dars from './pages/css32dars'
+import Css33dars from './pages/css33dars'
+import Css34dars from './pages/css34dars'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
@@ -173,6 +184,17 @@ function App() {
         <Route path='/css21dars' element={ <Css21dars />}></Route>
         <Route path='/css22dars' element={ <Css22dars />}></Route>
         <Route path='/css23dars' element={ <Css23dars />}></Route>
+        <Route path='/css24dars' element={ <Css24dars />}></Route>
+        <Route path='/css25dars' element={ <Css25dars />}></Route>
+        <Route path='/css26dars' element={ <Css26dars />}></Route>
+        <Route path='/css27dars' element={ <Css27dars />}></Route>
+        <Route path='/css28dars' element={ <Css28dars />}></Route>
+        <Route path='/css29dars' element={ <Css29dars />}></Route>
+        <Route path='/css30dars' element={ <Css30dars />}></Route>
+        <Route path='/css31dars' element={ <Css31dars />}></Route>
+        <Route path='/css32dars' element={ <Css32dars />}></Route>
+        <Route path='/css33dars' element={ <Css33dars />}></Route>
+        <Route path='/css34dars' element={ <Css34dars />}></Route>
         
       </Routes>
 

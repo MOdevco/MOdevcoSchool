@@ -97,15 +97,15 @@ export const css6dars = [
         name: "1-Mavzu: Css Margin"
     },
     {
-        link: "/",
+        link: "/css22dars",
         name: "2-Mavzu: Css Margin Collapse"
     },
     {
-        link: "/",
+        link: "/css23dars",
         name: "3-Mavzu: CSS Padding"
     },
     {
-        link: "/",
+        link: "/css24dars",
         name: "4-Mavzu: CSS Height, Width"
     }
 ]
@@ -114,27 +114,27 @@ export const css6dars = [
 
 export const css7dars = [
     {
-        link: "/",
+        link: "/css25dars",
         name: "1-Mavzu: Css Box Model"
     },
     {
-        link: "/",
+        link: "/css26dars",
         name: "2-Mavzu: Css Outline"
     },
     {
-        link: "/",
+        link: "/css27dars",
         name: "3-Mavzu: CSS Outline Width"
     },
     {
-        link: "/",
+        link: "/css28dars",
         name: "4-Mavzu: CSS Outline Color"
     },
     {
-        link: "/",
+        link: "/css29dars",
         name: "5-Mavzu: CSS Outline Shorthand"
     },
     {
-        link: "/",
+        link: "/css30dars",
         name: "6-Mavzu: CSS Outline Offset"
     },
 ]
@@ -143,23 +143,23 @@ export const css7dars = [
 
 export const css8dars = [
     {
-        link: "/",
+        link: "/css31dars",
         name: "1-Mavzu: Css Text Color"
     },
     {
-        link: "/",
+        link: "/css32dars",
         name: "2-Mavzu: Css Text Alignment"
     },
     {
-        link: "/",
+        link: "/css33dars",
         name: "3-Mavzu: CSS Text Decoration"
     },
     {
-        link: "/",
+        link: "/css34dars",
         name: "4-Mavzu: CSS Text Transformation"
     },
     {
-        link: "/",
+        link: "/css35dars",
         name: "5-Mavzu: CSS Text Spacing"
     },
     {

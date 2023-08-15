@@ -18,7 +18,7 @@ const Fikr = () => {
 
   const handleSubmit = async () => {
 
-    await axios.post('http://localhost:3000/taklif' , data).then((res) => {
+    await axios.post('http://localhost:3000/taklif', data).then((res) => {
       toast({
         description: "Malumot Yetkazildi!!",
         status: 'success',

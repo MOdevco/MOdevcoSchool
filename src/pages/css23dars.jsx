@@ -89,20 +89,20 @@ const Css23dars = () => {
                 </Box>
             </Flex>
             <Divider mt={'20px'} />
-            <Box height={'32vh'} display={'flex'} alignItems={'flex-start'} gap={'3rem'} flexDirection={'column'} pt={4} pl={{base: '20px' , md: '450px'}}>
+            <Box className='duo' height={{lg:'55vh', md: '35vh', base: '40vh', xl :'38vh', '2xl': '32vh'}} display={'flex'} alignItems={'flex-start'} gap={'3rem'} flexDirection={'column'} pt={4} pl={{base: '20px' , md: '450px',}}>
                 <Text fontSize={'20px'}>To'ldirish element tarkibi atrofida, har qanday belgilangan chegaralar ichida bo'sh joy <br /> yaratish uchun ishlatiladi.</Text>
-                <Box w={{md: '100%', lg: '874px', base: '100%'}} h={'170px'} border={'1px solid #008000'}>
+                <Box w={{md: '100%', '2xl': '874px',lg: '100%', base: '100%'}} h={'170px'} border={'1px solid #008000'}>
                         <Text fontSize={'20px'} padding={'70px'}>Ushbu element 70px hajmga ega.</Text>
                 </Box>
             </Box>
-            <Divider mt={'20px'} />
+            <Divider mt={{md:'20px', base: '220px'}} />
 
-            <Box h={{md:'24vh', base: '50vh', lg: '38vh', xl: '23vh'}} pl={{base: '20px' , md: '450px'}} pt={4} display={'flex'} flexDirection={'column'} gap={'10px'}>
+            <Box className='padding' h={{md:'32vh', lg: '50vh', xl: '23vh'}} pl={{base: '20px' , md: '450px'}} pt={4} display={'flex'} flexDirection={'column'} gap={'10px'}>
                 <Heading fontSize={{base: '30px', md: '50px'}}>CSS Padding</Heading>
                 <Text fontSize={'20px'}>CSS to'ldirish xususiyatlari har qanday belgilangan chegaralar ichida element tarkibi <br /> atrofida bo'sh joy yaratish uchun ishlatiladi.</Text>
                 <Text fontSize={'20px'}>CSS yordamida siz to'ldirishni to'liq boshqarishingiz mumkin. Elementning har bir tomoni (yuqori, <br /> o'ng, pastki va chap) uchun to'ldirishni o'rnatish uchun xususiyatlar mavjud.</Text>
             </Box>
-            <Divider mt={'20px'} />
+            <Divider mt={{md:'20px', base: '130px'}} />
 
 
 
@@ -130,7 +130,7 @@ const Css23dars = () => {
                 </ul>
                 <Text fontSize={'20px'}>Eslatma: Salbiy qiymatlarga ruxsat berilmaydi.</Text>
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'440px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{xl:'400px',lg: '480px', md: '560px', base: '440px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'20px'}> <span className='red'>{`<div>`}</span> elementining barcha to'rt tomoni uchun turli xil to'ldirishni o'rnating:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'210px'} bg={'#0A1624'} pt={'10px'}>
@@ -169,7 +169,7 @@ const Css23dars = () => {
                     <li>left padding 100px</li>
                 </ul>
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'350px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{xl:'350px',lg:'400px', md: '470px', base: '350px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'20px'}>Padding stenografiya xususiyatidan to'rtta qiymat bilan foydalaning:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
@@ -190,7 +190,7 @@ const Css23dars = () => {
                     <li>bottom padding is 75px</li>
                 </ul>
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'350px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{xl:'350px',lg: '400', md: '470px', base: '350px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'20px'}>Padding stenografiya xususiyatidan uchta qiymat bilan foydalaning:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
@@ -209,7 +209,7 @@ const Css23dars = () => {
                     <li>top va bottom padding lari 25px</li>
                     <li>right va left padding lari  50px</li>
                 </ul>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'350px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{xl:'350px',lg: '400', md: '480px', base: '350px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'20px'}>Padding stenografiya xususiyatidan ikkita qiymat bilan foydalaning:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
@@ -228,7 +228,7 @@ const Css23dars = () => {
                     <li>to'rtta chekkaning hammasi 25px</li>
                 </ul>
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'350px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{xl:'350px',lg: '400px', md: '480px', base: '350px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'20px'}>Padding stenografiya xususiyatidan bitta qiymat bilan foydalaning:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'120px'} bg={'#0A1624'} pt={'10px'}>
@@ -251,7 +251,7 @@ const Css23dars = () => {
                   <Heading>Padding va Element Width</Heading>
                   <Text fontSize={'20px'}>CSS width xususiyati elementning kontent maydonining kengligini belgilaydi. Kontent <br /> maydoni - bu elementning to'ldirish, chegara va chetidagi qism (box modeli).</Text>
                   <Text fontSize={'20px'}>Shunday qilib, agar element belgilangan kenglikka ega bo'lsa, ushbu elementga qo'shilgan to'ldirish <br /> elementning umumiy kengligiga qo'shiladi. Bu ko'pincha istalmagan natijadir.</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'420px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{xl:'420px',lg: '500px', md: '580px', base: '420px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'20px'}>Bu yerda {`<div>`} elementiga 300px kenglik berilgan. Biroq, {`<div>`} elementining haqiqiy kengligi 350px <br /> (300px + 25px chap toʻldirish + 25px oʻng toʻldirish) boʻladi:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'180px'} bg={'#0A1624'} pt={'10px'}>
@@ -272,7 +272,7 @@ const Css23dars = () => {
 
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'50vh'}>
 
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'400px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{xl:'400px',lg: '480px', md: '530px', base: '400px'}} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Text fontSize={'20px'}>To'ldirish miqdoridan qat'i nazar, kengligi 300 pikselda ushlab turish uchun box-sizing xususiyatidan foydalaning:</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'180px'} bg={'#0A1624'} pt={'10px'}>

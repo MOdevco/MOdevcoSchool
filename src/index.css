@@ -106,7 +106,6 @@ input {
     height: 9vh !important;
   } 
 
-  
 }
 
 @media (max-width: 980px) {
@@ -125,14 +124,33 @@ input {
   .over {
     height: 8vh !important;
   }
+  .duo{
+    height: 24vh !important;
+  }
+  .padding{
+    height: 23vh !important;
+  }
+  .miniw{
+    height: 17vh !important;
+  }
+  .minih{
+    height: 34vh !important;
+  }
+  .minii{
+    height: 45vh !important;
+  }
+  .css26{
+    height: 68vh !important;
+  }
+  .outlinecolor{
+    height: 64vh !important;
+  }
 
-  
 }
 @media (max-width: 850px) {
   .header {
     padding-top: 20000px;
   }
-  
   
  
 }
@@ -156,7 +174,18 @@ input {
   .mini{
     height: 8vh !important; 
   }
-  
+  .minii{
+    height: 58vh !important;
+  }
+  .outlinecolor{
+    height: 78vh !important;
+  }
+  #surfaces{
+    height: 40vh !important;
+  }
+  .css33{
+    height: 32vh !important;
+  }
 }
 
 @media (max-width: 761px) {
@@ -166,6 +195,7 @@ input {
   .over {
     height: 8vh !important;
   }
+  
  
 
   
@@ -191,6 +221,33 @@ input {
   }
   .margin{
     height: 41vh !important;
+  }
+  .padding{
+    height: 42vh !important;
+  }
+  .miniw{
+    height: 27vh !important;
+  }
+  .minih{
+    height: 63vh !important;
+  }
+  .minii{
+    height: 75vh !important;
+  }
+  .outlinecolor{
+    height: 90vh !important;
+  }
+  .offset{
+    height: 36vh !important;
+  }
+  #surfaces{
+    height: 46vh !important;
+  }
+  .css32{
+    height: 33vh !important;
+  }
+  .css33{
+    height: 36vh !important;
   }
 }
 
@@ -232,6 +289,12 @@ input {
   .base{
     height: 200vh !important;
   }
+  .outlinecolor{
+    height: 100vh !important;
+  }
+  .offset{
+    height: 38vh !important;
+  }
 }
 @media (max-width: 375px) {
   .header {
@@ -243,8 +306,15 @@ input {
     padding-top: 5px !important;
     height: 9vh !important;
   }
-
-
+  .minii{
+    height: 100vh !important;
+  }
+  .outlinecolor{
+    height: 140vh !important;
+  }
+  .offset{
+    height: 50vh !important;
+  }
 }
 @media (max-width: 280px) {
   .header {
@@ -260,6 +330,11 @@ input {
     height: 50vh !important;
   }
 
+}
+@media(max-width: 353px){
+  .outlinecolor{
+    height: 125vh !important;
+  }
 }
 
 
