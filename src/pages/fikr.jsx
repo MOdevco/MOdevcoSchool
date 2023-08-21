@@ -63,10 +63,9 @@ const Fikr = () => {
               { <Button onClick={handleSubmit} bg={'#7FFFD4'} _hover={{bg: '#4FFFD4'}} width={'100%'} mt={'20px'}>Jo'natish</Button>}
               
             </Box>
-
-            <Box >
-              <video autoPlay muted loop src={video} style={{width: '700px' ,}}></video>
-            </Box>
+              <Box>
+                <video autoPlay muted loop src={video} style={{width: '700px' ,}}></video>
+              </Box>
           </Box>
 
         </Box>

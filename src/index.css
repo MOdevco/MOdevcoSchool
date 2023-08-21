@@ -145,7 +145,10 @@ input {
   .outlinecolor{
     height: 64vh !important;
   }
-
+  .css34{
+    height: 18vh !important;
+  }
+  
 }
 @media (max-width: 850px) {
   .header {
@@ -185,6 +188,12 @@ input {
   }
   .css33{
     height: 32vh !important;
+  }
+  .css34{
+    height: 30vh !important;
+  }
+  .css34dars{
+    height: 48vh !important;
   }
 }
 
@@ -249,6 +258,12 @@ input {
   .css33{
     height: 36vh !important;
   }
+  .css34{
+    height: 35vh !important;
+  }
+  .css34dars{
+    height: 55vh !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -276,6 +291,7 @@ input {
   .fikrTop {
     margin-top: 450px;
   }
+  
 }
 
 @media (max-width: 420px) {
@@ -295,6 +311,9 @@ input {
   .offset{
     height: 38vh !important;
   }
+.css34dars{
+  height: 42vh !important;
+}
 }
 @media (max-width: 375px) {
   .header {
@@ -315,6 +334,13 @@ input {
   .offset{
     height: 50vh !important;
   }
+  .css34{
+    height: 50vh !important;
+  }
+  .css34dars{
+    height: 56vh !important;
+  }
+  
 }
 @media (max-width: 280px) {
   .header {
@@ -329,13 +355,15 @@ input {
   .slider img {
     height: 50vh !important;
   }
-
+  
 }
 @media(max-width: 353px){
   .outlinecolor{
     height: 125vh !important;
   }
+  
 }
+
 
 
 

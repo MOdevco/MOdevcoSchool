@@ -87,13 +87,13 @@ const Css34dars = () => {
                     </Drawer>
                     
                     <Box>
-                        <Heading fontSize={{base: '30px' , md: '50px'}}>CSS Text Transformation</Heading>
+                        <Heading fontSize={{base: '30px' , md: '40px', lg: '50px'}}>CSS Text Transformation</Heading>
                     </Box>
                 </Box>
             </Flex>
             <Divider mt={'20px'} />
-            <Box height={'20vh'} display={'flex'} justifyContent={'center'} alignItems={'flex-start'} gap={'1rem'} flexDirection={'column'} pt={4} pl={{base: '20px' , md: '450px',}}>
-                <Heading fontSize={{base: '30px' , md: '50px'}}>Text Transformation</Heading>
+            <Box className='css34' height={{'2xl':'20vh', md: '35vh',}} display={'flex'} justifyContent={'center'} alignItems={'flex-start'} gap={'1rem'} flexDirection={'column'} pt={4} pl={{base: '20px' , md: '450px',}}>
+                <Heading fontSize={{base: '30px' , md: '40px', lg :'50px'}}>Text Transformation</Heading>
                 <Text fontSize={'20px'}>Matnni o'zgartirish xususiyati matndagi katta va kichik harflarni belgilash uchun ishlatiladi.</Text>
                 <Text fontSize={'20px'}>U hamma narsani katta yoki kichik harflarga aylantirish yoki har bir so'zning birinchi harfini bosh <br /> harf bilan yozish uchun ishlatilishi mumkin:</Text>
             </Box>
@@ -109,7 +109,7 @@ const Css34dars = () => {
             
            
             
-            <Box  pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{xl:'50vh', base: '50vh', md: '80vh'}}>
+            <Box className='css34dars' pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{xl:'50vh', md: '42vh'}}>
                 <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={'500px'} py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'300px'} bg={'#0A1624'} pt={'10px'}>
@@ -126,7 +126,7 @@ const Css34dars = () => {
                     </CopyToClipboard>
                 </Box>
             </Box>
-            <Divider mt={'20px'} />
+            <Divider mt={{md:'20px', base: '150px'}} />
                 
 
             <Box pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={'10vh'}>
