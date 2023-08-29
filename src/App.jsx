@@ -74,6 +74,13 @@ import Css31dars from './pages/css31dars'
 import Css32dars from './pages/css32dars'
 import Css33dars from './pages/css33dars'
 import Css34dars from './pages/css34dars'
+import Css35dars from './pages/css35dars'
+import Css36dars from './pages/css36dars'
+import Css37dars from './pages/css37dars'
+import Css38dars from './pages/css38dars'
+import Css39dars from './pages/css39dars'
+import Css40dars from './pages/css40dars'
+import Css41dars from './pages/css41dars'
 function App() {
   const [scroll , setScroll] = useState(false)
   const [time , setTime] = useState(false)
@@ -195,6 +202,13 @@ function App() {
         <Route path='/css32dars' element={ <Css32dars />}></Route>
         <Route path='/css33dars' element={ <Css33dars />}></Route>
         <Route path='/css34dars' element={ <Css34dars />}></Route>
+        <Route path='/css35dars' element={ <Css35dars />}></Route>
+        <Route path='/css36dars' element={ <Css36dars />}></Route>
+        <Route path='/css37dars' element={ <Css37dars />}></Route>
+        <Route path='/css38dars' element={ <Css38dars />}></Route>
+        <Route path='/css39dars' element={ <Css39dars />}></Route>
+        <Route path='/css40dars' element={ <Css40dars />}></Route>
+        <Route path='/css41dars' element={ <Css41dars />}></Route>
         
       </Routes>
 

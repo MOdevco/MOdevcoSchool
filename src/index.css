@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Mitr:wght@300;500;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Mitr:wght@300;500;700&family=Monda:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Mitr:wght@300;500;700&family=Monda:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Gochi+Hand&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Mitr:wght@300;500;700&family=Monda:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Cutive+Mono&family=Gochi+Hand&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Mitr:wght@300;500;700&family=Monda:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
 * {
   font-family: 'Molengo';
   color: white;
@@ -46,7 +50,7 @@ body {
   color:  #00FFFF;
 }
 input {
-  color: black;
+  color: black ;
 }
 .purple{
   color: #9D5EBB  ;
@@ -70,7 +74,72 @@ input {
   filter: drop-shadow(3px 3px 3px  #7FFFD4);
 }
 
+/* font family */
 
+.sanserif{
+  font-family: sans-serif !important;
+  color: #000;
+}
+.serif{
+  font-family: serif !important;
+  color: #000;
+}
+.redserif{
+  font-family: serif !important;
+  color: #FF0000;
+}
+.courier{
+  font-family: 'Cutive Mono';
+}
+.lucida{
+  font-family: 'Mitr';
+}
+
+.pacific{ 
+  font-family: 'Pacifico';
+}
+.hand{
+  font-family: 'Gochi Hand';
+}
+.monda{
+  font-family: 'Monda';
+}
+.cutive{
+  font-family: 'Cutive Mono';
+}
+.font1{
+  font-family: A rial, Helvetica, sans-serif;
+}
+.font2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font3{
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.font4{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.font5{
+  font-family: 'Times New Roman', Times, serif;
+}
+.font6{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.font7{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.font8{
+  font-family: 'Courier New', Courier, monospace;
+}
+.font9{
+  font-family: cursive;
+}
+.font10{
+  font-family: sans-serif;
+}
+.font11{
+  font-family: fantasy;
+}
 
 
 @media (max-width: 2000px) {
@@ -148,6 +217,10 @@ input {
   .css34{
     height: 18vh !important;
   }
+  .mt{
+    margin-top: -70px !important;
+  }
+  
   
 }
 @media (max-width: 850px) {
@@ -194,6 +267,37 @@ input {
   }
   .css34dars{
     height: 48vh !important;
+  }
+  .css35dars{
+    height: 50vh !important;
+  }
+  .css36{
+    height: 34vh !important;
+  }
+  .css36dars{
+    padding-top: 60px !important;
+    height: 39vh !important;
+  }
+  .css37{
+    height: 56vh !important;
+  }
+  .mt{
+    margin-top: -70px;
+  }
+  .css38{
+    height: 20vh !important;
+  }
+  .css38dars{
+    height: 40vh !important;
+  }
+  .css39{
+    height: 36vh !important;
+  }
+  .css40dars{
+    height: 630px !important;
+  }
+  .css40, .csss40{
+    height: 540px !important;
   }
 }
 
@@ -264,6 +368,41 @@ input {
   .css34dars{
     height: 55vh !important;
   }
+  .css35{
+    height: 30vh !important;
+  }
+  .css35dars{
+    height: 60vh !important;
+  }
+  .css36{
+    height: 40vh !important;
+  }
+  .css36dars{
+    padding-top: 120px !important;
+    height: 50vh !important;
+  }
+  .css37{
+    height: 75vh !important;
+  }
+  .mt{
+    margin-top: -0px !important;
+  }
+  .css38{
+    height: 22vh !important;
+  }
+  .css38dars{
+    height: 47vh !important;
+  }
+  .css39{
+    height: 50vh !important;
+  }
+  .css40dars{
+    height: 650px !important;
+  }
+  .css40, .csss40{
+    height: 570px !important;
+  }
+  
 }
 
 @media (max-width: 600px) {
@@ -314,6 +453,10 @@ input {
 .css34dars{
   height: 42vh !important;
 }
+.css36dars{
+  margin-top: -80px;
+  height: 77vh !important;
+}
 }
 @media (max-width: 375px) {
   .header {
@@ -340,6 +483,10 @@ input {
   .css34dars{
     height: 56vh !important;
   }
+  .css36dars{
+    margin-top: -80px;
+    height: 77vh !important;
+  }
   
 }
 @media (max-width: 280px) {
@@ -360,6 +507,10 @@ input {
 @media(max-width: 353px){
   .outlinecolor{
     height: 125vh !important;
+  }
+  .css36dars{
+    margin-top: -80px;
+    height: 69vh !important;
   }
   
 }
@@ -385,9 +536,26 @@ input {
   color: red;
 }
 
+.ull li::marker{
+  background: #D9D9D9;
+}
+.ul li::marker{
+  background: #D9D9D9;
+}
+.ulll li::marker{
+  background: #D9D9D9;
+}
+
 
 
 /* arrov icon */
 .topicon{
   color: #000 !important;
+}
+
+
+/* shadow  */
+
+.shadow{
+    text-shadow: 2px 2px; 
 }
