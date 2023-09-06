@@ -36,4 +36,8 @@ import user from './user.png'
 import taklif from './taklif.png'
 import barchasi from './barchasi.png'
 import messImg from './messImg.png'
-export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg ,   htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon , media , video , audio , closeAudio , loginAudio , errorAudio , enterGoogle ,  notFound , FaqImage , Heard , err , value , cssRek , user , taklif , barchasi , messImg}
+import photo from './icon.png'
+import icons from './iconkalar.png'
+import icons3 from './icons3.png'
+import icons4 from './icons4.png'
+export { Tg , You , Ins , Goog , vsc , vsh , vsp , frontImg , Logo , beckImg ,   htmlPast ,chakraPast , jsPast , tailPast , reatcPast , tsPast , booPast , materPast , nextPast , cssPast , favicon , media , video , audio , closeAudio , loginAudio , errorAudio , enterGoogle ,  notFound , FaqImage , Heard , err , value , cssRek , user , taklif , barchasi , messImg, photo, icons, icons3, icons4}

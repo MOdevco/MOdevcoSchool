@@ -33,7 +33,7 @@ import CssAccordion from '../components/cssAccordion/cssAccordion'
 import BorderProps from '../components/borderProps/borderProps'
 import OutlineProps from '../components/outlineProps/OutlineProps'
 
-const Css40dars = () => {
+const Css42dars = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [placement, setPlacement] = useState('left')
     const [size, setSize] = useState('')
@@ -110,12 +110,12 @@ const Css40dars = () => {
                 <Text fontSize={'20px'}>Bu xususiyat uchta qiymatga ega:</Text>
                 <ul className='ull'>
                     <li><span className='red'>normal</span> - matn an'anaviy tarzda ko'rsatiladi</li>
-                    <li><span className='red'>italic</span>- matn kursiv bilan ko'rsatiladi</li>
-                    <li><span className='red'>oblique</span> - matn "egilgan" (qiyshiq kursivga juda o'xshaydi, lekin kamroq qo'llab-quvvatlanadi)</li>
+                    <li><span style={{fontStyle: 'italic'}} className='red'>italic</span>- matn kursiv bilan ko'rsatiladi</li>
+                    <li><span style={{fontStyle: 'oblique'}} className='red'>oblique</span> - matn "egilgan" (qiyshiq kursivga juda o'xshaydi, lekin kamroq qo'llab-quvvatlanadi)</li>
                 </ul>
-                <Box className='css40dars' width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'520px', base: '520px', md: '580px'}}  py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box className='css40dars' width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'550px', base: '550px', md: '600px'}}  py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    
+                    <Text>Bu erda uchta shrift turi mavjud: Tahoma, Verdana va sans-serif. Ikkinchi va uchinchi shriftlar, agar <br /> birinchisi topilmasa, zaxira nusxasi.</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'300px'} bg={'#0A1624'} pt={'10px'}>
                       
                      <Text fontSize={'20px'} className='purple'>p.normal {`{`} <br /> <span style={{paddingLeft: '20px'}} className='red'>font-style:</span> <span className='yellow'>normal;</span> <br /> {`}`}</Text>
@@ -135,9 +135,9 @@ const Css40dars = () => {
             <Box  pl={{base: '20px' , md: '450px'}} display={'flex'} flexDirection={'column'} gap={'20px'} pt={'40px'} minHeight={{xl:'50vh', md: '50vh'}}>
                 <Heading fontSize={{base: '30px', md: '50px'}}>Font Weight</Heading>
                 <Text fontSize={'20px'}><span className='red'>Font-weight</span> xususiyati shrift og'irligini belgilaydi:</Text>
-                <Box className='css40' width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'420px', base: '420px', md: '500px'}}  py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box className='css40' width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'450px', base: '450px', md: '520px'}}  py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
-                    
+                    <Text>Bu erda uchta shrift turi mavjud: Tahoma, Verdana va sans-serif. Ikkinchi va uchinchi shriftlar, agar <br /> birinchisi topilmasa, zaxira nusxasi.</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'205px'} bg={'#0A1624'} pt={'10px'}>
                       
                      <Text fontSize={'20px'} className='purple'>p.normal {`{`} <br /> <span style={{paddingLeft: '20px'}} className='red'>font-wight:</span> <span className='yellow'>normal;</span> <br /> {`}`}</Text>
@@ -156,8 +156,9 @@ const Css40dars = () => {
                 <Heading fontSize={{base: '30px', md: '50px'}}>Font Variant</Heading>
                 <Text fontSize={'20px'}><span className='red'>Font-variant</span> xususiyati matnni kichik bosh harflar bilan ko'rsatish yoki ko'rsatmaslik kerakligini belgilaydi.</Text>
                 <Text fontSize={'20px'}>Kichik boshli shriftda barcha kichik harflar katta harflarga aylantiriladi. Biroq, o'zgartirilgan katta harflar matndagi <br /> asl bosh harflarga qaraganda kichikroq shrift o'lchamida ko'rinadi.</Text>
-                <Box className='csss40' width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'420px', base: '420px', md: '500px'}}   py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box className='csss40' width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'450px', base: '450px', md: '520px'}}   py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
+                    <Text>Bu erda uchta shrift turi mavjud: Tahoma, Verdana va sans-serif. Ikkinchi va uchinchi shriftlar, agar <br /> birinchisi topilmasa, zaxira nusxasi.</Text>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'205px'} bg={'#0A1624'} pt={'10px'}>
                       
                      <Text fontSize={'20px'} className='purple'>p.normal {`{`} <br /> <span style={{paddingLeft: '20px'}} className='red'>font-variant:</span> <span className='yellow'>normal;</span> <br /> {`}`}</Text>
@@ -179,4 +180,4 @@ const Css40dars = () => {
   )
 }
 
-export default Css40dars
+export default Css42dars

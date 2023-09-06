@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Mitr:wght@300;500;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Mitr:wght@300;500;700&family=Monda:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Mitr:wght@300;500;700&family=Monda:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Gochi+Hand&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Mitr:wght@300;500;700&family=Monda:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Cutive+Mono&family=Gochi+Hand&family=Heebo:wght@200;400;600;800;900&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Mitr:wght@300;500;700&family=Monda:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Audiowide&family=Boogaloo&family=Cinzel:wght@400;600;800;900&family=Courier+Prime:wght@400;700&family=Cutive+Mono&family=Fjalla+One&family=Gochi+Hand&family=Heebo:wght@200;400;600;800;900&family=Libre+Baskerville:wght@400;700&family=Manrope:wght@200;400;500;600;700;800&family=Marck+Script&family=Merriweather:wght@300;400;700;900&family=Mitr:wght@300;500;700&family=Molengo&family=Monda:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;400;600&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600;1,700;1,800;1,900&family=Sofia&family=Space+Mono:wght@400;700&family=Spectral:wght@200;300;400;500;600;700&family=Trirong:wght@200;300;400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap');
 * {
   font-family: 'Molengo';
   color: white;
@@ -140,6 +135,47 @@ input {
 .font11{
   font-family: fantasy;
 }
+
+.sofia{
+  font-family: 'Sofia', cursive;
+}
+.trirong{
+  font-family: 'Trirong', serif;
+}
+.audiowide{
+  font-family: 'Audiowide', cursive;
+}
+.boogalo{
+  font-family: 'Boogaloo', cursive;
+}
+.molengo{
+  font-family: 'Molengo', sans-serif;
+}
+.merri{
+  font-family: 'Merriweather', serif;
+}
+.ubuntu{
+  font-family: 'Ubuntu', sans-serif;
+}
+.abril{
+  font-family: 'Abril Fatface', cursive;
+}
+.cinzel{
+  font-family: 'Cinzel', serif;
+}
+.libre{
+  font-family: 'Libre Baskerville', serif;
+}
+.mono{
+  font-family: 'Space Mono', monospace;
+}
+.spectral{
+  font-family: 'Spectral', serif;
+}
+.oswald{
+  font-family: 'Oswald', sans-serif;
+}
+
 
 
 @media (max-width: 2000px) {
@@ -299,6 +335,21 @@ input {
   .css40, .csss40{
     height: 540px !important;
   }
+  .css43{
+    height: 25vh !important;
+  }
+  .css44{
+    height: 40vh !important;
+  }
+  .top{
+    height: 8vh !important;
+  }
+  .css45{
+    height: 45vh !important;
+  }
+  .css45dars{
+    height: 570px !important;
+  }
 }
 
 @media (max-width: 761px) {
@@ -402,7 +453,21 @@ input {
   .css40, .csss40{
     height: 570px !important;
   }
-  
+  .css43{
+    height: 32vh !important;
+  }
+  .css44{
+    height: 50vh !important;
+  }
+  .top{
+    height: 10vh !important;
+  }
+  .css45{
+    height: 60vh !important;
+  }
+  .css45dars{
+    height: 600px !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -457,6 +522,13 @@ input {
   margin-top: -80px;
   height: 77vh !important;
 }
+.css43{
+  height: 25vh !important;
+}
+.css45dars{
+  height: 500px !important;
+}
+
 }
 @media (max-width: 375px) {
   .header {
@@ -487,7 +559,18 @@ input {
     margin-top: -80px;
     height: 77vh !important;
   }
-  
+  .css43{
+    height: 40vh !important;
+  }
+  .media{
+    /* height: 350vh !important; */
+  }
+  .css45dars{
+    height: 500px !important;
+  }
+  .css45{
+    height: 80vh !important;
+  }
 }
 @media (max-width: 280px) {
   .header {
