@@ -93,15 +93,15 @@ const Css46dars = () => {
                 </Box>
             </Flex>
             <Divider mt={'20px'} />
-            <Box height={{'2xl':'6vh', md: '15vh',lg: '25h', xl: '8vh'}} display={'flex'} justifyContent={'center'} alignItems={'flex-start'} gap={'1rem'} flexDirection={'column'} pt={4} pl={{base: '20px' , md: '450px',}}>
+            <Box height={{'2xl':'6vh', md: '15vh',lg: '15vh', xl: '8vh'}} display={'flex'} justifyContent={'center'} alignItems={'flex-start'} gap={'1rem'} flexDirection={'column'} pt={4} pl={{base: '20px' , md: '450px',}}>
                 <Text fontSize={'20px'}>Belgilar kutubxonasi yordamida <span className='red'>HTML</span> sahifangizga osongina qo'shilishi mumkin.</Text>
             </Box>
             <Divider mt={'20px'} />
-            <Box height={{'2xl':'15vh', md: '15vh',lg: '25h', xl: '8vh'}} display={'flex'} justifyContent={'center'} alignItems={'flex-start'} gap={'1rem'} flexDirection={'column'} pt={4} pl={{base: '20px' , md: '450px',}}>
+            <Box height={{'2xl':'15vh', md: '15vh',lg: '25vh', xl: '15vh'}} display={'flex'} justifyContent={'center'} alignItems={'flex-start'} gap={'1rem'} flexDirection={'column'} pt={4} pl={{base: '20px' , md: '450px',}}>
                 <Image w={{'2xl': '1022px', md: '100%'}} h={{md:'80px', '2xl': 'auto', base: '80px'}} src={photo} />
             </Box>
             <Divider mt={'20px'} />
-            <Box height={{'2xl':'30vh', md: '15vh',lg: '25h', xl: '8vh'}} display={'flex'} justifyContent={'center'} alignItems={'flex-start'} gap={'1rem'} flexDirection={'column'} pl={{base: '20px' , md: '450px',}}>
+            <Box height={{'2xl':'30vh', md: '15vh',lg: '70vh', xl: '40vh'}} display={'flex'} justifyContent={'center'} alignItems={'flex-start'} gap={'1rem'} flexDirection={'column'} pl={{base: '20px' , md: '450px',}}>
                 <Heading fontSize={{md: '50px', base: '30px'}}>Iconlarni qanday qo'shish kerak</Heading>
                 <Text fontSize={'20px'}><span className='red'>HTML</span> sahifangizga belgi qo'shishning eng oddiy usuli <span className='red'>Font Awesome</span> kabi piktogramma kutubxonasi.</Text>
                 <Text fontSize={'20px'}>Belgilangan piktogramma sinfining nomini istalgan <span className='red'>HTML</span> elementiga qo'shing {`(`}masalan, <span className='red'>{`<i>`}</span> yoki <span className='red'>{`<span>`}</span>{`)`}.</Text>
@@ -124,7 +124,7 @@ const Css46dars = () => {
             <Heading fontSize={{md: '50px', base: '30px'}}>Font Awesome Icons</Heading>
                 <Text fontSize={'20px'}>Font Awesome piktogrammalaridan foydalanish uchun fontawesome.com saytiga o‘ting, tizimga kiring va <span className='red'>HTML</span> <br /> sahifangizning <span className='red'>{`<head>`}</span> bo‘limiga qo‘shish uchun kodni oling:</Text>
                 <Text fontSize={'20px'} className='purple'>{`<script`} <span className='red'>src="</span><span className='yellow'>"https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"</span><span className='red'>"</span> <span className='red'>crossorigin="</span><span className='yellow'>anonymous</span><span className='red'>"</span> {`>`}{`</script>`}</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'550px', base: '800px', md: '600px', '2xl': '850px'}}  py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'550px', base: '800px', md: '600px', '2xl': '850px', xl: '820px'}}  py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'480px'} bg={'#0A1624'} pt={'10px'}>
                       
@@ -132,7 +132,7 @@ const Css46dars = () => {
                      
                     </Box>
                     <Text fontSize={'20px'}>Natija:</Text>
-                    <Image w={{'2xl': '959px', md: '90%', base: '90%'}} h={{md:'80px', '2xl': 'auto', base: '80px'}} src={icons}></Image>
+                    <Image w={{'2xl': '959px', md: '90%', base: '90%'}} h={{md:'80px', '2xl': 'auto', base: '50px'}} src={icons}></Image>
                     <CopyToClipboard text={`<!DOCTYPE html> <html> <head> <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> </head> <body> <i class="fas fa-cloud"></i <i class="fas fa-heart"></i <i class="fas fa-car"></i <i class="fas fa-file"></i <i class="fas fa-bars"></i> </body> </html>` } onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
@@ -149,7 +149,7 @@ const Css46dars = () => {
             <Heading fontSize={{md: '50px', base: '30px'}}>Bootstrap Icons</Heading>
                 <Text fontSize={'20px'}>Bootstrap glifikalaridan foydalanish uchun <span className='red'>HTML</span> sahifangizning <span className='red'>{`<head>`}</span> boʻlimi ga quyidagi qatorni qoʻshing:</Text>
                 <Text fontSize={'20px'} className='purple'>{`<link`} <span className='red'>rel="</span><span className='yellow'>stylesheet</span><span className='red'>"</span> <span className='red'>href="</span><span className='yellow'>https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css</span>{`>`}</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'550px', base: '800px', md: '600px', '2xl': '850px'}}  py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'550px', base: '800px', md: '600px', '2xl': '850px',xl: '820px'}}  py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'480px'} bg={'#0A1624'} pt={'10px'}>
 
@@ -157,7 +157,7 @@ const Css46dars = () => {
                      
                     </Box>
                     <Text fontSize={'20px'}>Natija:</Text>
-                    <Image w={{'2xl': '959px', md: '90%', base: '90%'}} h={{md:'80px', '2xl': 'auto', base: '80px'}} src={icons3}></Image>
+                    <Image w={{'2xl': '959px', md: '90%', base: '90%'}} h={{md:'80px', '2xl': 'auto', base: '40px'}} src={icons3}></Image>
                     <CopyToClipboard text={`<!DOCTYPE html <html <head> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" </head> <body> <i class="glyphicon glyphicon-cloud"></i> <i class="glyphicon glyphicon-remove"></i <i class="glyphicon glyphicon-user"></i <i class="glyphicon glyphicon-envelope"></i> <i class="glyphicon glyphicon-thumbs-up"></i> </body> </html>` } onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
@@ -177,7 +177,7 @@ const Css46dars = () => {
                 <Text fontSize={'20px'}>Google piktogrammalaridan foydalanish uchun <span className='red'>HTML</span> sahifangizning <span className='red'>{`<head>`}</span> boʻlimiga quyidagi qatorni qoʻshing:</Text>
                 <Text fontSize={'20px'} className='purple'>{`<link`} <span className='red'>rel="</span><span className='yellow'>stylesheet</span><span className='red'>"</span> <span className='red'>href="</span><span className='yellow'>https://fonts.googleapis.com/icon?family=Material+Icons</span>{`>`}</Text>
                 <Text fontSize={'20px'}>Eslatma: Yuklab olish yoki o'rnatish shart emas!</Text>
-                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'550px', base: '800px', md: '600px', '2xl': '850px'}}  py={{base: '15px', md :'0px'}} rounded={'20px'}>
+                <Box width={{base: '100%' , md: '80%'}} gap={'20px'} display={'flex'} flexDirection={'column'} pl={{base: '20px' , md: '100px'}} justifyContent={'center'} alignItems={'flex-start'} bg={'#233242'} height={{lg:'550px', base: '800px', md: '600px', '2xl': '850px', xl: '820px'}}  py={{base: '15px', md :'0px'}} rounded={'20px'}>
                     <Heading>Misol</Heading>
                     <Box width={'90%'} borderLeft={'4px'} pl={'10px'} display={'flex'} flexDirection={'column'} justifyContent={'flex-start'} overflow={'scroll'}  borderColor={'#7FFFD4'} height={'480px'} bg={'#0A1624'} pt={'10px'}>
 
@@ -185,7 +185,7 @@ const Css46dars = () => {
                      
                     </Box>
                     <Text fontSize={'20px'}>Natija:</Text>
-                    <Image w={{'2xl': '959px', md: '90%', base: '90%'}} h={{md:'80px', '2xl': 'auto', base: '80px'}} src={icons4}></Image>
+                    <Image w={{'2xl': '959px', md: '90%', base: '90%'}} h={{md:'80px', '2xl': 'auto', base: '50px'}} src={icons4}></Image>
                     <CopyToClipboard text={`<!DOCTYPE html> <html> <head> <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> </head> <body> <i class="material-icons">cloud</i> <i class="material-icons">favorite</i> <i class="material-icons">attachment</i> <i class="material-icons">computer</i> <i class="material-icons">traffic</i> </body> </html>` } onCopy={handleClip} >
                         <Button bg={'#7FFFD4'}>Nusxa olish</Button>
                     </CopyToClipboard>
